@@ -1,0 +1,51 @@
+site:
+  title: ZirekHQ
+  url: https://zirekhq.github.io
+  start_page: dengjen-tts::index.adoc
+  robots: allow
+
+runtime:
+  cache_dir: ./.cache/antora
+  log:
+    format: pretty
+    level: info
+    failure_level: warn
+
+content:
+  sources:
+    # Spike: two pilot components. Add one entry per repo here to onboard it,
+    # each repo owns its own docs/ via `docs/antora.yml`.
+    - url: https://github.com/ZirekHQ/dengjen-tts.git
+      branches:
+        - main
+      version:
+        main: 0.0.0-dev
+      start_path: docs
+    - url: https://github.com/ZirekHQ/dengjen-nvda.git
+      branches:
+        - main
+      version:
+        main: 0.0.0-dev
+      start_path: docs
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./supplemental-ui
+
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
+
+output:
+  clean: true
+
+asciidoc:
+  attributes:
+    idprefix: ''
+    idseparator: '-'
+    page-pagination: ''
+    experimental: ''
+  extensions:
+    - '@asciidoctor/tabs'
