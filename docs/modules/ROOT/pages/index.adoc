@@ -8,7 +8,8 @@ neural speech synthesis that makes a screen reader usable in the first place.
 == Screen readers
 
 * *https://github.com/ZirekHQ/dengjen-nvda[dengjen-nvda]* — NVDA add-on for fast, fully local
-  neural text-to-speech using Piper voices. No cloud service, no account, no network.
+  neural text-to-speech using Piper voices. No cloud service, no account. Speech runs locally
+  once voices are installed; downloading and previewing voices requires an internet connection.
   Originated as a maintenance fork of mush42/sonata-nvda (renamed from Sonata Neural Voices in
   v4.0.0).
 * *https://github.com/ZirekHQ/nvdaku[nvdaku]* — Kurdish (Kurmanji) localisation for NVDA:
