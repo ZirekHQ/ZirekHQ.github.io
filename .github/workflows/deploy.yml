@@ -1,0 +1,54 @@
+name: Deploy docs
+
+on:
+  push:
+    branches: [main]
+  repository_dispatch:
+    types: [update-docs]
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build site
+        run: npx antora --fetch antora-playbook.yml
+
+      # Optional: swap Lunr for Pagefind's WASM-based chunked index. Pagefind
+      # post-processes the built site rather than running as an Antora
+      # extension, so drop `@antora/lunr-extension` from antora-playbook.yml
+      # and the search partial in supplemental-ui when switching to it.
+      # - name: Index with Pagefind
+      #   run: npx pagefind --site build/site
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
