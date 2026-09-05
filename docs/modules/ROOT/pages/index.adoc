@@ -9,7 +9,8 @@ neural speech synthesis that makes a screen reader usable in the first place.
 
 * *https://github.com/ZirekHQ/dengjen-nvda[dengjen-nvda]* — NVDA add-on for fast, fully local
   neural text-to-speech using Piper voices. No cloud service, no account, no network.
-  Maintenance fork of mush42/sonata-nvda (renamed from Sonata Neural Voices in v4.0.0).
+  Originated as a maintenance fork of mush42/sonata-nvda (renamed from Sonata Neural Voices in
+  v4.0.0).
 * *https://github.com/ZirekHQ/nvdaku[nvdaku]* — Kurdish (Kurmanji) localisation for NVDA:
   interface translation, character descriptions, and a symbol dictionary. Dates from 2018 and
   is *partial* — see Help wanted below.
@@ -19,7 +20,8 @@ neural speech synthesis that makes a screen reader usable in the first place.
 
 == Speech synthesis
 
-The stack underneath the add-on, continuing https://github.com/mush42[Musharraf Omer]'s work:
+The stack underneath the add-on, originally built on https://github.com/mush42[Musharraf Omer]'s
+work:
 
 * *https://github.com/ZirekHQ/dengjen-tts[dengjen-tts]* — cross-platform Rust engine for neural
   TTS models (Piper, Kokoro, MeloTTS).
