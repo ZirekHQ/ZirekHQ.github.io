@@ -1,7 +1,7 @@
 site:
   title: ZirekHQ
   url: https://zirekhq.github.io
-  start_page: dengjen-tts::index.adoc
+  start_page: home::index.adoc
   robots: allow
 
 runtime:
@@ -13,6 +13,13 @@ runtime:
 
 content:
   sources:
+    # This repo's own docs/ -- the org home page (component `home`), not tied to
+    # any product version. `branches: HEAD` tracks whatever ref is checked out,
+    # so it works both in CI (detached HEAD from actions/checkout) and locally.
+    - url: .
+      branches: HEAD
+      start_path: docs
+
     # Spike: two pilot components. Add one entry per repo here to onboard it,
     # each repo owns its own docs/ via `docs/antora.yml`.
     - url: https://github.com/ZirekHQ/dengjen-tts.git
