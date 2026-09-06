@@ -1,0 +1,77 @@
+name: Build docs
+
+# Reusable: does the real build (po4a + both Antora sites) and uploads the
+# result as a plain build artifact. Called by ci.yml (on every PR, as a
+# status check) and deploy.yml (on push to main, before publishing). Keeping
+# this in one place means adding a component only needs updating here, not
+# separately in a PR-check copy that can drift out of sync.
+
+on:
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install po4a
+        run: sudo apt-get update && sudo apt-get install -y po4a
+
+      - name: Check out pilot component sources for translation
+        run: |
+          git clone --depth 1 --branch main https://github.com/ZirekHQ/dengjen-tts.git .translation-src/dengjen-tts
+          git clone --depth 1 --branch main https://github.com/ZirekHQ/dengjen-nvda.git .translation-src/dengjen-nvda
+          git clone --depth 1 --branch main https://github.com/ZirekHQ/dengjen-piper-rs.git .translation-src/dengjen-piper-rs
+          git clone --depth 1 --branch main https://github.com/ZirekHQ/nvda-addon-testkit.git .translation-src/nvda-addon-testkit
+          git clone --depth 1 --branch main https://github.com/ZirekHQ/dengjen-tashkeel.git .translation-src/dengjen-tashkeel
+          git clone --depth 1 --branch main https://github.com/ZirekHQ/pact-avro-plugin.git .translation-src/pact-avro-plugin
+
+      - name: Stage untranslated component trees
+        run: |
+          mkdir -p build/docs/kmr
+          cp -r docs build/docs/kmr/home
+          cp -r .translation-src/dengjen-tts/docs build/docs/kmr/dengjen-tts
+          cp -r .translation-src/dengjen-nvda/docs build/docs/kmr/dengjen-nvda
+          cp -r .translation-src/dengjen-piper-rs/docs build/docs/kmr/dengjen-piper-rs
+          cp -r .translation-src/dengjen-tashkeel/docs build/docs/kmr/dengjen-tashkeel
+          # nvda-addon-testkit and pact-avro-plugin link doc examples out to
+          # source code living outside docs/, so stage the whole repo (minus
+          # .git) rather than just docs/, to keep those relative symlinks
+          # resolvable.
+          cp -r .translation-src/nvda-addon-testkit build/docs/kmr/nvda-addon-testkit && rm -rf build/docs/kmr/nvda-addon-testkit/.git
+          cp -r .translation-src/pact-avro-plugin build/docs/kmr/pact-avro-plugin && rm -rf build/docs/kmr/pact-avro-plugin/.git
+
+      - name: Generate Kurmanji AsciiDoc via po4a
+        run: po4a --no-update --keep 0 po4a.cfg
+
+      - name: Build English site
+        run: SITE_LANG=en npx antora --fetch antora-playbook.yml
+
+      - name: Build Kurmanji site
+        run: SITE_LANG=kmr npx antora antora-playbook-kmr.yml
+
+      - name: Write language-root redirect
+        run: cp site-redirect.html build/site/index.html
+
+      # Optional: swap Lunr for Pagefind's WASM-based chunked index. Pagefind
+      # post-processes the built site rather than running as an Antora
+      # extension, so drop `@antora/lunr-extension` from antora-playbook.yml
+      # and the search partial in supplemental-ui when switching to it.
+      # - name: Index with Pagefind
+      #   run: npx pagefind --site build/site
+
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: site
+          path: build/site
+          retention-days: 7
