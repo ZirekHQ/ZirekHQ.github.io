@@ -17,10 +17,14 @@ the next site build picks up your edits.
 rewrite the catalog files themselves -- they only ever read existing `msgid`/`msgstr`
 pairs and fall back to English for anything not yet in the catalog. If you add a new
 page or edit existing English content, its strings won't show up in `locale/docs.pot`/
-`locale/kmr/docs.po` for translators until someone refreshes the catalog on purpose:
+`locale/kmr/docs.po` for translators until someone refreshes the catalog on purpose.
+`po4a.cfg` reads six of the seven component trees from `.translation-src/`, which only
+exists after `make build` has cloned them, so run that at least once on a fresh
+checkout first:
 
 [source,bash]
 ----
+make build
 po4a --keep 0 po4a.cfg
 ----
 
@@ -49,7 +53,8 @@ wired up explicitly, by hand, following the same pattern as `kmr`. To add locale
 see the existing file for the full list).
 
 . **Generate the initial catalog.** From the repo root, with
-https://po4a.org/[po4a] installed:
+https://po4a.org/[po4a] installed (and `make build` already run at least once, so
+`.translation-src/` exists for `po4a.cfg` to read from):
 +
 [source,bash]
 ----

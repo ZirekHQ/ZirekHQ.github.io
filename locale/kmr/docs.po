@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: po 4a-spike\n"
-"POT-Creation-Date: 2026-09-06 12:16+0100\n"
+"POT-Creation-Date: 2026-09-06 14:38+0100\n"
 "PO-Revision-Date: 2026-09-05 21:40+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -27,6 +27,9 @@ msgstr ""
 
 #. type: Plain text
 #: docs/modules/ROOT/nav.adoc:3
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/nav.adoc:3
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/nav.adoc:4
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/nav.adoc:5
 msgid "xref:architecture.adoc[Architecture]"
 msgstr ""
 
@@ -342,25 +345,29 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/modules/ROOT/pages/translating.adoc:21
+#: docs/modules/ROOT/pages/translating.adoc:24
 msgid ""
 "`make build` and CI always run po4a with `--no-update`, so routine builds "
 "never rewrite the catalog files themselves -- they only ever read existing "
 "`msgid`/`msgstr` pairs and fall back to English for anything not yet in the "
 "catalog. If you add a new page or edit existing English content, its strings "
 "won't show up in `locale/docs.pot`/ `locale/kmr/docs.po` for translators "
-"until someone refreshes the catalog on purpose:"
+"until someone refreshes the catalog on purpose.  `po4a.cfg` reads six of the "
+"seven component trees from `.translation-src/`, which only exists after "
+"`make build` has cloned them, so run that at least once on a fresh checkout "
+"first:"
 msgstr ""
 
 #. type: delimited block -
-#: docs/modules/ROOT/pages/translating.adoc:25
-#: docs/modules/ROOT/pages/translating.adoc:57
+#: docs/modules/ROOT/pages/translating.adoc:29
 #, no-wrap
-msgid "po4a --keep 0 po4a.cfg\n"
+msgid ""
+"make build\n"
+"po4a --keep 0 po4a.cfg\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/modules/ROOT/pages/translating.adoc:29
+#: docs/modules/ROOT/pages/translating.adoc:33
 msgid ""
 "Review the diff (it should only ever add or reword entries, never delete "
 "translated `msgstr`s for content that still exists) and commit the refreshed "
@@ -368,13 +375,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: docs/modules/ROOT/pages/translating.adoc:30
+#: docs/modules/ROOT/pages/translating.adoc:34
 #, no-wrap
 msgid "Adding a new language"
 msgstr ""
 
 #. type: Plain text
-#: docs/modules/ROOT/pages/translating.adoc:36
+#: docs/modules/ROOT/pages/translating.adoc:40
 msgid ""
 "There's no generic multi-language machinery here on purpose -- each language "
 "is wired up explicitly, by hand, following the same pattern as `kmr`. To add "
@@ -383,7 +390,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/modules/ROOT/pages/translating.adoc:39
+#: docs/modules/ROOT/pages/translating.adoc:43
 msgid ""
 "**Extend `po4a.cfg`.** Add `<code>` to the `[po4a_langs]` line, and "
 "duplicate every `[type: asciidoc]` line, replacing `kmr` with `<code>` in "
@@ -391,7 +398,7 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: docs/modules/ROOT/pages/translating.adoc:44
+#: docs/modules/ROOT/pages/translating.adoc:48
 #, no-wrap
 msgid ""
 "[po4a_langs] kmr <code>\n"
@@ -399,27 +406,34 @@ msgid ""
 msgstr ""
 
 #. type: delimited block -
-#: docs/modules/ROOT/pages/translating.adoc:46
+#: docs/modules/ROOT/pages/translating.adoc:50
 #, no-wrap
 msgid "[type: asciidoc] docs/modules/ROOT/pages/index.adoc $lang:build/docs/$lang/home/modules/ROOT/pages/index.adoc\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/modules/ROOT/pages/translating.adoc:50
+#: docs/modules/ROOT/pages/translating.adoc:54
 msgid ""
 "(one `[type: asciidoc]` line per page + `nav.adoc`, across every component "
 "-- see the existing file for the full list)."
 msgstr ""
 
 #. type: Plain text
-#: docs/modules/ROOT/pages/translating.adoc:53
+#: docs/modules/ROOT/pages/translating.adoc:58
 msgid ""
 "**Generate the initial catalog.** From the repo root, with https://po4a.org/"
-"[po4a] installed:"
+"[po4a] installed (and `make build` already run at least once, so "
+"`.translation-src/` exists for `po4a.cfg` to read from):"
+msgstr ""
+
+#. type: delimited block -
+#: docs/modules/ROOT/pages/translating.adoc:62
+#, no-wrap
+msgid "po4a --keep 0 po4a.cfg\n"
 msgstr ""
 
 #. type: Plain text
-#: docs/modules/ROOT/pages/translating.adoc:62
+#: docs/modules/ROOT/pages/translating.adoc:67
 msgid ""
 "Note there's no `--no-update` here: an initial catalog doesn't exist yet, "
 "and `--no-update` prevents po4a from creating one from scratch, not just "
@@ -427,14 +441,14 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/modules/ROOT/pages/translating.adoc:65
+#: docs/modules/ROOT/pages/translating.adoc:70
 msgid ""
 "This creates `locale/<code>/docs.po` with every string present and blank "
 "`msgstr`s. Commit it."
 msgstr ""
 
 #. type: Plain text
-#: docs/modules/ROOT/pages/translating.adoc:69
+#: docs/modules/ROOT/pages/translating.adoc:74
 msgid ""
 "**Add a playbook for the new language.** Copy `antora-playbook-kmr.yml` to "
 "`antora-playbook-<code>.yml`, and in the copy replace every `build/docs/"
@@ -443,7 +457,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/modules/ROOT/pages/translating.adoc:73
+#: docs/modules/ROOT/pages/translating.adoc:78
 msgid ""
 "**Add the language to CI.** In `.github/workflows/deploy.yml`, duplicate the "
 "\"Stage untranslated component trees\" and \"Build Kurmanji site\" steps for "
@@ -452,7 +466,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/modules/ROOT/pages/translating.adoc:77
+#: docs/modules/ROOT/pages/translating.adoc:82
 msgid ""
 "**Add the language to the switcher.** In `supplemental-ui/partials/page-"
 "languages.hbs`, add one more `<a class=\"language\">` entry (and extend the "
@@ -460,7 +474,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: docs/modules/ROOT/pages/translating.adoc:80
+#: docs/modules/ROOT/pages/translating.adoc:85
 msgid ""
 "Open a PR. Reviewers don't need to speak the language to merge it -- pages "
 "render in English until a native speaker fills in `msgstr` entries in "
@@ -469,7 +483,7 @@ msgstr ""
 
 #. type: Plain text
 #: .translation-src/dengjen-tts/docs/modules/ROOT/nav.adoc:3
-#: .translation-src/dengjen-nvda/docs/modules/ROOT/nav.adoc:3
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/nav.adoc:4
 #: .translation-src/dengjen-piper-rs/docs/modules/ROOT/nav.adoc:3
 #: .translation-src/nvda-addon-testkit/docs/modules/ROOT/nav.adoc:3
 #: .translation-src/dengjen-tashkeel/docs/modules/ROOT/nav.adoc:3
@@ -478,7 +492,7 @@ msgstr ""
 
 #. type: Plain text
 #: .translation-src/dengjen-tts/docs/modules/ROOT/nav.adoc:4
-#: .translation-src/dengjen-nvda/docs/modules/ROOT/nav.adoc:4
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/nav.adoc:5
 #: .translation-src/dengjen-tashkeel/docs/modules/ROOT/nav.adoc:4
 msgid "xref:usage.adoc[Usage]"
 msgstr ""
@@ -825,7 +839,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: .translation-src/dengjen-nvda/docs/modules/ROOT/nav.adoc:4
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/nav.adoc:5
 msgid "xref:troubleshooting.adoc[Troubleshooting]"
 msgstr ""
 
@@ -1265,8 +1279,8 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/nav.adoc:3
-#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/nav.adoc:4
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/nav.adoc:4
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/nav.adoc:5
 msgid "xref:building.adoc[Building]"
 msgstr ""
 
