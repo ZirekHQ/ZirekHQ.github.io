@@ -1,0 +1,2842 @@
+# Language kmr translations for po package
+# Copyright (C) 2026 Free Software Foundation, Inc.
+# This file is distributed under the same license as the po package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: po 4a-spike\n"
+"POT-Creation-Date: 2026-09-06 11:12+0100\n"
+"PO-Revision-Date: 2026-09-05 21:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: kmr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: docs/modules/ROOT/nav.adoc:2
+#: .translation-src/dengjen-tts/docs/modules/ROOT/nav.adoc:2
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/nav.adoc:2
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/nav.adoc:2
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/nav.adoc:2
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/nav.adoc:2
+msgid "xref:index.adoc[Overview]"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/nav.adoc:3
+msgid "xref:architecture.adoc[Architecture]"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/nav.adoc:3
+msgid "xref:translating.adoc[Translating the docs]"
+msgstr ""
+
+#. type: Title =
+#: docs/modules/ROOT/pages/index.adoc:1
+#, no-wrap
+msgid "Zirek"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:4
+msgid ""
+"Software that reads and speaks the languages large vendors don't get around "
+"to."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:7
+msgid ""
+"Two strands, and they meet: screen-reader support for under-served "
+"languages, and the local neural speech synthesis that makes a screen reader "
+"usable in the first place."
+msgstr ""
+
+#. type: Title ==
+#: docs/modules/ROOT/pages/index.adoc:8
+#, no-wrap
+msgid "Screen readers"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:15
+msgid ""
+"*https://github.com/ZirekHQ/dengjen-nvda[dengjen-nvda]* — NVDA add-on for "
+"fast, fully local neural text-to-speech using Piper voices. No cloud "
+"service, no account. Speech runs locally once voices are installed; "
+"downloading and previewing voices requires an internet connection.  "
+"Originated as a maintenance fork of mush42/sonata-nvda (renamed from Sonata "
+"Neural Voices in v4.0.0)."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:18
+msgid ""
+"*https://github.com/ZirekHQ/nvdaku[nvdaku]* — Kurdish (Kurmanji) "
+"localisation for NVDA: interface translation, character descriptions, and a "
+"symbol dictionary. Dates from 2018 and is *partial* — see Help wanted below."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:21
+msgid ""
+"*https://github.com/ZirekHQ/nvda-addon-testkit[nvda-addon-testkit]* — end-to-"
+"end testing for NVDA add-ons, against a real NVDA, in CI. Built to keep the "
+"add-ons above honest across NVDA releases."
+msgstr ""
+
+#. type: Title ==
+#: docs/modules/ROOT/pages/index.adoc:22
+#, no-wrap
+msgid "Speech synthesis"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:26
+msgid ""
+"The stack underneath the add-on, originally built on https://github.com/"
+"mush42[Musharraf Omer]'s work:"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:29
+msgid ""
+"*https://github.com/ZirekHQ/dengjen-tts[dengjen-tts]* — cross-platform Rust "
+"engine for neural TTS models (Piper, Kokoro, MeloTTS)."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:31
+msgid ""
+"*https://github.com/ZirekHQ/dengjen-piper-rs[dengjen-piper-rs]* — Rust "
+"bindings for running Piper TTS models directly, independent of the full "
+"dengjen engine."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:34
+msgid ""
+"*https://github.com/ZirekHQ/dengjen-tashkeel[dengjen-tashkeel]* — diacritic "
+"(tashkeel)  restoration for Arabic. Arabic is normally written without the "
+"short vowels a synthesizer needs, so they have to be inferred before "
+"anything can be spoken."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:38
+msgid ""
+"Kurmanji phoneme support is contributed upstream to https://github.com/"
+"espeak-ng/espeak-ng[espeak-ng] rather than kept here, so it reaches every "
+"project that uses it."
+msgstr ""
+
+#. type: Title ==
+#: docs/modules/ROOT/pages/index.adoc:39
+#, no-wrap
+msgid "Help wanted"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:43
+msgid ""
+"Kurmanji is badly served by assistive technology, and most of the gap needs "
+"native speakers rather than programmers:"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:45
+msgid ""
+"*Reviewing the NVDA interface translation* in nvdaku — partial and dated."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:47
+msgid ""
+"*Character descriptions and symbol names* — judgement calls that someone who "
+"isn't a daily speaker shouldn't be making alone."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:48
+msgid "*Voice recordings* for text-to-speech training."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:51
+msgid ""
+"Sorani and Zazaki speakers are just as welcome; the work is Kurmanji-first "
+"only because that's where it started."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:53
+msgid "On the synthesis and add-on side:"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:55
+msgid ""
+"*Windows testers* for dengjen-nvda, especially against current NVDA releases."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:56
+msgid ""
+"*Co-maintainers.* Every add-on and engine here has one maintainer, which is "
+"one too few."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:58
+msgid ""
+"*Developers* to extend the Rust/Python/Java bindings and fix issues across "
+"dengjen-tts, dengjen-piper-rs, and dengjen-tashkeel's multi-language surface."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:60
+msgid "And for this documentation site:"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:63
+msgid ""
+"*Writers* to expand the docs beyond the current README-derived starting "
+"point — tutorials, troubleshooting guides, and architecture notes are all "
+"still missing."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:64
+msgid ""
+"*Translators*, once there's enough documentation written to be worth "
+"translating."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/index.adoc:68
+msgid ""
+"Open an issue on the relevant repository — for anything that sounds wrong, "
+"include the exact text and what it should sound like. See https://github.com/"
+"ZirekHQ/.github/blob/main/CONTRIBUTING.md[CONTRIBUTING.md]; you do not need "
+"to write code to help."
+msgstr ""
+
+#. type: Title =
+#: docs/modules/ROOT/pages/architecture.adoc:1
+#, no-wrap
+msgid "Architecture"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/architecture.adoc:10
+msgid ""
+"This page shows how the ZirekHQ speech components relate to each other, as a "
+"https://c4model.com/[C4] System Context diagram. Each component's own docs "
+"break its internals down further (Container, Component, and a Code-level "
+"diagram) — see xref:dengjen-tts:architecture.adoc[dengjen-tts], xref:dengjen-"
+"nvda:architecture.adoc[dengjen-nvda], xref:piper-"
+"rs:architecture.adoc[dengjen-piper-rs], and xref:dengjen-"
+"tashkeel:architecture.adoc[dengjen-tashkeel]."
+msgstr ""
+
+#. type: delimited block -
+#: docs/modules/ROOT/pages/architecture.adoc:15
+#, no-wrap
+msgid ""
+"C4Context\n"
+"    Person(user, \"Screen reader user\")\n"
+msgstr ""
+
+#. type: delimited block -
+#: docs/modules/ROOT/pages/architecture.adoc:22
+#, no-wrap
+msgid ""
+"    System_Boundary(zirekhq, \"ZirekHQ\") {\n"
+"        System(nvda_addon, \"dengjen-nvda\", \"NVDA add-on (Python). Loaded in-process by NVDA as a synth driver.\")\n"
+"        System(tts, \"dengjen-tts\", \"Rust neural TTS inference engine. Exposes CLI, C ABI, Python, and gRPC frontends.\")\n"
+"        System(tashkeel, \"dengjen-tashkeel\", \"Arabic diacritization (tashkeel/harakat). Rust core with C ABI, Python, and Java bindings.\")\n"
+"        System(piper_rs, \"dengjen-piper-rs\", \"Standalone Piper-format TTS inference crate. Not currently consumed by any other ZirekHQ component.\")\n"
+"    }\n"
+msgstr ""
+
+#. type: delimited block -
+#: docs/modules/ROOT/pages/architecture.adoc:25
+#, no-wrap
+msgid ""
+"    System_Ext(nvda, \"NVDA\", \"Open-source Windows screen reader\")\n"
+"    System_Ext(voices, \"Voice model catalogue\", \"Piper / Kokoro / MeloTTS ONNX voices, e.g. huggingface.co/rhasspy/piper-voices\")\n"
+msgstr ""
+
+#. type: delimited block -
+#: docs/modules/ROOT/pages/architecture.adoc:33
+#, no-wrap
+msgid ""
+"    Rel(user, nvda, \"Uses\")\n"
+"    Rel(nvda, nvda_addon, \"Loads as a synthesizer driver\")\n"
+"    Rel(nvda_addon, tts, \"Synthesizes speech via gRPC, talking to a vendored dengjen-tts-grpc binary\")\n"
+"    Rel(tts, tashkeel, \"Optionally phonemizes Arabic input text (feature-gated, opt-in)\")\n"
+"    Rel(nvda_addon, voices, \"Downloads voices\")\n"
+"    Rel(tts, voices, \"Loads ONNX voice models\")\n"
+"    Rel(piper_rs, voices, \"Loads Piper ONNX voices\")\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/architecture.adoc:36
+msgid ""
+"Two things worth calling out that aren't obvious from the individual repos:"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/architecture.adoc:41
+msgid ""
+"*dengjen-nvda never talks to dengjen-tts as a library.* It launches a "
+"separately vendored `dengjen-tts-grpc` binary as its own OS process and "
+"speaks to it over gRPC — the two are only coupled at the process boundary, "
+"not the API boundary."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/architecture.adoc:45
+msgid ""
+"*dengjen-piper-rs and dengjen-tashkeel are not wired into dengjen-tts's "
+"default build.* dengjen-tashkeel is an optional, feature-gated dependency of "
+"one of dengjen-tts's model crates; dengjen-piper-rs is a fully separate, "
+"parallel implementation with no dependency relationship to dengjen-tts in "
+"either direction."
+msgstr ""
+
+#. type: Title =
+#: docs/modules/ROOT/pages/translating.adoc:1
+#, no-wrap
+msgid "Translating the docs"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/translating.adoc:8
+msgid ""
+"The site is built once per language by Antora, using AsciiDoc generated by "
+"https://po4a.org/[po4a] from the same English source files every component "
+"already publishes. A translated page always exists at the same path as its "
+"English counterpart -- untranslated strings just render in English until "
+"someone fills them in."
+msgstr ""
+
+#. type: Title ==
+#: docs/modules/ROOT/pages/translating.adoc:9
+#, no-wrap
+msgid "Filling in Kurmanji (kmr)"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/translating.adoc:15
+msgid ""
+"Kurmanji translations live in a single catalog, `locale/kmr/docs.po`, at the "
+"root of this repo. Open it in any PO editor (Poedit, Lokalize, a plain text "
+"editor) and fill in the `msgstr` under any `msgid` you can translate. "
+"Nothing else needs to change -- the next site build picks up your edits."
+msgstr ""
+
+#. type: Title ==
+#: docs/modules/ROOT/pages/translating.adoc:16
+#, no-wrap
+msgid "Adding a new language"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/translating.adoc:22
+msgid ""
+"There's no generic multi-language machinery here on purpose -- each language "
+"is wired up explicitly, by hand, following the same pattern as `kmr`. To add "
+"locale `<code>` (an https://en.wikipedia.org/wiki/ISO_639[ISO 639] code, "
+"e.g. `kmr`, `es`, `fr`):"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/translating.adoc:25
+msgid ""
+"**Extend `po4a.cfg`.** Add `<code>` to the `[po4a_langs]` line, and "
+"duplicate every `[type: asciidoc]` line, replacing `kmr` with `<code>` in "
+"each localized-file path."
+msgstr ""
+
+#. type: delimited block -
+#: docs/modules/ROOT/pages/translating.adoc:30
+#, no-wrap
+msgid ""
+"[po4a_langs] kmr <code>\n"
+"[po4a_paths] locale/docs.pot $lang:locale/$lang/docs.po\n"
+msgstr ""
+
+#. type: delimited block -
+#: docs/modules/ROOT/pages/translating.adoc:32
+#, no-wrap
+msgid "[type: asciidoc] docs/modules/ROOT/pages/index.adoc $lang:build/docs/$lang/home/modules/ROOT/pages/index.adoc\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/translating.adoc:36
+msgid ""
+"(one `[type: asciidoc]` line per page + `nav.adoc`, across all three "
+"components -- see the existing file for the full list)."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/translating.adoc:39
+msgid ""
+"**Generate the initial catalog.** From the repo root, with https://po4a.org/"
+"[po4a] installed:"
+msgstr ""
+
+#. type: delimited block -
+#: docs/modules/ROOT/pages/translating.adoc:43
+#, no-wrap
+msgid "po4a --no-update --keep 0 po4a.cfg\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/translating.adoc:47
+msgid ""
+"This creates `locale/<code>/docs.po` with every string present and blank "
+"`msgstr`s. Commit it."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/translating.adoc:51
+msgid ""
+"**Add a playbook for the new language.** Copy `antora-playbook-kmr.yml` to "
+"`antora-playbook-<code>.yml`, and in the copy replace every `build/docs/"
+"kmr/...` path with `build/docs/<code>/...`, and `output.dir` with `./build/"
+"site/<code>`."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/translating.adoc:55
+msgid ""
+"**Add the language to CI.** In `.github/workflows/deploy.yml`, duplicate the "
+"\"Stage untranslated component trees\" and \"Build Kurmanji site\" steps for "
+"`<code>` (pointing at `build/docs/<code>` and `antora-playbook-<code>.yml` "
+"respectively)."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/translating.adoc:59
+msgid ""
+"**Add the language to the switcher.** In `supplemental-ui/partials/page-"
+"languages.hbs`, add one more `<a class=\"language\">` entry (and extend the "
+"button-label conditional) for `<code>`."
+msgstr ""
+
+#. type: Plain text
+#: docs/modules/ROOT/pages/translating.adoc:62
+msgid ""
+"Open a PR. Reviewers don't need to speak the language to merge it -- pages "
+"render in English until a native speaker fills in `msgstr` entries in "
+"`locale/<code>/docs.po` over time."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/nav.adoc:3
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/nav.adoc:3
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/nav.adoc:3
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/nav.adoc:3
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/nav.adoc:3
+msgid "xref:installation.adoc[Installation]"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/nav.adoc:4
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/nav.adoc:4
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/nav.adoc:4
+msgid "xref:usage.adoc[Usage]"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/nav.adoc:4
+msgid "xref:testing.adoc[Testing]"
+msgstr ""
+
+#. type: Title =
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/index.adoc:1
+#, no-wrap
+msgid "dengjen-tts"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/index.adoc:4
+msgid "A cross-platform Rust engine for neural TTS models."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/index.adoc:5
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/index.adoc:7
+#, no-wrap
+msgid "Features"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/index.adoc:8
+msgid ""
+"*Models*: https://github.com/rhasspy/piper[Piper], https://github.com/"
+"hexgrad/kokoro[Kokoro], and https://github.com/myshell-ai/MeloTTS[MeloTTS] "
+"ONNX voices, including Kokoro per-voice style embeddings"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/index.adoc:9
+msgid ""
+"*Phonemization*: eSpeak-ng (100+ languages, IPA output) and Arabic "
+"diacritization via `libtashkeel`"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/index.adoc:10
+msgid "*Multi-speaker voices*: select by `speaker_id`"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/index.adoc:11
+msgid ""
+"*Streaming synthesis*: chunked output (`chunk_size`/`chunk_padding`) and a "
+"realtime gRPC stream"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/index.adoc:12
+msgid "*Prosody control*: rate, pitch, and volume via `sonic-sys` (libsonic)"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/index.adoc:13
+msgid "*Synthesis modes*: lazy, parallel, and batched, selectable per request"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/index.adoc:14
+msgid ""
+"*Bindings*: native Rust, C-API (`libdengjen`), Python (`pyo3`), gRPC (any "
+"language over the wire), and a CLI"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/index.adoc:18
+msgid ""
+"Not yet supported, tracked on the issue tracker: native Go/Java/Kotlin "
+"bindings and a Matcha-TTS model loader. RHVoice-style formant/statistical "
+"synthesis is a different synthesis paradigm from this engine's neural-ONNX "
+"pipeline and isn't planned."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/index.adoc:19
+#, no-wrap
+msgid "Crates"
+msgstr ""
+
+#. type: Table
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/index.adoc:45
+#, no-wrap
+msgid ""
+"|Crate |Purpose\n"
+"\n"
+"|`espeak-phonemizer`\n"
+"|Converts text to IPA phonemes using a patched version of eSpeak-ng\n"
+"\n"
+"|`dengjen-model`\n"
+"|Handles model loading and inference using `onnxruntime` via `ort`\n"
+"\n"
+"|`dengjen-tts`\n"
+"|Wraps `DengjenModel` and adds synthesized speech post-processing, including changing prosody. Also provides different modes of parallelism.\n"
+"\n"
+"|`dengjen-tts-grpc`\n"
+"|https://grpc.io/[GRPC] frontend for dengjen\n"
+"\n"
+"|`libdengjen`\n"
+"|C-API binding to dengjen\n"
+"\n"
+"|`dengjen-tts-python`\n"
+"|Python bindings to `dengjen-tts` using `pyo3`\n"
+"\n"
+"|`sonic-sys`\n"
+"|Rust FFI bindings to https://github.com/waywardgeek/sonic[Sonic]: a C library for controlling rate, volume, and pitch of generated speech\n"
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/index.adoc:47
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/index.adoc:37
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/index.adoc:30
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/index.adoc:70
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/index.adoc:25
+#, no-wrap
+msgid "License"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/index.adoc:51
+msgid ""
+"Licensed under the GNU General Public License v3.0 or later (GPL-3.0-or-"
+"later). dengjen began as a fork of https://github.com/mush42/sonata[Sonata] "
+"by Musharraf Omer, originally MIT-licensed; retained attribution is in the "
+"repo's `NOTICE` file."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/installation.adoc:1
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/installation.adoc:1
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/installation.adoc:1
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/installation.adoc:1
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:1
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/getting_started.adoc:10
+#, no-wrap
+msgid "Installation"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/installation.adoc:5
+msgid ""
+"Dengjen pulls its native dependencies (eSpeak-ng, Sonic, ...) in as git "
+"submodules, so clone recursively:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/installation.adoc:10
+#, no-wrap
+msgid ""
+"git clone --recurse-submodules https://github.com/ZirekHQ/dengjen-tts.git\n"
+"cd dengjen-tts\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/installation.adoc:13
+msgid "If you already cloned without `--recurse-submodules`, fetch them with:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/installation.adoc:17
+#, no-wrap
+msgid "git submodule update --init --recursive\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/installation.adoc:20
+msgid "Then build the workspace, or just the CLI frontend:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/installation.adoc:26
+#, no-wrap
+msgid ""
+"cargo build --release --workspace\n"
+"# or just the CLI\n"
+"cargo build --release -p dengjen-tts-cli\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/installation.adoc:29
+msgid ""
+"The resulting binary is at `target/release/dengjen` (`dengjen.exe` on "
+"Windows)."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/installation.adoc:30
+#, no-wrap
+msgid "Runtime data directory"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/installation.adoc:35
+msgid ""
+"eSpeak-ng needs its `espeak-ng-data` directory at runtime. Dengjen looks for "
+"it next to the running executable by default; if it lives elsewhere (or "
+"you're running via `cargo run`), point to it with:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/installation.adoc:39
+#, no-wrap
+msgid "export DENGJEN_ESPEAKNG_DATA_DIRECTORY=/path/to/directory/containing/espeak-ng-data\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/installation.adoc:42
+msgid ""
+"On Windows you also need `espeak-ng.dll` on your `PATH` — see "
+"xref:testing.adoc[Testing] for the exact variable to set."
+msgstr ""
+
+#. type: Title =
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/testing.adoc:1
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:1
+#, no-wrap
+msgid "Testing"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/testing.adoc:6
+msgid ""
+"Some packages, such as `espeak-phonemizer`, include tests. Running `cargo "
+"test` from the root of the workspace will likely fail, because `cargo` does "
+"not load `config` from sub packages when run from the workspace root."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/testing.adoc:11
+msgid ""
+"On Windows, `espeak-rs-sys`'s build script copies the built `espeak-ng.dll` "
+"into `target\\{profile}\\deps`, which is where `cargo test` looks for it, so "
+"no `PATH` changes are normally needed. If a test binary still can't find the "
+"DLL, add that directory to the library search path before `cargo test`:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/testing.adoc:15
+#, no-wrap
+msgid "set PATH=%PATH%;{repo_path}\\target\\debug\\deps\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/testing.adoc:18
+msgid ""
+"Replace `repo_path` with the absolute path to the repository, and `debug` "
+"with `release` for a release build. Then `cd` to the package, and run `cargo "
+"test` from there."
+msgstr ""
+
+#. type: Title =
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/usage.adoc:1
+#, no-wrap
+msgid "Synthesizing speech"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/usage.adoc:7
+msgid ""
+"Dengjen synthesizes speech from a https://github.com/rhasspy/piper[Piper] "
+"voice. Download a voice's `.onnx` model and matching `.onnx.json` config "
+"from the https://huggingface.co/rhasspy/piper-voices[Piper voices] "
+"repository and keep both files together, e.g. `voices/en_US-lessac-"
+"medium.onnx` and `voices/en_US-lessac-medium.onnx.json`."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/usage.adoc:15
+msgid ""
+"A voice doesn't have to come from the official Piper voices repository — any "
+"VITS-family ONNX export using the same 3/4-input tensor convention (phoneme "
+"ids, lengths, scales, optional speaker id) can be loaded by writing a "
+"matching `.onnx.json` manifest with `\"model_type\": \"vits\"`. The minimal "
+"required fields are `audio` (sample rate), `inference` (`noise_scale`/"
+"`length_scale`/`noise_w`), and `phoneme_id_map` (the symbol vocabulary); "
+"`phoneme_type` selects the phonemizer (`espeak` is the default if omitted, "
+"and needs an `espeak.voice` entry — `text`, `hebrew`, and `pinyin` don't)."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/usage.adoc:24
+msgid ""
+"A https://github.com/myshell-ai/MeloTTS[MeloTTS] voice — its own VITS-"
+"derived ONNX export, with a `tones` tensor alongside phone ids — is loaded "
+"with `\"model_type\": \"melotts\"`. The required fields are `audio` (sample "
+"rate), `inference` (`noise_scale`/`length_scale`/`noise_scale_w`), "
+"`phone_id_map` and `tone_id_map` (the phone and tone symbol vocabularies), "
+"and `model_path`; `phonemizer` selects the phonemization backend and must be "
+"one of `{\"type\": \"espeak\", \"voice\": \"<espeak-ng voice name>\"}` "
+"(covers English, Spanish, French, Japanese, Korean) or `{\"type\": "
+"\"pinyin\", \"model_dir\": \"<g2pW model directory>\"}` (Chinese, with real "
+"tone extraction — requires building with the `pinyin` feature)."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/usage.adoc:25
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:89
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:55
+#, no-wrap
+msgid "CLI"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/usage.adoc:28
+msgid ""
+"Synthesize text from a file to a WAV file, using the `dengjen-cli` frontend:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/usage.adoc:34
+#, no-wrap
+msgid ""
+"cargo run --release -p dengjen-tts-cli -- voices/en_US-lessac-medium.onnx.json \\\n"
+"    -f input.txt \\\n"
+"    -o output.wav\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/usage.adoc:37
+msgid ""
+"Or send a single request as JSON on stdin and capture the WAV bytes written "
+"to stdout:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/usage.adoc:41
+#, no-wrap
+msgid "echo '{\"text\": \"Hello world\"}' | cargo run --release -p dengjen-tts-cli -- voices/en_US-lessac-medium.onnx.json > output.wav\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tts/docs/modules/ROOT/pages/usage.adoc:44
+msgid ""
+"Run `dengjen --help` (or `cargo run --release -p dengjen-tts-cli -- --help`) "
+"for the full list of options, including synthesis mode, speaker id, rate/"
+"pitch/volume, and streaming chunk size."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/nav.adoc:4
+msgid "xref:troubleshooting.adoc[Troubleshooting]"
+msgstr ""
+
+#. type: Title =
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/index.adoc:1
+#, no-wrap
+msgid "Dengjen Neural Voices for NVDA"
+msgstr ""
+
+#. type: delimited block =
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/index.adoc:12
+msgid ""
+"*Project history.* Musharraf Omer (https://github.com/mush42[@mush42]) "
+"created the original add-on and https://nvda-addons.groups.io/g/nvda-addons/"
+"message/27636[announced on the NVDA Add-ons list] that commercial contract "
+"conflicts prevent him from continuing to maintain it. This project has "
+"continued it since, keeping the add-on working on current NVDA releases, "
+"with compatibility updates alongside bug fixes to the voice manager and the "
+"synthesizer driver. All credit for the original work belongs to Musharraf "
+"Omer."
+msgstr ""
+
+#. type: delimited block =
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/index.adoc:15
+msgid ""
+"Renamed from Sonata Neural Voices in v4.0.0, at the original author's "
+"request, as a condition of listing in the NVDA Add-on Store. Same add-on, "
+"same maintainer, same GPL v2 licence."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/index.adoc:21
+msgid ""
+"This add-on adds neural text-to-speech voices to NVDA. It provides a "
+"synthesizer driver for https://github.com/rhasspy/piper[Piper] voice models, "
+"which run entirely on your own machine, plus a voice manager for downloading "
+"and installing voices. An internet connection is needed to download voices, "
+"but not to speak with them."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/index.adoc:27
+msgid ""
+"Piper is a fast, local neural text-to-speech system that sounds great and is "
+"optimized for low-end devices such as the Raspberry Pi. You can hear what "
+"the voices sound like on the https://rhasspy.github.io/piper-samples/[Piper "
+"voice samples] page. Speech is generated by https://github.com/ZirekHQ/"
+"dengjen-tts[dengjen], a cross-platform Rust engine for neural TTS models, "
+"originally based on https://github.com/mush42/sonata[Sonata] by Musharraf "
+"Omer."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/index.adoc:28
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/index.adoc:62
+#, no-wrap
+msgid "Requirements"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/index.adoc:31
+msgid "NVDA 2026.1 or later."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/index.adoc:36
+msgid ""
+"The https://aka.ms/vs/17/release/vc_redist.x64.exe[Microsoft Visual C++ "
+"2015-2022 Redistributable (x64)].  The speech engine bundled with the add-on "
+"is built with MSVC and cannot start without it. If it is missing, the add-on "
+"shows a message pointing you to that download; install it and restart NVDA. "
+"Most Windows machines already have it."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/index.adoc:40
+msgid ""
+"Copyright(c) 2024, Musharraf Omer. Copyright(c) 2026, Ali Ustek and "
+"contributors to this project.  Licensed under the GNU General Public License "
+"Version 2 (GPL v2)."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/installation.adoc:3
+#, no-wrap
+msgid "Downloading the add-on"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/installation.adoc:7
+msgid ""
+"You can find the add-on package under the assets section of the https://"
+"github.com/ZirekHQ/dengjen-nvda/releases/latest[release page]."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/installation.adoc:8
+#, no-wrap
+msgid "Adding voices"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/installation.adoc:12
+msgid ""
+"The add-on is just a driver — it comes with no voices by default. You need "
+"to download and install the voices you want from the voice manager."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/installation.adoc:15
+msgid ""
+"Upon installing the add-on and restarting NVDA, the add-on will ask you to "
+"download and install at least one voice, and it will give you the option to "
+"open the voice manager."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/installation.adoc:17
+msgid "You can also open the voice manager from NVDA's main menu."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/installation.adoc:21
+msgid ""
+"We recommend choosing the `low` or `medium` quality voices for your target "
+"language(s), because they generally provide better responsiveness. For "
+"additional responsiveness, you can choose to download the `fast` variant of "
+"a voice at a cost of slightly lower speech quality."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/installation.adoc:24
+msgid ""
+"You can also install voices from local archives. After obtaining the voice's "
+"file, open the voice manager, in the installed tab, click the button labeled "
+"`Install from local file`. Choose the voice file and wait for the voice to "
+"install."
+msgstr ""
+
+#. type: Title =
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/troubleshooting.adoc:1
+#, no-wrap
+msgid "Troubleshooting"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/troubleshooting.adoc:7
+msgid ""
+"*Dengjen is missing from NVDA's synthesizer list, or fails to load.* The two "
+"usual causes are the missing Visual C++ redistributable described in "
+"xref:index.adoc[Requirements], and having no voices installed — the driver "
+"deliberately refuses to load when it cannot find at least one voice. Open "
+"the voice manager from NVDA's main menu, install a voice, then restart NVDA."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/troubleshooting.adoc:11
+msgid ""
+"*A voice I just downloaded is not offered in NVDA's voice list.* Restart "
+"NVDA. A download refreshes the voice manager's own list, but NVDA may still "
+"be holding the voice set it loaded at startup."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/troubleshooting.adoc:14
+msgid ""
+"*A preview or the voice list fails with a connection error.* Both are "
+"fetched from the internet.  Check your connection, then use `Refresh voices "
+"list` on the Download tab to retry."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/troubleshooting.adoc:17
+msgid ""
+"*\"You cannot remove the currently active voice!\"* Switch NVDA to a "
+"different voice, or a different synthesizer, and then remove it."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/troubleshooting.adoc:21
+msgid ""
+"*Speech is slow to start or stutters.* Prefer the `low` or `medium` quality "
+"voices, and consider the `fast` variant of your voice. Higher quality models "
+"need noticeably more processing per utterance."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/troubleshooting.adoc:22
+#, no-wrap
+msgid "Reporting issues"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/troubleshooting.adoc:25
+msgid ""
+"For anything else, NVDA's log usually says what went wrong: `NVDA menu` > "
+"`Tools` > `View log`."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/troubleshooting.adoc:28
+msgid ""
+"Please report bugs and feature requests on the https://github.com/ZirekHQ/"
+"dengjen-nvda/issues[issue tracker], and include the log along with your NVDA "
+"version and the voice you were using."
+msgstr ""
+
+#. type: Title =
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:1
+#, no-wrap
+msgid "Using the voice manager"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:5
+msgid ""
+"Open the voice manager from NVDA's main menu, under `Dengjen voice "
+"manager...`. It has two tabs: `Download` and `Installed`."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:6
+#, no-wrap
+msgid "Download tab"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:10
+msgid ""
+"Choose a language from the `Language` dropdown to filter the `Available "
+"voices` list, then select a voice to act on it."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:14
+msgid ""
+"`Preview` plays a short sample of the selected voice so you can hear it "
+"before downloading. The sample is streamed from the internet and nothing is "
+"installed. While it is playing, the same button becomes `Stop preview`."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:16
+msgid ""
+"`Speaker`, beside the preview button, is only enabled for voices trained "
+"with more than one speaker. It selects which speaker the preview uses."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:19
+msgid ""
+"`Download standard variant` and `Download fast variant` fetch the voice. "
+"Each button is disabled when that variant is already installed, and the fast "
+"button is also disabled for voices that have no fast variant."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:21
+msgid ""
+"`Refresh voices list` fetches the catalogue again instead of reusing the "
+"copy cached for this session."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:22
+#, no-wrap
+msgid "Installed tab"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:25
+msgid ""
+"The `Installed voices` list shows each installed voice with its variant, "
+"quality and language."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:28
+msgid ""
+"`Voice model card...` displays the `MODEL_CARD` file shipped with the voice, "
+"which records where its training data came from and how it is licensed. Not "
+"every voice includes one."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:31
+msgid ""
+"`Remove voice...` deletes the selected voice after asking you to confirm. It "
+"stays disabled unless you have at least two voices installed, and it will "
+"not remove the voice that is currently in use."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:32
+msgid ""
+"`Install from local file` installs a voice from a `.tar.gz` or `.tgz` "
+"archive you already have."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:35
+msgid ""
+"`Import voices from Sonata` copies voices you downloaded with the older "
+"Sonata Neural Voices add-on. It only appears while that add-on's voices are "
+"still present and have not been imported yet. The originals are left in "
+"place, so Sonata keeps working."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:39
+msgid ""
+"After installing from a local archive or removing a voice, the add-on "
+"reloads the synthesizer for you, so the change applies immediately. After a "
+"download the new voice shows up in the voice manager right away; if NVDA's "
+"own voice list has not picked it up, restart NVDA."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:40
+#, no-wrap
+msgid "Voice settings"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:44
+msgid ""
+"With `Dengjen Neural Voices` selected as your synthesizer, the following "
+"appear in NVDA's speech settings (`NVDA menu` > `Preferences` > `Settings` > "
+"`Speech`)."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:46
+msgid "`Voice` lists your installed voices as `name (language) - quality`."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:49
+msgid ""
+"`Variant` switches between the `Standard` and `Fast` build of the current "
+"voice. Only the variants you actually have installed are listed."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:52
+msgid ""
+"`Speaker` applies to voices trained with several speakers; on a single-"
+"speaker voice it has no effect. It is also available in the synth settings "
+"ring."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:56
+msgid ""
+"`Rate`, `Volume` and `Pitch` behave as they do for any NVDA synthesizer. "
+"With `Rate boost` turned off, the rate slider only covers the lower part of "
+"the engine's speed range; turning it on spreads the slider across the whole "
+"range, which allows much faster speech."
+msgstr ""
+
+#. type: Title ===
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:57
+#, no-wrap
+msgid "Fine-tuning how a voice sounds"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:63
+msgid ""
+"`Length scale`, `Noise scale` and `Noise w` expose the Piper model's own "
+"inference parameters.  All three work the same way: the slider runs from 0 "
+"to 100, and 50 means the voice's trained default, so returning a slider to "
+"50 undoes your changes to it. Of the three, only `Length scale` is offered "
+"in the synth settings ring."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:68
+msgid ""
+"`Length scale` sets how long each speech sound is held. Higher values draw "
+"speech out, lower values compress it. This is a separate mechanism from "
+"`Rate` and the two combine, so it is usually easiest to set your speed with "
+"`Rate` and only reach for this if a voice's natural pacing bothers you."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:70
+msgid ""
+"`Noise scale` sets how much variation the model puts into tone and "
+"inflection. Higher values sound more expressive but less predictable."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:72
+msgid ""
+"`Noise w` sets how much the duration of individual speech sounds varies, "
+"which comes across as rhythm. Higher values sound less mechanical but can "
+"blur articulation."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:76
+msgid ""
+"Above 50, the sliders scale up to twice the voice's default for `Length "
+"scale` and three times the default for `Noise scale` and `Noise w`. Because "
+"50 always means \"this voice's default\", a given slider position keeps its "
+"meaning when you switch to a different voice."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:77
+#, no-wrap
+msgid "A note on voice quality"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:81
+msgid ""
+"The currently available voices are trained using freely available TTS "
+"datasets, which are generally of low quality (mostly public domain audio "
+"books or research-quality recordings)."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:84
+msgid ""
+"Additionally, these datasets are not comprehensive, hence some voices may "
+"exhibit incorrect or weird pronunciation. Both issues could be resolved by "
+"using better datasets for training."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-nvda/docs/modules/ROOT/pages/usage.adoc:86
+msgid ""
+"Luckily, the Piper developer and some developers from the blind and vision-"
+"impaired community are working on training better voices."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/nav.adoc:3
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/nav.adoc:4
+msgid "xref:building.adoc[Building]"
+msgstr ""
+
+#. type: Title =
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/index.adoc:1
+#, no-wrap
+msgid "dengjen-piper-rs"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/index.adoc:4
+msgid ""
+"image:https://img.shields.io/crates/v/dengjen-piper-rs?"
+"logo=rust&color=F07B3C[Crates,link=https://crates.io/crates/dengjen-piper-"
+"rs/]"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/index.adoc:6
+msgid "Use https://github.com/OHF-Voice/piper1-gpl[Piper] TTS models in Rust."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/index.adoc:10
+msgid "Compatibility with all Piper TTS models"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/index.adoc:11
+msgid "Support for multiple languages"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/index.adoc:12
+msgid ""
+"High performance with a pure Rust API (eSpeak NG is vendored and built via "
+"CMake/bindgen)"
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/index.adoc:13
+#, no-wrap
+msgid "Models"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/index.adoc:17
+msgid ""
+"All pretrained models are available at https://huggingface.co/rhasspy/piper-"
+"voices/tree/main[huggingface.co/rhasspy/piper-voices]."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/index.adoc:18
+#, no-wrap
+msgid "Unloading models"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/index.adoc:24
+msgid ""
+"`Piper` has no `unload()` method because it doesn't need one: dropping a "
+"`Piper` value releases its ONNX Runtime session, and the native memory "
+"backing it, immediately. To unload a model on demand — e.g. to swap voices "
+"in a long-running app — hold it behind an `Option<Piper>` and assign `None` "
+"to it. See `examples/unload_model.rs` in the repository."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/index.adoc:25
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/index.adoc:21
+#, no-wrap
+msgid "Credits"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/index.adoc:29
+msgid ""
+"This project is inspired by https://github.com/mush42/sonata[sonata], "
+"originally created by https://github.com/mush42[mush42]."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/index.adoc:35
+msgid ""
+"Licensed under the GNU General Public License v3.0 or later (GPL-3.0-or-"
+"later): `dengjen-piper-rs` links against eSpeak-ng (vendored as a git "
+"submodule in `crates/espeak-rs-sys`), which is GPL-3.0-or-later, so `dengjen-"
+"piper-rs`, `dengjen-espeak-rs`, and `dengjen-espeak-rs-sys` are derivative "
+"works under the same terms."
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/installation.adoc:6
+#, no-wrap
+msgid "cargo add dengjen-piper-rs\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/installation.adoc:8
+msgid "See `examples/` in the repository for usage examples."
+msgstr ""
+
+#. type: Title =
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:1
+#, no-wrap
+msgid "Building a distributable binary"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:9
+msgid ""
+"`dengjen-espeak-rs-sys`'s build script compiles eSpeak NG's data files "
+"(dictionaries, voices, phoneme tables) and, since it needs *some* directory "
+"to build into, generates them inside `target/<profile>/build/dengjen-espeak-"
+"rs-sys-<hash>/out/...` — an ephemeral, cache-keyed path that disappears the "
+"moment `target/` is deleted or the crate is rebuilt with a different hash.  "
+"Copying only the compiled binary out of `target/` and discarding the rest "
+"(e.g.  `cargo build --release` followed by `rm -rf target`) breaks it at "
+"runtime with:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:14
+#, no-wrap
+msgid ""
+"Failed to initialize eSpeak-ng. Try setting `PIPER_ESPEAKNG_DATA_DIRECTORY`\n"
+"to the directory that contains the `espeak-ng-data` directory.\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:19
+msgid ""
+"To make this easy, the build script also copies `espeak-ng-data` to `target/"
+"<profile>/espeak-ng-data`, right next to the binary itself. At runtime, "
+"`dengjen-espeak-rs` looks for `espeak-ng-data` (in this order) in:"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:21
+msgid "the directory named by the `PIPER_ESPEAKNG_DATA_DIRECTORY` env var,"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:22
+msgid "the current working directory,"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:23
+msgid "the directory containing the running executable."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:26
+msgid ""
+"So for a plain `cargo build --release` / `cargo run --release`, it just "
+"works — no env var needed, since (3) already finds `target/release/espeak-ng-"
+"data`."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:29
+msgid ""
+"To ship a binary elsewhere, copy both the binary and its `espeak-ng-data` "
+"directory together and keep them side by side:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:36
+#, no-wrap
+msgid ""
+"cargo build --release\n"
+"mkdir -p dist\n"
+"cp target/release/<your-binary> dist/\n"
+"cp -r target/release/espeak-ng-data dist/\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:41
+msgid ""
+"If your packaging can't keep them side by side (e.g. the data directory "
+"belongs in a shared system location), set `PIPER_ESPEAKNG_DATA_DIRECTORY` at "
+"runtime to the directory that *contains* `espeak-ng-data`."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:42
+#, no-wrap
+msgid "Gotchas"
+msgstr ""
+
+#. type: Title ===
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:44
+#, no-wrap
+msgid "Link failed on Windows"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:47
+msgid "If you encounter linking errors such as"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:51
+#, no-wrap
+msgid "error LNK2019: unresolved external symbol __std_mismatch_1 referenced in function \"private: class onnxruntime::common::Status\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:54
+msgid ""
+"make sure your Visual Studio is >= 17.11 (update through the Visual Studio "
+"Installer)."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:55
+#, no-wrap
+msgid "Cross-compiling for Linux arm64 (e.g. Raspberry Pi)"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:63
+#, no-wrap
+msgid ""
+"sudo apt-get install crossbuild-essential-arm64 cmake pkg-config libssl-dev\n"
+"rustup target add aarch64-unknown-linux-gnu\n"
+"CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER=aarch64-linux-gnu-gcc \\\n"
+"  cargo build --release --target aarch64-unknown-linux-gnu\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-piper-rs/docs/modules/ROOT/pages/building.adoc:70
+msgid ""
+"No `CMAKE_TOOLCHAIN_FILE`, sysroot variable, or separately-built `libasound` "
+"is needed — the `cmake`/`cc` crates already recognize the standard `aarch64-"
+"linux-gnu-*` cross-compiler naming convention that `crossbuild-essential-"
+"arm64` installs, and eSpeak-ng's own CMake build skips its tests and native-"
+"only intonation data when `CMAKE_CROSSCOMPILING` is set. `pkg-config`/ "
+"`libssl-dev` are only needed on the host, for the `openssl-sys` build script "
+"(a build-time dependency of `ort`), not for the arm64 target itself."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/nav.adoc:4
+msgid "Guide"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/nav.adoc:5
+msgid "xref:guide/fixtures.adoc[Fixtures]"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/nav.adoc:6
+msgid "xref:guide/speech.adoc[speech]"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/nav.adoc:7
+msgid "xref:guide/braille.adoc[braille]"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/nav.adoc:8
+msgid "xref:guide/keys.adoc[keys]"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/nav.adoc:9
+msgid "xref:guide/config.adoc[config]"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/nav.adoc:10
+msgid "xref:guide/log.adoc[log]"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/nav.adoc:11
+msgid "xref:guide/addons.adoc[addons]"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/nav.adoc:12
+msgid "xref:example-project.adoc[Example Project]"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/nav.adoc:12
+msgid "xref:contributing.adoc[Contributing]"
+msgstr ""
+
+#. type: Title =
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/index.adoc:1
+#, no-wrap
+msgid "nvda-addon-testkit"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/index.adoc:4
+msgid "End-to-end testing for NVDA add-ons, against a real NVDA, in CI."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/index.adoc:8
+msgid ""
+"Your add-on's logic can be unit-tested with stubs. What cannot be stubbed is "
+"whether it installs, registers, and behaves inside NVDA itself. This kit "
+"provisions a disposable portable NVDA, installs your add-on into it, and "
+"lets pytest drive it."
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/index.adoc:16
+#, no-wrap
+msgid ""
+"def test_my_addon_announces_itself(nvda, addon_under_test, assert_no_unexpected_errors):\n"
+"    before = nvda.speech.index()\n"
+"    nvda.keys.press(\"NVDA+shift+m\")\n"
+"    assert \"my add-on is ready\" in nvda.speech.wait_for(\"ready\", timeout=10, since=before).text\n"
+"    assert_no_unexpected_errors(nvda)\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/index.adoc:19
+msgid ""
+"See xref:example-project.adoc[] for this same pattern applied to a real, "
+"working add-on."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/index.adoc:20
+#, no-wrap
+msgid "Core concepts"
+msgstr ""
+
+#. type: Table
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/index.adoc:34
+#, no-wrap
+msgid ""
+"|Fixture |What it gives you\n"
+"\n"
+"|`nvda`\n"
+"|a connected client, reset between tests\n"
+"\n"
+"|`addon_bundle`\n"
+"|the path to your built `.nvda-addon`\n"
+"\n"
+"|`addon_under_test`\n"
+"|that bundle, installed and enabled, NVDA restarted\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/index.adoc:38
+msgid ""
+"Every fixture and namespace has its own page under *Guide*, most with a "
+"real, tested code sample pulled straight from this kit's own test suite:"
+msgstr ""
+
+#. type: Table
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/index.adoc:60
+#, no-wrap
+msgid ""
+"|Namespace |Use it for\n"
+"\n"
+"|xref:guide/speech.adoc[`nvda.speech`]\n"
+"|what NVDA asked to say, and waiting for it\n"
+"\n"
+"|xref:guide/braille.adoc[`nvda.braille`]\n"
+"|the raw text sent to the braille display\n"
+"\n"
+"|xref:guide/keys.adoc[`nvda.keys`]\n"
+"|sending gestures through NVDA's own input pipeline\n"
+"\n"
+"|xref:guide/config.adoc[`nvda.config`]\n"
+"|reading and writing NVDA's configuration\n"
+"\n"
+"|xref:guide/log.adoc[`nvda.log`]\n"
+"|structured log records, and `assert_no_errors()`\n"
+"\n"
+"|xref:guide/addons.adoc[`nvda.addons`]\n"
+"|two-phase install, remove, and state\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/index.adoc:66
+msgid ""
+"Windows to run the tests. NVDA is downloaded automatically — you do not need "
+"one installed, and nothing touches an NVDA you already have."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/index.adoc:69
+msgid ""
+"Tests run serially: only one NVDA can own a desktop session, so `pytest-"
+"xdist` with more than one worker is refused rather than silently producing "
+"nonsense."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/index.adoc:72
+msgid "GPL-2.0-or-later."
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/installation.adoc:6
+#, no-wrap
+msgid "pip install nvda-addon-testkit\n"
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/installation.adoc:8
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:21
+#, no-wrap
+msgid "Configure"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/installation.adoc:15
+#, no-wrap
+msgid ""
+"[tool.nvda-testkit]\n"
+"addon-bundle = \"dist/my-addon-*.nvda-addon\"\n"
+"nvda-channel = \"stable\"\n"
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/installation.adoc:17
+#, no-wrap
+msgid "Run in GitHub Actions"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/installation.adoc:31
+#, no-wrap
+msgid ""
+"jobs:\n"
+"  e2e:\n"
+"    runs-on: windows-2025\n"
+"    steps:\n"
+"      - uses: actions/checkout@v5\n"
+"      - uses: zirekhq/nvda-addon-testkit@v1\n"
+"        with:\n"
+"          nvda-channel: stable\n"
+"      - run: scons dist\n"
+"      - run: pytest tests_e2e/ -v\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/installation.adoc:35
+msgid ""
+"The action requires a Windows runner — pick whichever one matches what your "
+"users run. This repository's own e2e test suite runs on both `windows-2025` "
+"and `windows-2022` (the latter for Windows 10 22H2, including builds still "
+"on Extended Security Updates)."
+msgstr ""
+
+#. type: Title =
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:1
+#, no-wrap
+msgid "Example Project"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:6
+msgid ""
+"`examples/demo-addon/` in this repository is a complete, minimal add-on that "
+"this kit tests itself against. It's deliberately boring: one gesture, one "
+"spoken phrase, one log line at startup — enough surface to assert against, "
+"nothing more."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:7
+#, no-wrap
+msgid "The add-on"
+msgstr ""
+
+#. type: Block title
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:9
+#, no-wrap
+msgid "examples/demo-addon/manifest.ini"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:13
+#, no-wrap
+msgid "include::example$demo-addon/manifest.ini[]\n"
+msgstr ""
+
+#. type: Block title
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:15
+#, no-wrap
+msgid "examples/demo-addon/globalPlugins/testkit_demo.py"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:19
+#, no-wrap
+msgid "include::example$demo-addon/globalPlugins/testkit_demo.py[]\n"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:27
+#, no-wrap
+msgid ""
+"[tool.nvda-testkit]\n"
+"addon-bundle = \"examples/demo-addon.nvda-addon\"\n"
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:29
+#, no-wrap
+msgid "Build the bundle"
+msgstr ""
+
+#. type: Block title
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:31
+#, no-wrap
+msgid "examples/demo-addon/build.py"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:35
+#, no-wrap
+msgid "include::example$demo-addon/build.py[]\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:40
+msgid ""
+"Use whatever your own add-on already builds with instead — `scons dist`, a "
+"Makefile target, this same zip-the-folder script. The testkit only cares "
+"that a `.nvda-addon` file lands somewhere the `addon-bundle` pattern can "
+"glob."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:41
+#, no-wrap
+msgid "Test it"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:44
+msgid "Most tests just ask for `nvda` and `addon_under_test`:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:49
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/fixtures.adoc:25
+#, no-wrap
+msgid ""
+"def test_it_survives_a_restart(nvda, addon_under_test):\n"
+"include::example$tests_e2e/test_demo_addon.py[tag=fixtures,indent=4]\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:53
+msgid ""
+"A test that owns the install lifecycle itself asks for `nvda.addons` "
+"directly instead — see xref:guide/addons.adoc[] for what each state means:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:61
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/fixtures.adoc:40
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/addons.adoc:13
+#, no-wrap
+msgid ""
+"@pytest.mark.fresh_nvda\n"
+"def test_install_is_two_phase_and_completes_on_restart(\n"
+"    nvda, built_demo_addon, assert_no_unexpected_errors\n"
+"):\n"
+"include::example$tests_e2e/test_demo_addon.py[tag=addons,indent=4]\n"
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:63
+#, no-wrap
+msgid "Run it"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:69
+#, no-wrap
+msgid ""
+"python examples/demo-addon/build.py\n"
+"pytest tests_e2e/test_demo_addon.py -v\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/example-project.adoc:71
+msgid ""
+"Windows only — see xref:installation.adoc[] for running the same suite in "
+"GitHub Actions."
+msgstr ""
+
+#. type: Title =
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/contributing.adoc:1
+#, no-wrap
+msgid "Contributing"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/contributing.adoc:3
+msgid ""
+"See link:https://github.com/ZirekHQ/nvda-addon-testkit/blob/main/.github/"
+"CONTRIBUTING.md[CONTRIBUTING.md] in the repository for how to report bugs, "
+"set up a dev environment, run tests, and submit a PR."
+msgstr ""
+
+#. type: Title =
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/fixtures.adoc:1
+#, no-wrap
+msgid "Fixtures"
+msgstr ""
+
+#. type: Table
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/fixtures.adoc:15
+#, no-wrap
+msgid ""
+"|Fixture |What it gives you\n"
+"\n"
+"|`nvda`\n"
+"|a connected client, reset between tests\n"
+"\n"
+"|`addon_bundle`\n"
+"|the path to your built `.nvda-addon`, resolved from `addon-bundle` in xref:installation.adoc[]\n"
+"\n"
+"|`addon_under_test`\n"
+"|that bundle, installed and enabled, NVDA restarted\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/fixtures.adoc:20
+msgid ""
+"`addon_under_test` is session-scoped: every test that asks for it shares the "
+"same installed add-on and the same running NVDA. The plain `nvda` fixture "
+"resets state between tests, so most tests only need `nvda` and "
+"`addon_under_test` together:"
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/fixtures.adoc:27
+#, no-wrap
+msgid "Owning the install lifecycle"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/fixtures.adoc:32
+msgid ""
+"Reach for the raw `nvda.addons` namespace instead of `addon_under_test` when "
+"a test needs to drive install/remove itself — for example, to prove the two-"
+"phase install contract. Mark it `@pytest.mark.fresh_nvda` so it gets its own "
+"NVDA process rather than the shared session one:"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/fixtures.adoc:42
+msgid "See xref:guide/addons.adoc[] for what each `AddonState` means."
+msgstr ""
+
+#. type: Title =
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/speech.adoc:1
+#, no-wrap
+msgid "nvda.speech"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/speech.adoc:4
+msgid "What NVDA asked to say, and waiting for it."
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/speech.adoc:9
+#, no-wrap
+msgid ""
+"def test_nvda_speaks_when_asked(nvda):\n"
+"include::example$tests_e2e/test_smoke.py[tag=speech,indent=4]\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/speech.adoc:14
+msgid ""
+"`wait_for` polls until a speech sequence matching the pattern arrives, since "
+"the given index — it will not pass on a stale sequence spoken before "
+"`since`, and raises on timeout instead of returning `None`."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/speech.adoc:16
+msgid ""
+"`index()`, `clear()`, and `cancel()` are also available for tests that care "
+"about ordering or interruption rather than just content."
+msgstr ""
+
+#. type: Title =
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/braille.adoc:1
+#, no-wrap
+msgid "nvda.braille"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/braille.adoc:4
+msgid "The raw text sent to the braille display."
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/braille.adoc:11
+#, no-wrap
+msgid ""
+"def test_my_addon_updates_braille(nvda, addon_under_test):\n"
+"    before = nvda.braille.index()\n"
+"    nvda.keys.press(\"NVDA+shift+b\")\n"
+"    assert \"expected cell text\" in nvda.braille.since(before)\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/braille.adoc:15
+msgid ""
+"Unlike the other namespace pages, this snippet is illustrative rather than "
+"pulled from a real test — nothing in this kit's own suite currently drives a "
+"braille display end to end."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/braille.adoc:18
+msgid ""
+"`index()`, `since()`, `all()`, and `last()` mirror xref:guide/"
+"speech.adoc[`nvda.speech`]'s shape.  `wait_for` polls the same way. "
+"`set_cell_count()` / `cell_count()` let a test simulate a display of a given "
+"width, since braille output wraps differently depending on it."
+msgstr ""
+
+#. type: Title =
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/keys.adoc:1
+#, no-wrap
+msgid "nvda.keys"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/keys.adoc:5
+msgid ""
+"Sending gestures through NVDA's own input pipeline — not simulated at the OS "
+"level, so it exercises the same gesture-handling code your add-on's "
+"`__gestures` map runs under."
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/keys.adoc:10
+#, no-wrap
+msgid ""
+"def test_a_gesture_reaches_nvda(nvda):\n"
+"include::example$tests_e2e/test_smoke.py[tag=keys,indent=4]\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/keys.adoc:14
+msgid ""
+"`sent()` returns every gesture NVDA has processed this session, in order — "
+"useful for asserting that a gesture was actually delivered even when it "
+"produces no speech or log line of its own."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/keys.adoc:15
+msgid ""
+"`type_text` and `press_all` cover typing a string and chording multiple "
+"gestures."
+msgstr ""
+
+#. type: Title =
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/config.adoc:1
+#, no-wrap
+msgid "nvda.config"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/config.adoc:5
+msgid ""
+"Reading and writing NVDA's configuration, so a test can set up the exact "
+"state your add-on's code path depends on."
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/config.adoc:10
+#, no-wrap
+msgid ""
+"def test_config_round_trips_through_a_real_nvda(nvda):\n"
+"include::example$tests_e2e/test_smoke.py[tag=config,indent=4]\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/config.adoc:14
+msgid ""
+"`snapshot()` and `restore()` let a test change configuration for the "
+"duration of one test and put it back afterwards, without needing to know "
+"every key it touched:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/config.adoc:24
+#, no-wrap
+msgid ""
+"def test_something_under_a_changed_setting(nvda):\n"
+"    snapshot = nvda.config.snapshot()\n"
+"    try:\n"
+"        nvda.config.set((\"speech\", \"symbolLevel\"), \"all\")\n"
+"        ...\n"
+"    finally:\n"
+"        nvda.config.restore(snapshot)\n"
+msgstr ""
+
+#. type: Title =
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/log.adoc:1
+#, no-wrap
+msgid "nvda.log"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/log.adoc:5
+msgid ""
+"Structured log records, and `assert_no_errors()` for the common case of \"my "
+"add-on shouldn't have logged anything alarming.\""
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/log.adoc:10
+#, no-wrap
+msgid ""
+"def test_the_installed_addon_logs_at_startup(nvda, addon_under_test):\n"
+"include::example$tests_e2e/test_demo_addon.py[tag=log,indent=4]\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/log.adoc:15
+msgid ""
+"`wait_for` takes a regex and an index to search from — pass `since=0` (as "
+"above) to search the whole session, or `since=nvda.log.index()` taken "
+"earlier to ignore anything logged before that point."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/log.adoc:17
+msgid ""
+"`errors()` and `warnings()` filter by level; `assert_no_errors()` raises "
+"with the offending records attached instead of returning a bare `False`."
+msgstr ""
+
+#. type: Title =
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/addons.adoc:1
+#, no-wrap
+msgid "nvda.addons"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/addons.adoc:5
+msgid ""
+"Two-phase install, remove, and state — install and remove only take effect "
+"after NVDA restarts, matching how NVDA itself behaves outside tests."
+msgstr ""
+
+#. type: Table
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/addons.adoc:36
+#, no-wrap
+msgid ""
+"|`AddonState` |Meaning\n"
+"\n"
+"|`NOT_INSTALLED`\n"
+"|no trace of the add-on\n"
+"\n"
+"|`PENDING_INSTALL`\n"
+"|installed, waiting for the restart that enables it\n"
+"\n"
+"|`ENABLED`\n"
+"|installed and running\n"
+"\n"
+"|`DISABLED`\n"
+"|installed but turned off\n"
+"\n"
+"|`PENDING_REMOVE`\n"
+"|marked for removal, waiting for the restart that completes it\n"
+"\n"
+"|`INCOMPATIBLE`\n"
+"|installed, but NVDA refuses to enable it\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/nvda-addon-testkit/docs/modules/ROOT/pages/guide/addons.adoc:40
+msgid ""
+"Most tests don't need this directly — the xref:guide/"
+"fixtures.adoc[`addon_under_test` fixture] already does the install-and-"
+"restart dance for you. Reach for `nvda.addons` yourself only when a test is "
+"about the install/remove lifecycle itself."
+msgstr ""
+
+#. type: Title =
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/index.adoc:1
+#, no-wrap
+msgid "dengjen-tashkeel"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/index.adoc:5
+msgid ""
+"Arabic-text diacritic (tashkeel) restoration using an ONNX neural model, "
+"trained mainly on MSA data from https://github.com/mush42/hareef[Hareef]."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/index.adoc:7
+msgid ""
+"Available as a Rust crate, a C ABI, a Python package, a Java library, and a "
+"standalone CLI."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/index.adoc:8
+#, no-wrap
+msgid "Non-scope"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/index.adoc:11
+msgid "Diacritization only — not a general-purpose Arabic NLP toolkit."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/index.adoc:12
+#, no-wrap
+msgid "Known limitation"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/index.adoc:20
+msgid ""
+"Accuracy is bounded by the underlying Hareef model: it can mis-diacritize "
+"proper nouns and other words whose correct case ending depends on context it "
+"wasn't trained to resolve. For example, given `عن أمير المؤمنين أبي حفص عمر "
+"بن الخطاب`, the name `حفص` comes out as `حِفَصِ` (\"hifsi\")  instead of the "
+"grammatically correct `حَفْصٍ` (\"hafsin\"). See https://github.com/ZirekHQ/"
+"dengjen-tashkeel/issues/28[issue #28] for the full discrepancy. This is a "
+"model-accuracy limitation, not a bug in this library's code."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/index.adoc:24
+msgid "Created by https://github.com/mush42[mush42] (Musharraf Omer)."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/index.adoc:27
+msgid "Dual-licensed under MIT or Apache-2.0, at your option."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:3
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:3
+#, no-wrap
+msgid "Rust"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:8
+#, no-wrap
+msgid "cargo add dengjen-tashkeel\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:12
+msgid ""
+"The default features (`ort-static`, `rayon`) statically link a bundled ONNX "
+"Runtime, so this works with no extra setup."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:13
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:19
+#, no-wrap
+msgid "Python"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:18
+#, no-wrap
+msgid "pip install dengjen-tashkeel-py\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:25
+msgid ""
+"Published to PyPI as `dengjen-tashkeel-py` by the `python-publish.yml` CI "
+"workflow whenever a version tag is pushed — availability at any given moment "
+"depends on whether a tag has been pushed since this was set up, so if the "
+"install fails, build the wheel yourself instead (see "
+"xref:building.adoc[Building]). The wheel depends on `onnxruntime` (installed "
+"automatically by `pip`); don't have `onnxruntime-gpu` installed alongside it "
+"— they share the same import name."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:26
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:32
+#, no-wrap
+msgid "C"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:32
+msgid ""
+"Download the prebuilt `dengjen-tashkeel-capi-<target>` archive for your "
+"platform from https://github.com/ZirekHQ/dengjen-tashkeel/releases[GitHub "
+"Releases]. Each archive bundles the built shared library (`.so`/`.dylib`/"
+"`.dll`) together with `dengjen_tashkeel.h` — link against the library and "
+"include the header, no need to build from source."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:37
+msgid ""
+"The library and header are also available through a self-hosted https://"
+"learn.microsoft.com/en-us/vcpkg/consuming/git-registries[vcpkg custom "
+"registry] — this repository itself, referenced directly by git, no separate "
+"server needed. Add it to your project's `vcpkg-configuration.json`:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:54
+#, no-wrap
+msgid ""
+"{\n"
+"  \"default-registry\": {\n"
+"    \"kind\": \"builtin\",\n"
+"    \"baseline\": \"<current vcpkg builtin-registry baseline>\"\n"
+"  },\n"
+"  \"registries\": [\n"
+"    {\n"
+"      \"kind\": \"git\",\n"
+"      \"repository\": \"https://github.com/ZirekHQ/dengjen-tashkeel\",\n"
+"      \"baseline\": \"<commit-sha of the dengjen-tashkeel commit to pin>\",\n"
+"      \"packages\": [\"dengjen-tashkeel-capi\"]\n"
+"    }\n"
+"  ]\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:57
+msgid ""
+"then add `dengjen-tashkeel-capi` to your `vcpkg.json` dependencies and run "
+"`vcpkg install`."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:62
+msgid ""
+"https://github.com/conan-io/conan-center-index[ConanCenter] requires recipes "
+"to build from source, which this project's C API can't do without a Rust "
+"toolchain in Conan's build environment, so this isn't published there. "
+"Instead, clone this repository and export the recipe into your local Conan "
+"cache:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:66
+#, no-wrap
+msgid "conan create packaging/conan --version=1.5.3\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:70
+msgid ""
+"then add `dengjen-tashkeel-capi/1.5.3` to your `conanfile.txt`/"
+"`conanfile.py` `requires`. See `packaging/README.md` in the repository for "
+"how both are maintained."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:71
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:38
+#, no-wrap
+msgid "Java"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:77
+#, no-wrap
+msgid ""
+"implementation(\"io.github.zirekhq:dengjen-tashkeel:1.5.3\")\n"
+"runtimeOnly(\"io.github.zirekhq:dengjen-tashkeel:1.5.3:linux-x86_64\")\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:88
+msgid ""
+"Published to Maven Central by the `java-publish.yml` CI workflow whenever a "
+"version tag is pushed. The binding uses the JDK Foreign Function & Memory "
+"API (`java.lang.foreign`), not JNA, to load the native "
+"`dengjen_tashkeel_capi` shared library. The native library ships as per-"
+"platform classifier jars — `linux-x86_64`, `windows-x64`, and `macos-"
+"aarch64` — so add a `runtimeOnly` dependency on the one matching your "
+"platform alongside the main dependency; it's picked up automatically at "
+"runtime. To use a library you built or placed yourself instead, set `-"
+"Ddengjen.tashkeel.native.library.path=/path/to/library` (a file path, not a "
+"directory — `java.library.path` is not consulted). Either way, add `--enable-"
+"native-access=ALL-UNNAMED` to your own JVM invocation to avoid a native-"
+"access warning."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:92
+msgid "Either build from source (see xref:building.adoc[Building]) or:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/installation.adoc:96
+#, no-wrap
+msgid "cargo install dengjen-tashkeel-cli\n"
+msgstr ""
+
+#. type: Title =
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:1
+#, no-wrap
+msgid "Quick start"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:8
+#, no-wrap
+msgid "use dengjen_tashkeel::{create_inference_engine, do_tashkeel};\n"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:12
+#, no-wrap
+msgid ""
+"// None = use the bundled model.\n"
+"let engine = create_inference_engine(None)?;\n"
+"let diacritized = do_tashkeel(&engine, \"بسم الله الرحمن الرحيم\", None, false)?;\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:18
+msgid ""
+"`do_tashkeel`'s third argument is an optional taskeen threshold (see below) "
+"and the fourth is `preprocessed` — pass `true` only if `text` is already "
+"sentence-segmented, otherwise the library segments it for you. Input is "
+"capped at `CHAR_LIMIT` (12,000 characters); longer input returns "
+"`Err(DengjenTashkeelError::InputTooLong(_))`."
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:24
+#, no-wrap
+msgid "from dengjen_tashkeel_py import tashkeel\n"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:26
+#, no-wrap
+msgid "tashkeel(\"بسم الله الرحمن الرحيم\")\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:31
+msgid ""
+"The Rust side logs via the `log` facade but installs no backend; if you want "
+"its diagnostics (e.g. a redundant-init warning) surfaced through Python's "
+"own `logging` module, install https://github.com/vorner/pyo3-log[pyo3-log] "
+"in your embedding process."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:37
+msgid ""
+"The API is a single entry point for diacritizing a UTF-8 encoded string — "
+"see `crates/capi/ffi_usage_example.py` in the repository for sample usage "
+"against the compiled library via `ctypes`."
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:44
+#, no-wrap
+msgid ""
+"import io.github.zirekhq.dengjen.tashkeel.Tashkeel;\n"
+"import java.util.Optional;\n"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:47
+#, no-wrap
+msgid ""
+"Tashkeel tashkeel = Tashkeel.loadDefault();\n"
+"String diacritized = tashkeel.diacritize(\"بسم الله الرحمن الرحيم\", Optional.empty(), false);\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:54
+msgid ""
+"`diacritize`'s second argument is an optional taskeen threshold (see below) "
+"and the third is `preprocessed` — pass `true` only if the text is already "
+"sentence-segmented, otherwise the library segments it for you. Errors "
+"surface as a checked `TashkeelException`, whose `reason()` is an "
+"exhaustively switchable sealed type mirroring the `ErrorCode` values in "
+"`dengjen_tashkeel.h`."
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:61
+#, no-wrap
+msgid ""
+"echo \"بسم الله الرحمن الرحيم\" > input.txt\n"
+"dengjen-tashkeel -f input.txt\n"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:66
+#, no-wrap
+msgid "Usage: dengjen-tashkeel [OPTIONS]\n"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:76
+#, no-wrap
+msgid ""
+"Options:\n"
+"  -f, --input-file <INPUT_FILE>    Input file (default `stdin`)\n"
+"  -o, --output-file <OUTPUT_FILE>  Output file (default `stdout`)\n"
+"  -i, --interactive                Use interactive mode (useful for testing)\n"
+"  -t, --taskeen                    Use sukoon for case-ending diacritic if the model is uncertain\n"
+"  -p, --prob <PROB>                Taskeen threshold probability [default: 0.95]\n"
+"  -x, --onnx <ONNX_MODEL>          ONNX model (default: use bundled model if available)\n"
+"  -h, --help                       Print help\n"
+"  -V, --version                    Print version\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:79
+msgid ""
+"With neither `--input-file` nor `--output-file`, the CLI runs in interactive "
+"mode by default."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:80
+#, no-wrap
+msgid "The taskeen option"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/usage.adoc:83
+msgid ""
+"When enabled (`taskeen_threshold` in Rust/Python, `--taskeen`/`--prob` in "
+"the CLI), the model substitutes a sukoon for a case-ending diacritic it "
+"isn't confident about, instead of guessing."
+msgstr ""
+
+#. type: Title =
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/building.adoc:1
+#, no-wrap
+msgid "Building"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/building.adoc:4
+msgid "Requires https://www.rust-lang.org/tools/install[Rust]."
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/building.adoc:8
+#, no-wrap
+msgid "cargo build --release\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/building.adoc:11
+msgid ""
+"Builds the `dengjen_tashkeel_capi` library and the `dengjen-tashkeel` CLI "
+"under `target/`."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/building.adoc:12
+#, no-wrap
+msgid "Python wheel"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/building.adoc:15
+msgid "Install https://github.com/pyo3/maturin[maturin]:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/building.adoc:23
+#, no-wrap
+msgid ""
+"cd crates/python\n"
+"python3 -m venv .venv\n"
+"source .venv/bin/activate\n"
+"pip install maturin\n"
+"maturin build --release --strip\n"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/dengjen-tashkeel/docs/modules/ROOT/pages/building.adoc:25
+msgid "The wheel is written to `target/wheels/`."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/nav.adoc:2
+msgid "xref:getting_started.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/nav.adoc:3
+msgid "xref:logging.adoc[]"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/nav.adoc:3
+msgid "xref:testing.adoc[]"
+msgstr ""
+
+#. type: Title =
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/getting_started.adoc:1
+#, no-wrap
+msgid "Getting Started"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/getting_started.adoc:4
+msgid ""
+"This plugin will register itself with the Pact framework for the `avro/"
+"binary`,`application/avro`, `application/*+avro` and `avro/bytes` content "
+"types."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/getting_started.adoc:7
+msgid ""
+"Using this plugin, you can write Pact tests that verify a single message "
+"(i.e. a message provider sends a message to a consumer)."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/getting_started.adoc:9
+msgid ""
+"Tests are supported by using the V4 asynchronous message Pact format, and "
+"the service method calls use the V4 synchronous message Pact format."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/getting_started.adoc:13
+msgid ""
+"The executable binaries and plugin manifest file for the plugin can be "
+"downloaded from the project link:../releases[releases page]."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/getting_started.adoc:16
+msgid ""
+"Plugin installation requires the plugin executable binary as well as the "
+"plugin manifest file to be unpacked/copied into a Pact plugin directory. By "
+"default, this will be `.pact/plugins/avro-<version>` in the home directory "
+"(i.e.  `$HOME/.pact/plugins/avro-{version}` for version {version})."
+msgstr ""
+
+#. type: Title ===
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/getting_started.adoc:17
+#, no-wrap
+msgid "Automated"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/getting_started.adoc:20
+msgid ""
+"The https://github.com/pact-foundation/pact-plugins/tree/main/cli[pact-"
+"plugin-cli] can be used to install the Avro plugin. See the https://"
+"github.com/pact-foundation/pact-plugins/tree/main/cli#installing[CLI "
+"installation] on how to install it."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/getting_started.adoc:22
+msgid "To install the latest version, run"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/getting_started.adoc:26
+#, no-wrap
+msgid "pact-plugin-cli -y install https://github.com/austek/pact-avro-plugin/releases/latest\n"
+msgstr ""
+
+#. type: Title ===
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/getting_started.adoc:28
+#, no-wrap
+msgid "Manual"
+msgstr ""
+
+#. type: Block title
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/getting_started.adoc:30
+#, no-wrap
+msgid "Run install-plugin.sh:"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/getting_started.adoc:34
+#, no-wrap
+msgid "wget -O - https://github.com/austek/pact-avro-plugin/releases/latest/download/install-plugin.sh | bash\n"
+msgstr ""
+
+#. type: Labeled list
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/getting_started.adoc:36
+#, no-wrap
+msgid "INFORMATION"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/getting_started.adoc:36
+msgid ""
+"The default plugin directory (`$HOME/.pact/plugins`) can be changed by "
+"setting the `PACT_PLUGIN_DIR` environment variable."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:4
+msgid ""
+"For an overview how asynchronous messages work with Pact, see https://"
+"docs.pact.io/getting_started/how_pact_works/#non-http-testing-message-"
+"pact[Non-HTTP testing (Message Pact)]."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:7
+msgid ""
+"In this scenario, a message provider writes a Protocol Buffer message to "
+"some one-way transport mechanism, like a message queue, and a consumer then "
+"reads it. With this style of testing, the transport mechanism is abstracted "
+"away."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:8
+#, no-wrap
+msgid "Consumer"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:11
+msgid ""
+"The message consumer test is written using the Pact Message test DSL. The "
+"test DSL defines the expected message format, and then the consumer is "
+"tested with an example message generated by the test framework."
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:12
+#, no-wrap
+msgid "The Avro test configuration"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:17
+msgid ""
+"The consumer tests need to get the plugin loaded and configure the expected "
+"messages to use in the test. This is done using the `usingPlugin` (or "
+"`using_plugin`, depending on the language implementation) followed by the "
+"content for the test in some type of map form."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:20
+msgid ""
+"For each field of the message that we want in the contract, we define an "
+"entry with the field name as the key and a matching definition as the value. "
+"For documentation on the matching definition format, see https://github.com/"
+"pact-foundation/pact-plugins/blob/main/docs/matching-rule-definition-"
+"expressions.md[Matching Rule definition expressions]."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:22
+msgid ""
+"For example, for a JVM test (taken from https://developers.google.com/"
+"protocol-buffers/docs/javatutorial[Protocol Buffer Java examples]) we would "
+"use the PactBuilder class:"
+msgstr ""
+
+#. type: Block title
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:23
+#, no-wrap
+msgid "Example Avro schema"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:29
+#, no-wrap
+msgid "include::example$consumer/src/main/resources/avro/orders.avsc[]\n"
+msgstr ""
+
+#. type: Block title
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:32
+#, no-wrap
+msgid "Consumer configuration"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:36
+#, no-wrap
+msgid "include::example$consumer/src/test/java/com/github/austek/example/pulsar/avro/PactPulsarConsumerTest.java[tags=configuration]\n"
+msgstr ""
+
+#. type: Block title
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:39
+#, no-wrap
+msgid "Java example consumer test"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:43
+#, no-wrap
+msgid "include::example$consumer/src/test/java/com/github/austek/example/pulsar/avro/PactPulsarConsumerTest.java[tags=consumer_test]\n"
+msgstr ""
+
+#. type: Title ==
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:45
+#, no-wrap
+msgid "Provider"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:49
+msgid ""
+"The message provider is verified by getting it to generate a message, and "
+"then this is verified against the Pact file from the consumer. There are two "
+"main ways of verifying the provider:"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:51
+msgid ""
+"Write a test in the provider code base that can call the provider to "
+"generate the message."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:52
+msgid ""
+"Use an HTTP proxy server that can call the provider and return the generated "
+"message, and then use a Pact framework verifier to verify it."
+msgstr ""
+
+#. type: Block title
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:53
+#, no-wrap
+msgid "Java example provider test"
+msgstr ""
+
+#. type: delimited block -
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/testing.adoc:59
+#, no-wrap
+msgid "include::example$provider/src/test/java/com/github/austek/example/pulsar/avro/PactPulsarProducerTest.java[]\n"
+msgstr ""
+
+#. type: Title =
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/logging.adoc:1
+#, no-wrap
+msgid "Logging"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/logging.adoc:4
+msgid "The plugin uses https://logback.qos.ch[Logback] to log to"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/logging.adoc:6
+msgid "standard output"
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/logging.adoc:7
+msgid "`log/plugin.log` file in in the plugin directory."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/logging.adoc:9
+msgid ""
+"The default log level is set to `ERROR` level and can be changed by the "
+"`LOG_LEVEL` environment variable that is passed into the plugin process "
+"(this should be set by the framework calling it)."
+msgstr ""
+
+#. type: Plain text
+#: .translation-src/pact-avro-plugin/docs/modules/ROOT/pages/logging.adoc:10
+msgid ""
+"The default file logging is set to roll daily or whenever the file size "
+"reaches 50MB. Logger will keep 30 days' worth of logging history"
+msgstr ""

@@ -20,24 +20,39 @@ content:
       branches: HEAD
       start_path: docs
 
-    # Spike: two pilot components. Add one entry per repo here to onboard it,
-    # each repo owns its own docs/ via `docs/antora.yml`.
+    # Pilot components. Add one entry per repo here to onboard it, each repo
+    # owns its own docs/ via `docs/antora.yml`. Version comes from each
+    # component's own antora.yml (all currently `version: true`, i.e. the
+    # branch name), not from a `version:` map here -- Antora always prefers
+    # the version declared in antora.yml when the file has one.
     - url: https://github.com/ZirekHQ/dengjen-tts.git
       branches:
         - main
-      version:
-        main: 0.0.0-dev
       start_path: docs
     - url: https://github.com/ZirekHQ/dengjen-nvda.git
       branches:
         - main
-      version:
-        main: 0.0.0-dev
+      start_path: docs
+    - url: https://github.com/ZirekHQ/dengjen-piper-rs.git
+      branches:
+        - main
+      start_path: docs
+    - url: https://github.com/ZirekHQ/nvda-addon-testkit.git
+      branches:
+        - main
+      start_path: docs
+    - url: https://github.com/ZirekHQ/dengjen-tashkeel.git
+      branches:
+        - main
+      start_path: docs
+    - url: https://github.com/ZirekHQ/pact-avro-plugin.git
+      branches:
+        - main
       start_path: docs
 
 ui:
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    url: https://github.com/ZirekHQ/docs-ui-bundle/releases/download/latest/ui-bundle.zip
     snapshot: true
   supplemental_files: ./supplemental-ui
 
@@ -47,9 +62,11 @@ antora:
 
 output:
   clean: true
+  dir: ./build/site/en
 
 asciidoc:
   attributes:
+    page-layout: with_menu
     idprefix: ''
     idseparator: '-'
     page-pagination: ''
