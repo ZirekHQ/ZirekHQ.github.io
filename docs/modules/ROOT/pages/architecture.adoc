@@ -1,0 +1,45 @@
+= Architecture
+
+This page shows how the ZirekHQ speech components relate to each other, as a
+https://c4model.com/[C4] System Context diagram. Each component's own docs
+break its internals down further (Container, Component, and a Code-level
+diagram) — see xref:dengjen-tts:architecture.adoc[dengjen-tts],
+xref:dengjen-nvda:architecture.adoc[dengjen-nvda],
+xref:piper-rs:architecture.adoc[dengjen-piper-rs], and
+xref:dengjen-tashkeel:architecture.adoc[dengjen-tashkeel].
+
+[source,mermaid]
+----
+C4Context
+    Person(user, "Screen reader user")
+
+    System_Boundary(zirekhq, "ZirekHQ") {
+        System(nvda_addon, "dengjen-nvda", "NVDA add-on (Python). Loaded in-process by NVDA as a synth driver.")
+        System(tts, "dengjen-tts", "Rust neural TTS inference engine. Exposes CLI, C ABI, Python, and gRPC frontends.")
+        System(tashkeel, "dengjen-tashkeel", "Arabic diacritization (tashkeel/harakat). Rust core with C ABI, Python, and Java bindings.")
+        System(piper_rs, "dengjen-piper-rs", "Standalone Piper-format TTS inference crate. Not currently consumed by any other ZirekHQ component.")
+    }
+
+    System_Ext(nvda, "NVDA", "Open-source Windows screen reader")
+    System_Ext(voices, "Voice model catalogue", "Piper / Kokoro / MeloTTS ONNX voices, e.g. huggingface.co/rhasspy/piper-voices")
+
+    Rel(user, nvda, "Uses")
+    Rel(nvda, nvda_addon, "Loads as a synthesizer driver")
+    Rel(nvda_addon, tts, "Synthesizes speech via gRPC, talking to a vendored dengjen-tts-grpc binary")
+    Rel(tts, tashkeel, "Optionally phonemizes Arabic input text (feature-gated, opt-in)")
+    Rel(nvda_addon, voices, "Downloads voices")
+    Rel(tts, voices, "Loads ONNX voice models")
+    Rel(piper_rs, voices, "Loads Piper ONNX voices")
+----
+
+Two things worth calling out that aren't obvious from the individual repos:
+
+* *dengjen-nvda never talks to dengjen-tts as a library.* It launches a
+  separately vendored `dengjen-tts-grpc` binary as its own OS process and
+  speaks to it over gRPC — the two are only coupled at the process boundary,
+  not the API boundary.
+* *dengjen-piper-rs and dengjen-tashkeel are not wired into dengjen-tts's
+  default build.* dengjen-tashkeel is an optional, feature-gated dependency
+  of one of dengjen-tts's model crates; dengjen-piper-rs is a fully separate,
+  parallel implementation with no dependency relationship to dengjen-tts in
+  either direction.
