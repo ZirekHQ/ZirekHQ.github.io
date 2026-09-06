@@ -1,5 +1,7 @@
 # ZirekHQ Documentation
 
+[Project board](https://github.com/orgs/ZirekHQ/projects/1) — live roadmap and status for this repo's issues.
+
 Aggregated Antora documentation site for the ZirekHQ organization, structured after
 [compress4j/compress4j.github.io](https://github.com/compress4j/compress4j.github.io).
 
