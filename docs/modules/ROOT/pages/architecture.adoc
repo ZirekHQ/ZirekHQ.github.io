@@ -3,10 +3,10 @@
 This page shows how the ZirekHQ speech components relate to each other, as a
 https://c4model.com/[C4] System Context diagram. Each component's own docs
 break its internals down further (Container, Component, and a Code-level
-diagram) — see xref:dengjen-tts:architecture.adoc[dengjen-tts],
-xref:dengjen-nvda:architecture.adoc[dengjen-nvda],
-xref:piper-rs:architecture.adoc[dengjen-piper-rs], and
-xref:dengjen-tashkeel:architecture.adoc[dengjen-tashkeel].
+diagram) — see xref:dengjen-tts:ROOT:architecture.adoc[dengjen-tts],
+xref:dengjen-nvda:ROOT:architecture.adoc[dengjen-nvda],
+xref:piper-rs:ROOT:architecture.adoc[dengjen-piper-rs], and
+xref:dengjen-tashkeel:ROOT:architecture.adoc[dengjen-tashkeel].
 
 [source,mermaid]
 ----
