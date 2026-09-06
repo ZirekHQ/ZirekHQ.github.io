@@ -1,3 +1,6 @@
 node_modules/
 build/
 .cache/
+.translation-src/
+/.idea/
+/.serena/

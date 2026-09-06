@@ -1,0 +1,61 @@
+site:
+  title: ZirekHQ
+  url: https://zirekhq.github.io
+  start_page: home::index.adoc
+  robots: allow
+
+runtime:
+  cache_dir: ./.cache/antora
+  log:
+    format: pretty
+    level: info
+    failure_level: warn
+
+content:
+  sources:
+    - url: .
+      branches: HEAD
+      start_path: build/docs/kmr/home
+
+    - url: .
+      branches: HEAD
+      start_path: build/docs/kmr/dengjen-tts
+    - url: .
+      branches: HEAD
+      start_path: build/docs/kmr/dengjen-nvda
+    - url: .
+      branches: HEAD
+      start_path: build/docs/kmr/dengjen-piper-rs
+    - url: .
+      branches: HEAD
+      start_path: build/docs/kmr/nvda-addon-testkit/docs
+    - url: .
+      branches: HEAD
+      start_path: build/docs/kmr/dengjen-tashkeel
+    - url: .
+      branches: HEAD
+      start_path: build/docs/kmr/pact-avro-plugin/docs
+
+ui:
+  bundle:
+    url: https://github.com/ZirekHQ/docs-ui-bundle/releases/download/latest/ui-bundle.zip
+    snapshot: true
+  supplemental_files: ./supplemental-ui
+
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
+
+output:
+  clean: true
+  dir: ./build/site/kmr
+
+asciidoc:
+  attributes:
+    page-layout: with_menu
+    idprefix: ''
+    idseparator: '-'
+    page-pagination: ''
+    experimental: ''
+  extensions:
+    - '@asciidoctor/tabs'
