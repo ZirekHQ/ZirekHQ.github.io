@@ -25,5 +25,5 @@ make serve     # serve build/site locally
 If this repository saves you time and effort, please consider supporting it!
 
 - ⭐ [Star on GitHub](https://github.com/ZirekHQ/ZirekHQ.github.io)
-- 🐦 [Share on Twitter](https://twitter.com/intent/tweet?text=ZirekHQ%20-%20screen%20readers%20and%20local%20neural%20TTS%20for%20under-served%20languages&url=https%3A%2F%2Fgithub.com%2FZirekHQ)
+- 🐦 [Share on Twitter](https://twitter.com/intent/tweet?text=ZirekHQ%20-%20screen%20readers%20and%20local%20neural%20TTS%20for%20under-served%20languages&url=https%3A%2F%2Fgithub.com%2FZirekHQ%2FZirekHQ.github.io)
 - 💖 [More ways to support](https://github.com/ZirekHQ) — Open Collective coming soon
