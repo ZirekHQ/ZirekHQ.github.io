@@ -10,6 +10,6 @@ permissions: {}
 
 jobs:
   sync:
-    uses: ZirekHQ/.github/.github/workflows/project-sync.yml@03c0090698fc8e2411796997c14df3f64836565a # main
+    uses: ZirekHQ/.github/.github/workflows/project-sync.yml@72bb704b4e28855035dd5f14d60b51901abdb41a # main
     secrets:
       PROJECT_SYNC_TOKEN: ${{ secrets.PROJECT_SYNC_TOKEN }}
