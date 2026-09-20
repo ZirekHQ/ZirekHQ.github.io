@@ -19,7 +19,7 @@ content:
 
     - url: .
       branches: HEAD
-      start_path: build/docs/kmr/dengjen-tts
+      start_path: build/docs/kmr/dengjen-tts/docs
     - url: .
       branches: HEAD
       start_path: build/docs/kmr/dengjen-nvda
