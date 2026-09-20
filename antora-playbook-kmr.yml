@@ -44,6 +44,8 @@ ui:
 
 antora:
   extensions:
+    - require: ./extensions/doc-versions.js
+      unversioned: [home]
     - require: '@antora/lunr-extension'
 
 output:
