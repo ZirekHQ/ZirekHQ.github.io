@@ -20,36 +20,63 @@ content:
       branches: HEAD
       start_path: docs
 
-    # Pilot components. Add one entry per repo here to onboard it, each repo
-    # owns its own docs/ via `docs/antora.yml`. Version comes from each
-    # component's own antora.yml (all currently `version: true`, i.e. the
-    # branch name), not from a `version:` map here -- Antora always prefers
-    # the version declared in antora.yml when the file has one.
+    # One entry per repo; each repo owns its docs/ via docs/antora.yml.
+    # Versions come from extensions/doc-versions.js.
     - url: https://github.com/ZirekHQ/dengjen-tts.git
+      tags:
+        - 'v*.*.*'
+        - '!v*-*'
+        # Antora fails on a tag without docs/; negate tags older than the repo's docs.
+        - '!v1.1.0'
       branches:
         - main
       start_path: docs
     - url: https://github.com/ZirekHQ/dengjen-nvda.git
+      tags:
+        - 'v*.*.*'
+        - '!v*-*'
+        - '!v3.*'
+        - '!v4.0.*'
       branches:
         - main
       start_path: docs
     - url: https://github.com/ZirekHQ/dengjen-piper-rs.git
+      tags:
+        - 'v*.*.*'
+        - '!v*-*'
+        - '!v0.2.0'
       branches:
         - main
       start_path: docs
     - url: https://github.com/ZirekHQ/nvda-addon-testkit.git
+      tags:
+        - 'v*.*.*'
+        - '!v*-*'
+        - '!v0.1.0'
+        - '!v0.1.1'
       branches:
         - main
       start_path: docs
     - url: https://github.com/ZirekHQ/dengjen-tashkeel.git
+      tags:
+        - 'v*.*.*'
+        - '!v*-*'
+        - '!v1.5.*'
       branches:
         - main
       start_path: docs
+    # Hardcodes `version:` in docs/antora.yml, so Antora merges every tag into
+    # one version before the extension runs; pinned until it uses `version: true`.
     - url: https://github.com/ZirekHQ/pact-avro-plugin.git
+      tags:
+        - v0.0.6
       branches:
         - main
       start_path: docs
     - url: https://github.com/ZirekHQ/dengjen-werger.git
+      tags:
+        - 'v*.*.*'
+        - '!v*-*'
       branches:
         - main
       start_path: docs
@@ -62,6 +89,8 @@ ui:
 
 antora:
   extensions:
+    - require: ./extensions/doc-versions.js
+      unversioned: [home]
     - require: '@antora/lunr-extension'
 
 output:
