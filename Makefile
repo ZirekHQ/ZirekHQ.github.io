@@ -24,13 +24,13 @@ build:
 	cd $(ROOT_DIR) && git clone --depth 1 --branch main https://github.com/ZirekHQ/pact-avro-plugin.git .translation-src/pact-avro-plugin
 	cd $(ROOT_DIR) && mkdir -p build/docs/kmr
 	cd $(ROOT_DIR) && cp -r docs build/docs/kmr/home
-	cd $(ROOT_DIR) && cp -r .translation-src/dengjen-tts/docs build/docs/kmr/dengjen-tts
 	cd $(ROOT_DIR) && cp -r .translation-src/dengjen-nvda/docs build/docs/kmr/dengjen-nvda
 	cd $(ROOT_DIR) && cp -r .translation-src/dengjen-piper-rs/docs build/docs/kmr/dengjen-piper-rs
 	cd $(ROOT_DIR) && cp -r .translation-src/dengjen-tashkeel/docs build/docs/kmr/dengjen-tashkeel
-	# nvda-addon-testkit and pact-avro-plugin link doc examples out to source
+	# dengjen-tts, nvda-addon-testkit and pact-avro-plugin link doc examples out to source
 	# code living outside docs/, so stage the whole repo (minus .git) rather
 	# than just docs/, to keep those relative symlinks resolvable.
+	cd $(ROOT_DIR) && cp -r .translation-src/dengjen-tts build/docs/kmr/dengjen-tts && rm -rf build/docs/kmr/dengjen-tts/.git
 	cd $(ROOT_DIR) && cp -r .translation-src/nvda-addon-testkit build/docs/kmr/nvda-addon-testkit && rm -rf build/docs/kmr/nvda-addon-testkit/.git
 	cd $(ROOT_DIR) && cp -r .translation-src/pact-avro-plugin build/docs/kmr/pact-avro-plugin && rm -rf build/docs/kmr/pact-avro-plugin/.git
 	cd $(ROOT_DIR) && po4a --no-update --keep 0 po4a.cfg
