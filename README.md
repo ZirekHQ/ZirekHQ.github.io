@@ -14,7 +14,7 @@ adding a `content.sources` entry in `antora-playbook.yml` and a `docs/antora.yml
 
 ## Versions
 
-`extensions/doc-versions.js` overrides the `version:` in each component's `docs/antora.yml`, unless that file hardcodes a value (see `pact-avro-plugin` in the playbook):
+`extensions/doc-versions.js` overrides the `version:` in each component's `docs/antora.yml`:
 
 - Every branch (`main`) publishes as **Next**, a prerelease. It is the default only while a component has no release.
 - Only the newest `vX.Y.Z` tag of each major line publishes, as `X.x`. Below 1.0 each minor counts as a line (`0.2.x`).

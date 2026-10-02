@@ -32,9 +32,6 @@ content:
     - url: .
       branches: HEAD
       start_path: build/docs/kmr/dengjen-tashkeel
-    - url: .
-      branches: HEAD
-      start_path: build/docs/kmr/pact-avro-plugin/docs
 
 ui:
   bundle:
