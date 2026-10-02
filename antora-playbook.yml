@@ -65,14 +65,6 @@ content:
       branches:
         - main
       start_path: docs
-    # Hardcodes `version:` in docs/antora.yml, so Antora merges every tag into
-    # one version before the extension runs; pinned until it uses `version: true`.
-    - url: https://github.com/ZirekHQ/pact-avro-plugin.git
-      tags:
-        - v0.0.6
-      branches:
-        - main
-      start_path: docs
     - url: https://github.com/ZirekHQ/dengjen-werger.git
       tags:
         - 'v*.*.*'
