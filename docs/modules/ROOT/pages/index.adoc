@@ -12,12 +12,12 @@ neural speech synthesis that makes a screen reader usable in the first place.
   once voices are installed; downloading and previewing voices requires an internet connection.
   Originated as a maintenance fork of mush42/sonata-nvda (renamed from Sonata Neural Voices in
   v4.0.0).
-* *https://github.com/ZirekHQ/nvdaku[nvdaku]* — Kurdish (Kurmanji) localisation for NVDA:
-  interface translation, character descriptions, and a symbol dictionary. Dates from 2018 and
-  is *partial* — see Help wanted below.
 * *https://github.com/ZirekHQ/nvda-addon-testkit[nvda-addon-testkit]* — end-to-end testing for
   NVDA add-ons, against a real NVDA, in CI. Built to keep the add-ons above honest across NVDA
   releases.
+
+Archived: https://github.com/ZirekHQ/nvdaku[nvdaku], Kurdish (Kurmanji) localisation for NVDA from
+2018 (a partial interface translation, character descriptions and a symbol dictionary). No longer maintained.
 
 == Speech synthesis
 
@@ -41,9 +41,6 @@ project that uses it.
 Kurmanji is badly served by assistive technology, and most of the gap needs native speakers
 rather than programmers:
 
-* *Reviewing the NVDA interface translation* in nvdaku — partial and dated.
-* *Character descriptions and symbol names* — judgement calls that someone who isn't a daily
-  speaker shouldn't be making alone.
 * *Voice recordings* for text-to-speech training.
 
 Sorani and Zazaki speakers are just as welcome; the work is Kurmanji-first only because that's
