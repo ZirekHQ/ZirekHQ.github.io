@@ -21,7 +21,7 @@ const dateOf = (iso) => iso.slice(0, 10)
 const latestOf = (project) => project.releases[0]
 const hasDocs = (project) => Boolean(project.docsComponent) && project.versions.length > 0
 const docsVersion = (project) => project.versions.find((v) => v !== 'next') ?? project.versions[0]
-const docsUrl = (project, version) => `/en/${project.docsComponent}/${version}/`
+const docsUrl = (project, version) => `/${project.docsComponent}/${version}/`
 const link = (href, text) => `<a href="${esc(href)}">${esc(text)}</a>`
 
 const versionBadge = (project) =>
@@ -110,7 +110,7 @@ const head = () => `<head><meta charset="utf-8"><meta name="viewport" content="w
 <link rel="icon" href="/assets/favicon.ico"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/home.css"></head>`
 
-const nav = () => `<nav aria-label="Primary"><a href="#projects">Projects</a><a href="/en/home/">Docs</a><a href="#releases">Releases</a><a href="#help-wanted">Help wanted</a><a href="#support">Support</a><a href="${ORG}">GitHub</a></nav>`
+const nav = () => `<nav aria-label="Primary"><a href="#projects">Projects</a><a href="/home/">Docs</a><a href="#releases">Releases</a><a href="#help-wanted">Help wanted</a><a href="#support">Support</a><a href="${ORG}">GitHub</a></nav>`
 
 const header = () => `
 <header class="site-header"><a class="brand" href="/"><img src="/assets/zirek-avatar.png" alt="" width="32" height="32"><span>ZirekHQ</span></a>
@@ -121,7 +121,7 @@ ${linkList([['GitHub', ORG], ...COMMUNITY.slice(1)])}</footer>`
 
 const hero = () => `
 <section id="hero" aria-labelledby="hero-title"><h1 id="hero-title">${esc(MISSION)}</h1><p class="lead">${esc(LEAD)}</p>
-<p><a class="button" href="#projects">Browse projects</a> <a class="button secondary" href="/en/home/">Read the docs</a></p></section>`
+<p><a class="button" href="#projects">Browse projects</a> <a class="button secondary" href="/home/">Read the docs</a></p></section>`
 
 const mainContent = ({ projects, feed }) =>
   `<main id="main" tabindex="-1">${hero()}${projectsSection(projects)}${releasesSection(feed)}${helpSection()}${supportSection()}${communitySection()}</main>`

@@ -16,7 +16,7 @@ const readdir = (dir) => (fs.existsSync(dir) ? fs.readdirSync(dir) : [])
 
 const withPageData = (project) => ({
   ...project,
-  versions: project.docsComponent ? documentedVersions(readdir, path.join(OUT, 'en'), project.docsComponent) : [],
+  versions: project.docsComponent ? documentedVersions(readdir, OUT, project.docsComponent) : [],
 })
 
 const feedOf = (projects) =>

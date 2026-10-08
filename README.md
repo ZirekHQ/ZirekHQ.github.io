@@ -41,4 +41,4 @@ If this repository saves you time and effort, please consider supporting it!
 
 ## Landing page
 
-`npm run build` also writes the landing page at `/`. `scripts/build-home.js` reads `data/projects.json`, fetches repository and release data from GitHub (set `GH_TOKEN` to avoid rate limits), and falls back to `data/snapshot.json` when GitHub is unreachable. Each build with live data rewrites the snapshot; commit it when it changes. Docs stay under `/en/`.
+`npm run build` also writes the landing page at `/`. `scripts/build-home.js` reads `data/projects.json`, fetches repository and release data from GitHub (set `GH_TOKEN` to avoid rate limits), and falls back to `data/snapshot.json` when GitHub is unreachable. Each build with live data rewrites the snapshot; commit it when it changes. The docs sit at the site root (`/home/`, `/<component>/<version>/`). `scripts/redirects.js` writes a small redirect page under `/en/` for every docs page, so links from before the move keep working; delete it once they have settled.
