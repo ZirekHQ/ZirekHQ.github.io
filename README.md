@@ -19,7 +19,7 @@ adding a `content.sources` entry in `antora-playbook.yml` and a `docs/antora.yml
 - Every branch (`main`) publishes as **Next**, a prerelease. It is the default only while a component has no release.
 - Only the newest `vX.Y.Z` tag of each major line publishes, as `X.x`. Below 1.0 each minor counts as a line (`0.2.x`).
 - Other tags, such as betas (`v4.0.2-beta.1`), are skipped.
-- `home` is unversioned in both playbooks. The Kurmanji site translates `main` only, so it shows Next alone.
+- `home` is unversioned.
 
 Antora fails on a tag without `docs/`. When onboarding a repo, negate its older tags in `antora-playbook.yml` (e.g. `'!v1.5.*'`).
 
