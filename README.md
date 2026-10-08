@@ -38,3 +38,7 @@ If this repository saves you time and effort, please consider supporting it!
 - ⭐ [Star on GitHub](https://github.com/ZirekHQ/ZirekHQ.github.io)
 - 🐦 [Share on Twitter](https://twitter.com/intent/tweet?text=ZirekHQ%20-%20screen%20readers%20and%20local%20neural%20TTS%20for%20under-served%20languages&url=https%3A%2F%2Fgithub.com%2FZirekHQ%2FZirekHQ.github.io)
 - 💖 [Support on Open Collective](https://opencollective.com/zirek)
+
+## Landing page
+
+`npm run build` also writes the landing page at `/`. `scripts/build-home.js` reads `data/projects.json`, fetches repository and release data from GitHub (set `GH_TOKEN` to avoid rate limits), and falls back to `data/snapshot.json` when GitHub is unreachable. Each build with live data rewrites the snapshot; commit it when it changes. Docs stay under `/en/`.
