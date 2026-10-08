@@ -1,0 +1,71 @@
+[
+  {
+    "slug": "dengjen-nvda",
+    "name": "dengjen-nvda",
+    "tagline": "Dengjen Neural Voices: fast, local neural text-to-speech voices for NVDA.",
+    "logo": "dengjen-nvda-logo.png",
+    "group": "screen-readers",
+    "docsComponent": "dengjen-nvda",
+    "getUrl": "https://github.com/ZirekHQ/dengjen-nvda/releases/latest",
+    "getLabel": "Download the add-on"
+  },
+  {
+    "slug": "nvda-addon-testkit",
+    "name": "nvda-addon-testkit",
+    "tagline": "End-to-end tests for NVDA add-ons, in CI.",
+    "logo": "nvda-addon-testkit-logo.png",
+    "group": "screen-readers",
+    "docsComponent": "nvda-addon-testkit",
+    "getUrl": "https://github.com/ZirekHQ/nvda-addon-testkit/releases",
+    "getLabel": "Releases"
+  },
+  {
+    "slug": "dengjen-tts",
+    "name": "dengjen-tts",
+    "tagline": "Cross-platform inference engine for neural TTS.",
+    "logo": "dengjen-tts-logo.png",
+    "group": "speech-synthesis",
+    "docsComponent": "dengjen-tts",
+    "getUrl": "https://github.com/ZirekHQ/dengjen-tts/releases",
+    "getLabel": "Releases"
+  },
+  {
+    "slug": "dengjen-piper-rs",
+    "name": "dengjen-piper-rs",
+    "tagline": "Use Piper TTS models directly from Rust.",
+    "logo": "dengjen-piper-rs-logo.png",
+    "group": "speech-synthesis",
+    "docsComponent": "piper-rs",
+    "getUrl": "https://github.com/ZirekHQ/dengjen-piper-rs/releases",
+    "getLabel": "Releases"
+  },
+  {
+    "slug": "dengjen-tts-go",
+    "name": "dengjen-tts-go",
+    "tagline": "Go bindings for dengjen-tts, with prebuilt binaries.",
+    "logo": "dengjen-tts-go-logo.png",
+    "group": "speech-synthesis",
+    "getUrl": "https://github.com/ZirekHQ/dengjen-tts-go/releases",
+    "getLabel": "Releases"
+  },
+  {
+    "slug": "dengjen-tashkeel",
+    "name": "dengjen-tashkeel",
+    "tagline": "Arabic diacritics (tashkeel) with Rust and NLP models.",
+    "logo": "dengjen-tashkeel-logo.png",
+    "group": "speech-synthesis",
+    "docsComponent": "dengjen-tashkeel",
+    "getUrl": "https://github.com/ZirekHQ/dengjen-tashkeel/releases",
+    "getLabel": "Releases"
+  },
+  {
+    "slug": "dengjen-werger",
+    "name": "dengjen-werger",
+    "tagline": "Peer review and commitment for volunteer translation.",
+    "logo": "dengjen-werger-logo.png",
+    "group": "translation",
+    "docsComponent": "dengjen-werger",
+    "getUrl": "https://github.com/ZirekHQ/dengjen-werger",
+    "getLabel": "Source"
+  }
+]

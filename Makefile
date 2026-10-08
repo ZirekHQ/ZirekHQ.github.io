@@ -14,8 +14,7 @@ clean:
 build:
 	@echo "Building documentation"
 	cd $(ROOT_DIR) && npm i
-	cd $(ROOT_DIR) && npx antora --fetch antora-playbook.yml
-	cd $(ROOT_DIR) && cp site-redirect.html build/site/index.html
+	cd $(ROOT_DIR) && npm run build
 	cd $(ROOT_DIR) && cp serve.json build/site/serve.json
 
 serve:

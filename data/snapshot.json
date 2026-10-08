@@ -1,0 +1,221 @@
+[
+  {
+    "description": "Dengjen Neural Voices — fast, local neural text-to-speech voices for NVDA. Maintenance continuation of mush42/sonata-nvda.",
+    "language": "Python",
+    "license": "GPL-2.0",
+    "stars": 20,
+    "openIssues": 5,
+    "topics": [],
+    "defaultBranch": "main",
+    "releases": [
+      {
+        "tag": "v4.1.0",
+        "date": "2026-09-20T17:19:13Z",
+        "url": "https://github.com/ZirekHQ/dengjen-nvda/releases/tag/v4.1.0",
+        "excerpt": "What's Changed chore: rename COPYING.txt to LICENSE for GitHub/tooling convention by @austek in ci: close ungated release override, add release-gate single entry point by @austek in fix: resolve corr…"
+      },
+      {
+        "tag": "v4.0.1",
+        "date": "2026-08-25T12:35:30Z",
+        "url": "https://github.com/ZirekHQ/dengjen-nvda/releases/tag/v4.0.1",
+        "excerpt": "- fix: correct declared minimum NVDA version to 2026.1 @austek (125) - chore: update repo URLs for zirekhq org migration @austek (121) - chore: ignore uv.lock @austek (122) - docs: add CLAUDE.md @aus…"
+      },
+      {
+        "tag": "v4.0.0",
+        "date": "2026-08-10T21:53:48Z",
+        "url": "https://github.com/ZirekHQ/dengjen-nvda/releases/tag/v4.0.0",
+        "excerpt": "SHA256: fe69a82f4eec02ca9df49542113c34d559719da8c89588482e9bb581e2146b14 dengjen_neural_voices-4.0.0.nvda-addon"
+      }
+    ],
+    "slug": "dengjen-nvda",
+    "name": "dengjen-nvda",
+    "tagline": "Dengjen Neural Voices: fast, local neural text-to-speech voices for NVDA.",
+    "logo": "dengjen-nvda-logo.png",
+    "group": "screen-readers",
+    "docsComponent": "dengjen-nvda",
+    "getUrl": "https://github.com/ZirekHQ/dengjen-nvda/releases/latest",
+    "getLabel": "Download the add-on"
+  },
+  {
+    "description": "End-to-end testing for NVDA add-ons, against a real NVDA, in CI.",
+    "language": "Python",
+    "license": "GPL-2.0",
+    "stars": 10,
+    "openIssues": 0,
+    "topics": [],
+    "defaultBranch": "main",
+    "releases": [
+      {
+        "tag": "v1.1.0",
+        "date": "2026-09-19T21:59:01Z",
+        "url": "https://github.com/ZirekHQ/nvda-addon-testkit/releases/tag/v1.1.0",
+        "excerpt": "What's Changed docs: link Open Collective in support banner by @austek in feat: add exec_nowait/simulate_modal for dismissing real modal dialogs by @austek in feat: add a sentence-like test DSL over…"
+      },
+      {
+        "tag": "v1.0.0",
+        "date": "2026-09-18T14:06:20Z",
+        "url": "https://github.com/ZirekHQ/nvda-addon-testkit/releases/tag/v1.0.0",
+        "excerpt": "What's Changed Close gaps from issue 34: exec_in_nvda, restart_harness/restart_nvda, main-thread start signal by @austek in Full Changelog:"
+      },
+      {
+        "tag": "v0.1.3",
+        "date": "2026-09-17T17:56:02Z",
+        "url": "https://github.com/ZirekHQ/nvda-addon-testkit/releases/tag/v0.1.3",
+        "excerpt": "What's Changed ci: fix publish job silently skipping and bad version string by @austek in ci: align release pipeline with sibling repo conventions by @austek in ci: collapse release.yml back into pre…"
+      },
+      {
+        "tag": "v0.1.2",
+        "date": "2026-09-17T06:51:04Z",
+        "url": "https://github.com/ZirekHQ/nvda-addon-testkit/releases/tag/v0.1.2",
+        "excerpt": "- Expand Antora docs with a tutorial, CI guide, and troubleshooting page @austek (29) - ci: fix publish.yml gate firing twice when called via release.yml @austek (27) - ci: prep repo for GitHub Marke…"
+      },
+      {
+        "tag": "v0.1.1",
+        "date": "2026-08-10T17:06:23Z",
+        "url": "https://github.com/ZirekHQ/nvda-addon-testkit/releases/tag/v0.1.1",
+        "excerpt": "🐛 Fixes - Fix the published wheel/sdist missing the spy add-on bundle, so every real (non-fake) provision() was failing require_spy_bundle() on any platform including Windows (12)"
+      }
+    ],
+    "slug": "nvda-addon-testkit",
+    "name": "nvda-addon-testkit",
+    "tagline": "End-to-end tests for NVDA add-ons, in CI.",
+    "logo": "nvda-addon-testkit-logo.png",
+    "group": "screen-readers",
+    "docsComponent": "nvda-addon-testkit",
+    "getUrl": "https://github.com/ZirekHQ/nvda-addon-testkit/releases",
+    "getLabel": "Releases"
+  },
+  {
+    "description": "A cross-platform inference engine for neural TTS models.",
+    "language": "Rust",
+    "license": "GPL-3.0",
+    "stars": 13,
+    "openIssues": 1,
+    "topics": [],
+    "defaultBranch": "main",
+    "releases": [
+      {
+        "tag": "v2.1.1",
+        "date": "2026-10-07T16:47:21Z",
+        "url": "https://github.com/ZirekHQ/dengjen-tts/releases/tag/v2.1.1",
+        "excerpt": "What's Changed fix: load Kokoro configs with j voices when no Japanese dictionary is set by @austek in chore: bump workspace version - 2.1.1 by @github-actionsbot in Full Changelog:"
+      },
+      {
+        "tag": "v2.1.0",
+        "date": "2026-10-07T14:49:18Z",
+        "url": "https://github.com/ZirekHQ/dengjen-tts/releases/tag/v2.1.0",
+        "excerpt": "What's Changed chore(deps): update ghcr.io/zizmorcore/zizmor docker tag to v1.30.1 by @renovatebot in chore(deps): update non-major dependencies by @renovatebot in chore(deps): update pre-commit hook…"
+      }
+    ],
+    "slug": "dengjen-tts",
+    "name": "dengjen-tts",
+    "tagline": "Cross-platform inference engine for neural TTS.",
+    "logo": "dengjen-tts-logo.png",
+    "group": "speech-synthesis",
+    "docsComponent": "dengjen-tts",
+    "getUrl": "https://github.com/ZirekHQ/dengjen-tts/releases",
+    "getLabel": "Releases"
+  },
+  {
+    "description": "Use piper TTS models in Rust",
+    "language": "Rust",
+    "license": "NOASSERTION",
+    "stars": 11,
+    "openIssues": 0,
+    "topics": [],
+    "defaultBranch": "main",
+    "releases": [],
+    "slug": "dengjen-piper-rs",
+    "name": "dengjen-piper-rs",
+    "tagline": "Use Piper TTS models directly from Rust.",
+    "logo": "dengjen-piper-rs-logo.png",
+    "group": "speech-synthesis",
+    "docsComponent": "piper-rs",
+    "getUrl": "https://github.com/ZirekHQ/dengjen-piper-rs/releases",
+    "getLabel": "Releases"
+  },
+  {
+    "description": "Go bindings for dengjen-tts, with prebuilt native binaries (generated release — do not hand-edit)",
+    "language": "Go",
+    "license": "GPL-3.0",
+    "stars": 0,
+    "openIssues": 0,
+    "topics": [],
+    "defaultBranch": "main",
+    "releases": [],
+    "slug": "dengjen-tts-go",
+    "name": "dengjen-tts-go",
+    "tagline": "Go bindings for dengjen-tts, with prebuilt binaries.",
+    "logo": "dengjen-tts-go-logo.png",
+    "group": "speech-synthesis",
+    "getUrl": "https://github.com/ZirekHQ/dengjen-tts-go/releases",
+    "getLabel": "Releases"
+  },
+  {
+    "description": "Add Arabic diacritics (tashkeel/harakat) using Rust/Python/C++/WASM and NLP models",
+    "language": "Rust",
+    "license": "Apache-2.0",
+    "stars": 10,
+    "openIssues": 1,
+    "topics": [],
+    "defaultBranch": "main",
+    "releases": [
+      {
+        "tag": "v1.6.6",
+        "date": "2026-09-16T22:39:32Z",
+        "url": "https://github.com/ZirekHQ/dengjen-tashkeel/releases/tag/v1.6.6",
+        "excerpt": "dengjen-tashkeel-capi 1.6.6 Download dengjen-tashkeel-capi 1.6.6 | File | Platform | Checksum | |--------|----------|----------| | dengjen-tashkeel-capi-aarch64-apple-darwin.tar.xz | Apple Silicon ma…"
+      },
+      {
+        "tag": "v1.6.2",
+        "date": "2026-09-14T02:03:35Z",
+        "url": "https://github.com/ZirekHQ/dengjen-tashkeel/releases/tag/v1.6.2",
+        "excerpt": "dengjen-tashkeel-cli 1.6.2 Install dengjen-tashkeel-cli 1.6.2 Install prebuilt binaries via shell script sh curl --proto '=https' --tlsv1.2 -LsSf | sh Install prebuilt binaries via powershell script…"
+      },
+      {
+        "tag": "v1.5.3",
+        "date": "2026-09-03T14:40:41Z",
+        "url": "https://github.com/ZirekHQ/dengjen-tashkeel/releases/tag/v1.5.3",
+        "excerpt": "dengjen-tashkeel-cli 1.5.3 Install dengjen-tashkeel-cli 1.5.3 Install prebuilt binaries via shell script sh curl --proto '=https' --tlsv1.2 -LsSf | sh Install prebuilt binaries via powershell script…"
+      },
+      {
+        "tag": "v1.5.2",
+        "date": "2026-09-03T11:37:44Z",
+        "url": "https://github.com/ZirekHQ/dengjen-tashkeel/releases/tag/v1.5.2",
+        "excerpt": "dengjen-tashkeel-cli 1.5.2 Install dengjen-tashkeel-cli 1.5.2 Install prebuilt binaries via shell script sh curl --proto '=https' --tlsv1.2 -LsSf | sh Install prebuilt binaries via powershell script…"
+      },
+      {
+        "tag": "v1.5.1",
+        "date": "2026-08-24T14:05:43Z",
+        "url": "https://github.com/ZirekHQ/dengjen-tashkeel/releases/tag/v1.5.1",
+        "excerpt": "Install tashkeel 1.5.1 Install prebuilt binaries via shell script sh curl --proto '=https' --tlsv1.2 -LsSf | sh Install prebuilt binaries via powershell script sh powershell -ExecutionPolicy Bypass -…"
+      }
+    ],
+    "slug": "dengjen-tashkeel",
+    "name": "dengjen-tashkeel",
+    "tagline": "Arabic diacritics (tashkeel) with Rust and NLP models.",
+    "logo": "dengjen-tashkeel-logo.png",
+    "group": "speech-synthesis",
+    "docsComponent": "dengjen-tashkeel",
+    "getUrl": "https://github.com/ZirekHQ/dengjen-tashkeel/releases",
+    "getLabel": "Releases"
+  },
+  {
+    "description": "Commitment and peer-review layer that turns volunteer translation into a sustained habit — built first for Kurmanji accessibility translation on Crowdin, designed for any language and platform",
+    "language": "Java",
+    "license": "GPL-3.0",
+    "stars": 7,
+    "openIssues": 22,
+    "topics": [],
+    "defaultBranch": "main",
+    "releases": [],
+    "slug": "dengjen-werger",
+    "name": "dengjen-werger",
+    "tagline": "Peer review and commitment for volunteer translation.",
+    "logo": "dengjen-werger-logo.png",
+    "group": "translation",
+    "docsComponent": "dengjen-werger",
+    "getUrl": "https://github.com/ZirekHQ/dengjen-werger",
+    "getLabel": "Source"
+  }
+]

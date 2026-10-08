@@ -27,11 +27,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Test
+        run: npm test
+
       - name: Build site
         run: npm run build
-
-      - name: Write language-root redirect
-        run: cp site-redirect.html build/site/index.html
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Optional: swap Lunr for Pagefind's WASM-based chunked index. Pagefind
       # post-processes the built site rather than running as an Antora
