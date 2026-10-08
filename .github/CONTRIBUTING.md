@@ -20,35 +20,23 @@ change — that often surfaces a simpler fix.
 
 ## Development setup
 
-Requires Node.js and [po4a](https://po4a.org/) (e.g. `sudo apt-get install po4a`). From
-the repo root:
+Requires Node.js. From the repo root:
 
 ```bash
 make install   # npm i
-make build     # po4a, then two Antora builds: English (antora-playbook.yml) and
-                # Kurmanji (antora-playbook-kmr.yml), into build/site/en and build/site/kmr
+make build     # Antora build (antora-playbook.yml) into build/site
 make serve     # serve build/site locally
 ```
 
 `make build` fetches every component repo listed in `antora-playbook.yml`'s
-`content.sources` (English) and clones them again for po4a to translate (Kurmanji), so
-the first build needs network access.
+`content.sources`, so the first build needs network access.
 
 ## Adding a new component
 
 Each product repo owns its own docs as an Antora component (`docs/antora.yml` +
 `docs/modules/ROOT/pages/*.adoc`). To onboard a repo here, add a `content.sources`
 entry for it in `antora-playbook.yml` — see the existing `dengjen-tts` and
-`dengjen-nvda` entries for the shape. For it to also build in Kurmanji, add the
-matching entries in `antora-playbook-kmr.yml`, `po4a.cfg`, and the `Makefile`/
-`.github/workflows/deploy.yml` staging steps — see the existing entries for the shape.
-
-## Working on translations
-
-The Kurmanji (`kmr`) translation pipeline (po4a-generated) is documented separately in
-[`TRANSLATING.md`](../TRANSLATING.md) and, in more depth, on the published
-[Translating the docs](../docs/modules/ROOT/pages/translating.adoc) page. That's also
-where to look if you want to add support for another language.
+`dengjen-nvda` entries for the shape.
 
 ## Submitting a PR
 
