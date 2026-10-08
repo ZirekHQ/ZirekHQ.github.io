@@ -1,8 +1,8 @@
-const THEMES = ['dark', 'light']
+const THEMES = new Set(['dark', 'light'])
 
 const currentTheme = () => {
-  const set = document.documentElement.getAttribute('data-theme')
-  if (THEMES.includes(set)) return set
+  const set = document.documentElement.dataset.theme
+  if (THEMES.has(set)) return set
   return matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 }
 
@@ -18,7 +18,7 @@ const initThemeToggle = () => {
   sync()
   button.addEventListener('click', () => {
     const next = currentTheme() === 'dark' ? 'light' : 'dark'
-    document.documentElement.setAttribute('data-theme', next)
+    document.documentElement.dataset.theme = next
     saveTheme(next)
     sync()
   })

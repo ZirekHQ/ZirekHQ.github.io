@@ -6,6 +6,7 @@ const esc = (text = '') => String(text).replace(/[&<>"']/g, (c) => ESCAPES[c])
 const SITE = 'https://zirekhq.github.io'
 const ORG = 'https://github.com/ZirekHQ'
 const ORG_BLOB = `${ORG}/.github/blob/main`
+const CONTRIBUTING_URL = `${ORG_BLOB}/CONTRIBUTING.md`
 const DESCRIPTION = 'Speech and screen-reader software for under-served languages.'
 const MISSION = "Software that reads and speaks the languages large vendors don't get around to."
 const LEAD = 'Two strands that meet: screen-reader support for under-served languages, and the local neural speech synthesis that makes a screen reader usable in the first place.'
@@ -65,9 +66,12 @@ const feedItem = (item) => `
 <li><strong>${esc(item.project)} ${esc(item.tag)}</strong> <time datetime="${esc(item.date)}">${esc(dateOf(item.date))}</time>
   <p>${esc(item.excerpt)}</p><a href="${esc(item.url)}">Release notes</a></li>`
 
+const feedList = (feed) =>
+  feed.length === 0 ? '<p>No releases yet.</p>' : `<ul class="feed">${feed.map(feedItem).join('')}</ul>`
+
 const releasesSection = (feed) => `
 <section id="releases" aria-labelledby="releases-title"><h2 id="releases-title">Latest releases</h2>
-${feed.length === 0 ? '<p>No releases yet.</p>' : `<ul class="feed">${feed.map(feedItem).join('')}</ul>`}</section>`
+${feedList(feed)}</section>`
 
 const helpSection = () => `
 <section id="help-wanted" aria-labelledby="help-title"><h2 id="help-title">Help wanted</h2>
@@ -77,7 +81,7 @@ const helpSection = () => `
 <p>On the synthesis side the shortage is different:</p>
 <ul><li><strong>Windows testers</strong> for dengjen-nvda, especially against current NVDA releases.</li>
 <li><strong>Co-maintainers.</strong> The add-on has one maintainer, which is one too few.</li></ul>
-<p>Open an issue on the relevant repository, and read the ${link(`${ORG_BLOB}/CONTRIBUTING.md`, 'contribution guide')}. You do not need to write code to help.</p></section>`
+<p>Open an issue on the relevant repository, and read the ${link(CONTRIBUTING_URL, 'contribution guide')}. You do not need to write code to help.</p></section>`
 
 const supportSection = () => `
 <section id="support" aria-labelledby="support-title"><h2 id="support-title">Support the work</h2>
@@ -90,7 +94,9 @@ const COMMUNITY = [
   ['Support', `${ORG_BLOB}/SUPPORT.md`],
 ]
 
-const linkList = (links) => `<ul class="links">${links.map(([title, url]) => `<li>${link(url, title)}</li>`).join('')}</ul>`
+const linkItem = ([title, url]) => `<li>${link(url, title)}</li>`
+
+const linkList = (links) => `<ul class="links">${links.map(linkItem).join('')}</ul>`
 
 const communitySection = () =>
   `<section id="community" aria-labelledby="community-title"><h2 id="community-title">Community</h2>${linkList(COMMUNITY)}</section>`
