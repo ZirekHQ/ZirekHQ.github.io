@@ -39,7 +39,6 @@
 body { margin: 0; background: var(--bg); color: var(--fg); font: 1rem/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
 a { color: var(--link); }
 a:focus-visible, button:focus-visible, main:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
-main:focus { outline: none; }
 img { max-width: 100%; height: auto; }
 
 .skip-link { position: absolute; left: 1rem; top: -4rem; background: var(--accent); color: var(--on-accent); padding: .5rem 1rem; z-index: 10; }

@@ -2,6 +2,8 @@
 
 const API = 'https://api.github.com'
 const EXCERPT_MAX = 200
+const RELEASES_FETCHED = 30
+const RELEASES_KEPT = 5
 const REQUEST_TIMEOUT_MS = 15000
 
 const headersFor = (token) => ({
@@ -29,7 +31,7 @@ const excerpt = (body = '') => {
   return text.length > EXCERPT_MAX ? `${text.slice(0, EXCERPT_MAX - 1).trimEnd()}…` : text
 }
 
-const toRelease = (r) => ({ tag: r.tag_name, date: r.published_at, url: r.html_url, excerpt: excerpt(r.body) })
+const toRelease = (r) => ({ tag: r.tag_name, date: r.published_at, url: r.html_url, excerpt: excerpt(r.body ?? '') })
 
 const STABLE_TAG = /^v\d+\.\d+\.\d+$/
 
@@ -59,11 +61,11 @@ const fetchRepo = async (fetchFn, slug, token) => {
   const base = `${API}/repos/ZirekHQ/${slug}`
   const [repo, list, latest] = await Promise.all([
     getJson(fetchFn, base, token),
-    getJson(fetchFn, `${base}/releases?per_page=5`, token),
+    getJson(fetchFn, `${base}/releases?per_page=${RELEASES_FETCHED}`, token),
     getOptional(fetchFn, `${base}/releases/latest`, token),
   ])
   const stableLatest = latest && isPublished(latest) ? latest : undefined
-  return { ...repoFields(repo), releases: withLatestFirst(stableLatest, list.filter(isPublished)).map(toRelease) }
+  return { ...repoFields(repo), releases: withLatestFirst(stableLatest, list.filter(isPublished)).slice(0, RELEASES_KEPT).map(toRelease) }
 }
 
 module.exports = { fetchRepo }
