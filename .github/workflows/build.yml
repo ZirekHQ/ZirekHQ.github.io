@@ -28,7 +28,7 @@ jobs:
         run: npm install
 
       - name: Build site
-        run: npx antora --fetch antora-playbook.yml
+        run: npm run build
 
       - name: Write language-root redirect
         run: cp site-redirect.html build/site/index.html
