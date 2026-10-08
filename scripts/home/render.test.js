@@ -25,12 +25,12 @@ test('groups projects under their headings and omits empty groups', () => {
 test('a card carries the slug as its anchor and links the latest stable docs version', () => {
   const html = renderPage(model([project()]))
   assert.match(html, /<article class="card" id="dengjen-nvda">/)
-  assert.match(html, /href="\/en\/dengjen-nvda\/4\.x\/">Documentation</)
+  assert.match(html, /href="\/dengjen-nvda\/4\.x\/">Documentation</)
 })
 
 test('only unreleased docs fall back to next', () => {
   const html = renderPage(model([project({ versions: ['next'] })]))
-  assert.match(html, /href="\/en\/dengjen-nvda\/next\/">Documentation</)
+  assert.match(html, /href="\/dengjen-nvda\/next\/">Documentation</)
 })
 
 test('no Documentation link without a docs component or without built versions', () => {
@@ -95,4 +95,11 @@ test('never shows the raw NOASSERTION license', () => {
 test('card heading has no trailing space without a release badge', () => {
   const html = renderPage(model([project({ slug: 'dengjen-tts-go', name: 'dengjen-tts-go', releases: [] })]))
   assert.match(html, /<h4>dengjen-tts-go<\/h4>/)
+})
+
+test('docs links and the nav point at the site root, not a language prefix', () => {
+  const html = renderPage(model(configured))
+  assert.match(html, /<a href="\/home\/">Docs<\/a>/)
+  assert.match(html, /href="\/home\/">Read the docs</)
+  assert.doesNotMatch(html, /href="\/en\//)
 })

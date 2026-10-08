@@ -87,7 +87,7 @@ antora:
 
 output:
   clean: true
-  dir: ./build/site/en
+  dir: ./build/site
 
 asciidoc:
   attributes:

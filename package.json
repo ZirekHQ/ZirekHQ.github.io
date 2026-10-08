@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Aggregated documentation site for the ZirekHQ organization (Antora)",
   "scripts": {
-    "build": "antora --fetch antora-playbook.yml && npm run build:home",
+    "build": "antora --fetch antora-playbook.yml && npm run build:home && npm run build:redirects",
     "build:home": "node scripts/build-home.js",
+    "build:redirects": "node scripts/redirects.js",
     "serve": "serve build/site",
     "test": "node --test \"scripts/**/*.test.js\""
   },
