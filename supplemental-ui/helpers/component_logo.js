@@ -10,5 +10,5 @@ const LOGOS = {
 }
 
 module.exports = function componentLogo (name) {
-  return LOGOS[name]
+  return Object.hasOwn(LOGOS, name) ? LOGOS[name] : undefined
 }
