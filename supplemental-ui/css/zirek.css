@@ -1,0 +1,24 @@
+/* ZirekHQ palette over the hominux docs UI bundle (vars.css). Plain CSS: supplemental files skip PostCSS. */
+:root {
+  --color-accent-3: #006a85;
+  --link-font-color: #006a85;
+  --link_hover-font-color: #00536a;
+  --mark-background-color: #cdf3fb;
+  --badge-background: #d4f4fc;
+  --badge-font-color: #0b0f19;
+  --selected-background-color: #0b0f19;
+  --navbar-background: #0b0f19;
+  --navbar-menu-background: #0b0f19;
+  --nav-link-hover-font-color: #00536a;
+}
+
+html.dark-theme {
+  --color-accent-3: #2fa8c7;
+  --link-font-color: #00d2ff;
+  --link_hover-font-color: #7fe8ff;
+  --mark-background-color: #cdf3fb;
+  --badge-background: #00d2ff;
+  --badge-font-color: #0b0f19;
+  --selected-background-color: #00d2ff;
+  --nav-link-hover-font-color: #00d2ff;
+}
