@@ -29,9 +29,11 @@ const block = (css, selector) => {
   throw new Error(`unterminated block for ${selector}`)
 }
 
+const withoutComments = (css) => css.replace(/\/\*[\s\S]*?\*\//g, '')
+
 const declarations = (body) =>
   Object.fromEntries(
-    [...body.matchAll(/^\s*--([\w-]+):\s*(.+?);\s*$/gm)].map((m) => [m[1], m[2].trim()])
+    [...withoutComments(body).matchAll(/^\s*--([\w-]+):\s*(.+?);\s*$/gm)].map((m) => [m[1], m[2].trim()])
   )
 
 const NAMED = { white: '#ffffff', black: '#000000' }
@@ -78,6 +80,9 @@ const PAIRS = [
   ['abstract-font-color', 'abstract-background'],
 ]
 
+// Hover backgrounds are literals in the bundle's nav.css (.nav-link:hover and .dark-theme .nav-link:hover).
+const NAV_HOVER_BACKGROUND = { light: '#ebf2f2', dark: '#262a2d' }
+
 test('the ZirekHQ overlay keeps every token pair at 4.5:1 over the published bundle', async () => {
   const vars = await bundleVars()
   const overlay = read('supplemental-ui/css/zirek.css')
@@ -88,7 +93,15 @@ test('the ZirekHQ overlay keeps every token pair at 4.5:1 over the published bun
     ...declarations(block(overlay, 'html.dark-theme {')),
   }
   const failures = Object.entries({ light, dark }).flatMap(([name, theme]) =>
-    PAIRS.map(([fg, bg]) => ({ name, fg, bg, ratio: ratio(hex(theme, fg), hex(theme, bg)) }))
+    [
+      ...PAIRS.map(([fg, bg]) => ({ name, fg, bg, ratio: ratio(hex(theme, fg), hex(theme, bg)) })),
+      {
+        name,
+        fg: 'nav-link-hover-font-color',
+        bg: NAV_HOVER_BACKGROUND[name],
+        ratio: ratio(hex(theme, 'nav-link-hover-font-color'), NAV_HOVER_BACKGROUND[name]),
+      },
+    ]
       .filter((p) => p.ratio < 4.5)
       .map((p) => `${p.name}: ${p.fg} on ${p.bg} is ${p.ratio.toFixed(2)}:1`)
   )
