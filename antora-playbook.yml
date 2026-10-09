@@ -1,6 +1,13 @@
 site:
   title: ZirekHQ
   url: https://zirekhq.github.io
+  keys:
+    logo: zirekhq-logo.png
+    social_image: social-preview.png
+    github_url: https://github.com/ZirekHQ
+    community_url: https://zirekhq.github.io/#help-wanted
+    own_links: zirekhq.github.io,github.com/ZirekHQ
+    extra_css: css/zirek.css
   start_page: home::index.adoc
   robots: allow
 
@@ -75,7 +82,7 @@ content:
 
 ui:
   bundle:
-    url: https://github.com/ZirekHQ/docs-ui-bundle/releases/download/bundle-latest/ui-bundle.zip
+    url: https://github.com/hominux/docs-ui-bundle/releases/download/latest/ui-bundle.zip
     snapshot: true
   supplemental_files: ./supplemental-ui
 
