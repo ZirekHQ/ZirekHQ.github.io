@@ -37,6 +37,13 @@ for (const [name, theme] of [['light', { ...light }], ['dark', { ...light, ...da
   })
 }
 
+for (const [name, theme] of [['light', { ...light }], ['dark', { ...light, ...dark }]]) {
+  test(`${name} theme control borders meet 3:1 (WCAG 1.4.11)`, () => {
+    const value = ratio(theme['control-border'], theme.bg)
+    assert.ok(value >= 3, `control-border on bg: ${value.toFixed(2)}`)
+  })
+}
+
 test('prefers-color-scheme dark matches data-theme dark', () => {
   assert.deepEqual(media, dark)
 })
