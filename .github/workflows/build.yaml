@@ -1,8 +1,8 @@
 name: Build docs
 
 # Reusable: builds the site and uploads it as a plain build
-# artifact. Called by ci.yml (on every PR, as a
-# status check) and deploy.yml (on push to main, before publishing). Keeping
+# artifact. Called by ci.yaml (on every PR, as a
+# status check) and deploy.yaml (on push to main, before publishing). Keeping
 # this in one place means adding a component only needs updating here, not
 # separately in a PR-check copy that can drift out of sync.
 
@@ -37,7 +37,7 @@ jobs:
 
       # Optional: swap Lunr for Pagefind's WASM-based chunked index. Pagefind
       # post-processes the built site rather than running as an Antora
-      # extension, so drop `@antora/lunr-extension` from antora-playbook.yml
+      # extension, so drop `@antora/lunr-extension` from antora-playbook.yaml
       # and the search partial in supplemental-ui when switching to it.
       # - name: Index with Pagefind
       #   run: npx pagefind --site build/site
