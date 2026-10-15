@@ -24,18 +24,18 @@ Requires Node.js. From the repo root:
 
 ```bash
 make install   # npm i
-make build     # Antora build (antora-playbook.yml) into build/site
+make build     # Antora build (antora-playbook.yaml) into build/site
 make serve     # serve build/site locally
 ```
 
-`make build` fetches every component repo listed in `antora-playbook.yml`'s
+`make build` fetches every component repo listed in `antora-playbook.yaml`'s
 `content.sources`, so the first build needs network access.
 
 ## Adding a new component
 
 Each product repo owns its own docs as an Antora component (`docs/antora.yml` +
 `docs/modules/ROOT/pages/*.adoc`). To onboard a repo here, add a `content.sources`
-entry for it in `antora-playbook.yml` — see the existing `dengjen-tts` and
+entry for it in `antora-playbook.yaml` — see the existing `dengjen-tts` and
 `dengjen-nvda` entries for the shape.
 
 ## Submitting a PR
@@ -48,6 +48,6 @@ entry for it in `antora-playbook.yml` — see the existing `dengjen-tts` and
 
 ## Deploying
 
-Deployment is automatic: pushing to `main` runs `workflows/deploy.yml`, which
+Deployment is automatic: pushing to `main` runs `workflows/deploy.yaml`, which
 builds the site with Antora and publishes it to GitHub Pages. There's no separate
 release/tagging step for this repo.

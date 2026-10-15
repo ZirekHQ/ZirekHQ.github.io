@@ -9,8 +9,8 @@ Each source repo owns its own docs under `docs/` (an Antora component: `docs/ant
 `docs/modules/ROOT/pages/*.adoc`). This repo only holds the playbook, UI, and build tooling
 that stitches those components into one published site.
 
-Currently a spike covering the components listed in `antora-playbook.yml`. Add a repo by
-adding a `content.sources` entry in `antora-playbook.yml` and a `docs/antora.yml` in that repo.
+Currently a spike covering the components listed in `antora-playbook.yaml`. Add a repo by
+adding a `content.sources` entry in `antora-playbook.yaml` and a `docs/antora.yml` in that repo.
 
 ## Versions
 
@@ -21,11 +21,11 @@ adding a `content.sources` entry in `antora-playbook.yml` and a `docs/antora.yml
 - Other tags, such as betas (`v4.0.2-beta.1`), are skipped.
 - `home` is unversioned.
 
-Antora fails on a tag without `docs/`. When onboarding a repo, negate its older tags in `antora-playbook.yml` (e.g. `'!v1.5.*'`).
+Antora fails on a tag without `docs/`. When onboarding a repo, negate its older tags in `antora-playbook.yaml` (e.g. `'!v1.5.*'`).
 
 ```
 make install   # npm i
-make build     # antora --fetch antora-playbook.yml
+make build     # antora --fetch antora-playbook.yaml
 make serve     # serve build/site locally
 ```
 
