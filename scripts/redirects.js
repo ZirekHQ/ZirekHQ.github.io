@@ -10,9 +10,15 @@ const isDocsPage = (file) => file.endsWith('.html') && !SKIPPED.some((rx) => rx.
 
 const targetOf = (file) => (file.endsWith('/index.html') ? `/${file.slice(0, -'index.html'.length)}` : `/${file}`)
 
+const legacyComponentRedirects = (files) =>
+  files
+    .filter((file) => isDocsPage(file) && file.startsWith('dengjen/'))
+    .map((file) => ({ stub: file.replace(/^dengjen\//, 'dengjen-tts/'), target: targetOf(file) }))
+
 const redirectsFor = (files) => [
   { stub: 'en/index.html', target: '/' },
   ...files.filter(isDocsPage).map((file) => ({ stub: `en/${file}`, target: targetOf(file) })),
+  ...legacyComponentRedirects(files),
 ]
 
 const stubHtml = (target, site = SITE) => `<!doctype html>
@@ -35,7 +41,7 @@ const main = () => {
     fs.mkdirSync(path.dirname(path.join(root, stub)), { recursive: true })
     fs.writeFileSync(path.join(root, stub), stubHtml(target))
   })
-  console.log(`wrote ${redirects.length} redirect stubs under /en/`)
+  console.log(`wrote ${redirects.length} redirect stubs`)
 }
 
 if (require.main === module) main()

@@ -2,7 +2,7 @@
 
 This repo aggregates the ZirekHQ organization's docs into one [Antora](https://antora.org/)
 site. It only holds the playbook, UI overrides, and build tooling — each product repo
-(`dengjen-tts`, `dengjen-nvda`, ...) owns its own content under its own `docs`.
+(`dengjen`, `dengjen-nvda`, ...) owns its own content under its own `docs`.
 
 Contributions are welcome.
 
@@ -35,7 +35,7 @@ make serve     # serve build/site locally
 
 Each product repo owns its own docs as an Antora component (`docs/antora.yml` +
 `docs/modules/ROOT/pages/*.adoc`). To onboard a repo here, add a `content.sources`
-entry for it in `antora-playbook.yaml` — see the existing `dengjen-tts` and
+entry for it in `antora-playbook.yaml` — see the existing `dengjen` and
 `dengjen-nvda` entries for the shape.
 
 ## Submitting a PR

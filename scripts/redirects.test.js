@@ -14,6 +14,8 @@ const FILES = [
   'home/index.html',
   'dengjen-nvda/next/usage.html',
   'dengjen-nvda/4.x/index.html',
+  'dengjen/next/usage.html',
+  'dengjen/2.0.3/index.html',
   'en/home/index.html',
 ]
 
@@ -22,6 +24,13 @@ test('maps every docs page to a stub under en/ pointing at the new path', () => 
   assert.equal(map['en/home/index.html'], '/home/')
   assert.equal(map['en/dengjen-nvda/next/usage.html'], '/dengjen-nvda/next/usage.html')
   assert.equal(map['en/dengjen-nvda/4.x/index.html'], '/dengjen-nvda/4.x/')
+})
+
+test('maps the old dengjen-tts component path to the dengjen component', () => {
+  const map = Object.fromEntries(redirectsFor(FILES).map((r) => [r.stub, r.target]))
+  assert.equal(map['dengjen-tts/next/usage.html'], '/dengjen/next/usage.html')
+  assert.equal(map['dengjen-tts/2.0.3/index.html'], '/dengjen/2.0.3/')
+  assert.equal(map['dengjen-tts/dengjen-nvda/next/usage.html'], undefined)
 })
 
 test('redirects the old language root to the landing page', () => {
