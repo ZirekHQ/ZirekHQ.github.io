@@ -50,7 +50,7 @@ On the synthesis and add-on side:
 
 * *Windows testers* for dengjen-nvda, especially against current NVDA releases.
 * *Co-maintainers.* Every add-on and engine here has one maintainer, which is one too few.
-* *Developers* to extend the Rust/Python/Java bindings and fix issues across dengjen-tts,
+* *Developers* to extend the Rust/Python/Java bindings and fix issues across dengjen,
   dengjen-piper-rs, and dengjen-tashkeel's multi-language surface.
 
 And for this documentation site:
