@@ -20,13 +20,13 @@
     "getLabel": "Releases"
   },
   {
-    "slug": "dengjen-tts",
-    "name": "dengjen-tts",
+    "slug": "dengjen",
+    "name": "dengjen",
     "tagline": "Cross-platform inference engine for neural TTS.",
     "logo": "dengjen-tts-logo.png",
     "group": "speech-synthesis",
-    "docsComponent": "dengjen-tts",
-    "getUrl": "https://github.com/ZirekHQ/dengjen-tts/releases",
+    "docsComponent": "dengjen",
+    "getUrl": "https://github.com/ZirekHQ/dengjen/releases",
     "getLabel": "Releases"
   },
   {

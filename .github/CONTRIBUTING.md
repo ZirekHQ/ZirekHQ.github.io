@@ -35,7 +35,7 @@ make serve     # serve build/site locally
 
 Each product repo owns its own docs as an Antora component (`docs/antora.yml` +
 `docs/modules/ROOT/pages/*.adoc`). To onboard a repo here, add a `content.sources`
-entry for it in `antora-playbook.yaml` — see the existing `dengjen-tts` and
+entry for it in `antora-playbook.yaml` — see the existing `dengjen` and
 `dengjen-nvda` entries for the shape.
 
 ## Submitting a PR

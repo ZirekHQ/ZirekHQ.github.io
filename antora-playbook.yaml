@@ -29,7 +29,7 @@ content:
 
     # One entry per repo; each repo owns its docs/ via docs/antora.yml.
     # Versions come from extensions/doc-versions.js.
-    - url: https://github.com/ZirekHQ/dengjen-tts.git
+    - url: https://github.com/ZirekHQ/dengjen.git
       tags:
         - 'v*.*.*'
         - '!v*-*'

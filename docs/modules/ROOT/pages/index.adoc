@@ -24,7 +24,7 @@ Archived: https://github.com/ZirekHQ/nvdaku[nvdaku], Kurdish (Kurmanji) localisa
 The stack underneath the add-on, originally built on https://github.com/mush42[Musharraf Omer]'s
 work:
 
-* *https://github.com/ZirekHQ/dengjen-tts[dengjen-tts]* — cross-platform Rust engine for neural
+* *https://github.com/ZirekHQ/dengjen[dengjen]* — cross-platform Rust engine for neural
   TTS models (Piper, Kokoro, MeloTTS).
 * *https://github.com/ZirekHQ/dengjen-piper-rs[dengjen-piper-rs]* — Rust bindings for running
   Piper TTS models directly, independent of the full dengjen engine.
