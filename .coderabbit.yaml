@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: en-US
+reviews:
+  profile: chill
+  request_changes_workflow: false
+  path_filters:
+    - "!build/**"
+    - "!node_modules/**"
+    - "!.translation-src/**"
+chat:
+  auto_reply: true
