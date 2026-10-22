@@ -15,6 +15,11 @@ const isNewer = (a, b) => {
   return i !== -1 && a[i] > b[i]
 }
 
+const LEGACY_NAMES = { 'dengjen-tts': 'dengjen' }
+
+const withCurrentName = (bundle) =>
+  Object.assign(bundle, { name: LEGACY_NAMES[bundle.name] ?? bundle.name })
+
 const reftypeOf = (bundle) => bundle.origins[0].reftype
 
 const asNext = (bundle) =>
@@ -41,6 +46,7 @@ const newestPerLine = (releases) =>
  */
 function register({ config: { unversioned = [] } }) {
   this.on('contentAggregated', ({ contentAggregate }) => {
+    contentAggregate.forEach(withCurrentName)
     const versioned = contentAggregate.filter((bundle) => !unversioned.includes(bundle.name))
     const releases = newestPerLine(versioned.map(releaseOf).filter(Boolean))
     const kept = new Set([...releases.values()].map(({ bundle }) => bundle))
