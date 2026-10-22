@@ -15,10 +15,10 @@ const isNewer = (a, b) => {
   return i !== -1 && a[i] > b[i]
 }
 
-const LEGACY_NAMES = { 'dengjen-tts': 'dengjen' }
+const LEGACY_NAMES = new Map([['dengjen-tts', 'dengjen']])
 
 const withCurrentName = (bundle) =>
-  Object.assign(bundle, { name: LEGACY_NAMES[bundle.name] ?? bundle.name })
+  Object.assign(bundle, { name: LEGACY_NAMES.get(bundle.name) ?? bundle.name })
 
 const reftypeOf = (bundle) => bundle.origins[0].reftype
 
