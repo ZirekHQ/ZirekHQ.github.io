@@ -22,8 +22,8 @@
   {
     "slug": "dengjen",
     "name": "dengjen",
-    "tagline": "Cross-platform inference engine for neural TTS.",
-    "logo": "dengjen-tts-logo.png",
+    "tagline": "Cross-platform engine for neural speech models.",
+    "logo": "dengjen-logo.png",
     "group": "speech-synthesis",
     "docsComponent": "dengjen",
     "getUrl": "https://github.com/ZirekHQ/dengjen/releases",
@@ -42,7 +42,7 @@
   {
     "slug": "dengjen-tts-go",
     "name": "dengjen-tts-go",
-    "tagline": "Go bindings for dengjen-tts, with prebuilt binaries.",
+    "tagline": "Go bindings for dengjen, with prebuilt binaries.",
     "logo": "dengjen-tts-go-logo.png",
     "group": "speech-synthesis",
     "getUrl": "https://github.com/ZirekHQ/dengjen-tts-go/releases",
