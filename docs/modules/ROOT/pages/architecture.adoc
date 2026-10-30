@@ -15,7 +15,7 @@ C4Context
 
     System_Boundary(zirekhq, "ZirekHQ") {
         System(nvda_addon, "dengjen-nvda", "NVDA add-on (Python). Loaded in-process by NVDA as a synth driver.")
-        System(tts, "dengjen-tts", "Rust neural TTS inference engine. Exposes CLI, C ABI, Python, and gRPC frontends.")
+        System(tts, "dengjen", "Rust neural speech engine: text to speech and speech recognition. Exposes CLI, C ABI, Python, and gRPC frontends.")
         System(tashkeel, "dengjen-tashkeel", "Arabic diacritization (tashkeel/harakat). Rust core with C ABI, Python, and Java bindings.")
         System(piper_rs, "dengjen-piper-rs", "Standalone Piper-format TTS inference crate. Not currently consumed by any other ZirekHQ component.")
     }
@@ -34,12 +34,12 @@ C4Context
 
 Two things worth calling out that aren't obvious from the individual repos:
 
-* *dengjen-nvda never talks to dengjen-tts as a library.* It launches a
+* *dengjen-nvda never talks to dengjen as a library.* It launches a
   separately vendored `dengjen-tts-grpc` binary as its own OS process and
   speaks to it over gRPC — the two are only coupled at the process boundary,
   not the API boundary.
-* *dengjen-piper-rs and dengjen-tashkeel are not wired into dengjen-tts's
+* *dengjen-piper-rs and dengjen-tashkeel are not wired into dengjen's
   default build.* dengjen-tashkeel is an optional, feature-gated dependency
-  of one of dengjen-tts's model crates; dengjen-piper-rs is a fully separate,
-  parallel implementation with no dependency relationship to dengjen-tts in
+  of one of dengjen's TTS model crates; dengjen-piper-rs is a fully separate,
+  parallel implementation with no dependency relationship to dengjen in
   either direction.
