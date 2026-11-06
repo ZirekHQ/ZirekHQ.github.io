@@ -29,7 +29,7 @@ For a string that has no context or reads wrongly, open an issue on the https://
 
 Text-to-speech models for Kurmanji, Sorani and Zazaki need voice recordings from native speakers. The voices are used by blind people with NVDA, often at two to three times normal speed, so every sound has to stay clear. Consistency matters more than expressiveness.
 
-Anyone who speaks the language natively can volunteer. To start, open an issue on the https://github.com/ZirekHQ/dengjen/issues[dengjen repository] saying which language you speak. We send you the script and access to the upload folder. Start with batch 1: it is useful on its own, and you can continue from there. The guide below is the Kurmanji one; other languages will follow the same method.
+Anyone who speaks the language natively can volunteer. To start, open an issue on the https://github.com/ZirekHQ/dengjen/issues[dengjen repository] saying which language you speak. GitHub issues are public, so post only your language, the terms line and your credit choice, never contact details or recordings; the terms below do not cover what you write in an issue. If you prefer not to use a public issue, contact a maintainer through the https://github.com/ZirekHQ[organization page]. We send you the script and access to the upload folder. Start with batch 1: it is useful on its own, and you can continue from there. The guide below is the Kurmanji one; other languages will follow the same method.
 
 === Recording terms
 
@@ -73,12 +73,12 @@ By recording for Zirek you agree to the following. Confirm it in your opening is
 
 * Record at most 1 to 1.5 hours of actual reading per day, in sessions of 30 to 45 minutes with breaks. A tired voice changes how you sound, and that hurts the model.
 * Record at the same time of day when you can. Keep water nearby, and avoid dairy and caffeine just before recording.
-* Start every session by reading the reference sentence _Yek, du, sê, çar, pênc, şeş, heft, heşt, neh, deh._ Save it as `ref_YYYY-MM-DD.wav`. We use it to check that your voice and setup stay the same between sessions.
+* Start every session by reading the reference sentence _Yek, du, sê, çar, pênc, şeş, heft, heşt, neh, deh._ Save it as `ref_YYYY-MM-DD_N.wav`, where N counts that day's sessions (`_1`, `_2`), so two sessions on one day never overwrite each other. We use it to check that your voice and setup stay the same between sessions.
 * After batch 1, upload it and wait for feedback before continuing. Setup problems are cheap to fix at that point.
 
 === Recording app
 
-* Piper Recording Studio is the easiest option. It shows one sentence at a time, records it and saves it under its id. We load the batch files into it for you.
+* Piper Recording Studio is the easiest option. It shows one sentence at a time, records it and saves it under its id. We load the batch files into it for you. Whichever app you use, upload mono WAV files in the format above. Check what your app saves, and tell us if it saves anything else; we check the format on your batch 1 before you continue.
 * Audacity also works if you export one file per sentence, named by id.
 
 === Handing in recordings
