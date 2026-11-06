@@ -4,11 +4,9 @@ Zirek builds screen-reader support and local neural text-to-speech for languages
 
 == How the project fits together
 
-* *Screen readers.* https://github.com/ZirekHQ/dengjen-nvda[dengjen-nvda] is an NVDA add-on that speaks with local neural voices. https://github.com/ZirekHQ/nvda-addon-testkit[nvda-addon-testkit] tests NVDA add-ons against a real NVDA in CI.
-* *Speech synthesis.* https://github.com/ZirekHQ/dengjen[dengjen] is the Rust engine that runs the voice models. https://github.com/ZirekHQ/dengjen-piper-rs[dengjen-piper-rs], now archived, ran Piper models directly; Piper support lives in dengjen. https://github.com/ZirekHQ/dengjen-tashkeel[dengjen-tashkeel] restores Arabic diacritics before synthesis.
-* *Language support.* Kurmanji phoneme support goes upstream to https://github.com/espeak-ng/espeak-ng[espeak-ng], so every project that uses it benefits.
+The add-ons run on the dengjen speech engine, which runs the voice models. Every project is listed under https://zirekhq.github.io/#projects[Projects] on the home page, with links to its releases, source and issues, and to its docs where it has them. xref:architecture.adoc[Architecture] shows how the pieces connect.
 
-xref:architecture.adoc[Architecture] shows how these pieces connect.
+Kurmanji phoneme support goes upstream to https://github.com/espeak-ng/espeak-ng[espeak-ng], so every project that uses it benefits.
 
 == Translate
 

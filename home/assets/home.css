@@ -67,6 +67,7 @@ h2 { font-size: 1.6rem; margin: 0 0 1rem; }
 .card-logo { border-radius: 14px; }
 .meta, .versions { color: var(--muted); font-size: .9rem; margin: .25rem 0; }
 .badge { font-size: .75rem; font-weight: 700; padding: .1rem .5rem; border-radius: 1rem; background: var(--accent); color: var(--on-accent); vertical-align: middle; }
+.badge.archived { background: transparent; color: var(--muted); border: 1px solid var(--control-border); }
 .project-links { margin-bottom: 0; }
 
 .feed, .links { list-style: none; padding: 0; }

@@ -27,6 +27,9 @@ const link = (href, text) => `<a href="${esc(href)}">${esc(text)}</a>`
 const versionBadge = (project) =>
   latestOf(project) ? ` <span class="badge version">${esc(latestOf(project).tag)}</span>` : ''
 
+const archivedBadge = (project) =>
+  project.archived ? ' <span class="badge archived">Archived</span>' : ''
+
 const metaLine = (project) =>
   [project.language, project.license === 'NOASSERTION' ? undefined : project.license, project.stars === undefined ? undefined : `★ ${project.stars}`]
     .filter(Boolean).map(esc).join(' · ')
@@ -45,7 +48,7 @@ const projectLinks = (project) =>
 const card = (project) => `
 <article class="card" id="${esc(project.slug)}">
   <img class="card-logo" src="/assets/${esc(project.logo)}" alt="" width="64" height="64">
-  <h4>${esc(project.name)}${versionBadge(project)}</h4>
+  <h4>${esc(project.name)}${versionBadge(project)}${archivedBadge(project)}</h4>
   <p>${esc(project.tagline)}</p>
   <p class="meta">${metaLine(project)}</p>
   ${hasDocs(project) ? `<p class="versions">Documented versions: ${versionLinks(project)}</p>` : ''}

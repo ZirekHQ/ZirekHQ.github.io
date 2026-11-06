@@ -28,6 +28,11 @@ test('a card carries the slug as its anchor and links the latest stable docs ver
   assert.match(html, /href="\/dengjen-nvda\/4\.x\/">Documentation</)
 })
 
+test('an archived project is labelled and an active one is not', () => {
+  assert.match(renderPage(model([project({ archived: true })])), /<span class="badge archived">Archived<\/span>/)
+  assert.doesNotMatch(renderPage(model([project()])), /Archived/)
+})
+
 test('only unreleased docs fall back to next', () => {
   const html = renderPage(model([project({ versions: ['next'] })]))
   assert.match(html, /href="\/dengjen-nvda\/next\/">Documentation</)

@@ -55,6 +55,7 @@ const repoFields = (repo) => ({
   openIssues: repo.open_issues_count,
   topics: repo.topics ?? [],
   defaultBranch: repo.default_branch,
+  archived: repo.archived ?? false,
 })
 
 const fetchRepo = async (fetchFn, slug, token) => {

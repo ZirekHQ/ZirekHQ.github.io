@@ -4,10 +4,23 @@
     "language": "Python",
     "license": "GPL-2.0",
     "stars": 20,
-    "openIssues": 5,
+    "openIssues": 4,
     "topics": [],
     "defaultBranch": "main",
+    "archived": false,
     "releases": [
+      {
+        "tag": "v4.2.1",
+        "date": "2026-11-05T16:18:06Z",
+        "url": "https://github.com/ZirekHQ/dengjen-nvda/releases/tag/v4.2.1",
+        "excerpt": "What's Changed l10n: sync translations from Crowdin by @zirekhq-automationbot in chore(deps): update dependency pre-commit to v4.7.0 by @renovatebot in chore(deps): update actions/create-github-app-t…"
+      },
+      {
+        "tag": "v4.2.0",
+        "date": "2026-10-18T06:58:19Z",
+        "url": "https://github.com/ZirekHQ/dengjen-nvda/releases/tag/v4.2.0",
+        "excerpt": "What's Changed ci: rebuild docs site on docs changes to main by @austek in fix: repair scheduled CI and replace PATs with app tokens by @austek in chore(deps): update zirekhq/.github digest to 7e29bd…"
+      },
       {
         "tag": "v4.1.0",
         "date": "2026-09-20T17:19:13Z",
@@ -44,7 +57,14 @@
     "openIssues": 0,
     "topics": [],
     "defaultBranch": "main",
+    "archived": false,
     "releases": [
+      {
+        "tag": "v2.0.0",
+        "date": "2026-10-16T08:18:05Z",
+        "url": "https://github.com/ZirekHQ/nvda-addon-testkit/releases/tag/v2.0.0",
+        "excerpt": "What's Changed chore(deps): update zirekhq/.github digest to 04989cb by @renovatebot in chore(deps): update actions/cache action to v5 by @renovatebot in chore(deps): update actions/download-artifact…"
+      },
       {
         "tag": "v1.1.0",
         "date": "2026-09-19T21:59:01Z",
@@ -68,12 +88,6 @@
         "date": "2026-09-17T06:51:04Z",
         "url": "https://github.com/ZirekHQ/nvda-addon-testkit/releases/tag/v0.1.2",
         "excerpt": "- Expand Antora docs with a tutorial, CI guide, and troubleshooting page @austek (29) - ci: fix publish.yml gate firing twice when called via release.yml @austek (27) - ci: prep repo for GitHub Marke…"
-      },
-      {
-        "tag": "v0.1.1",
-        "date": "2026-08-10T17:06:23Z",
-        "url": "https://github.com/ZirekHQ/nvda-addon-testkit/releases/tag/v0.1.1",
-        "excerpt": "🐛 Fixes - Fix the published wheel/sdist missing the spy add-on bundle, so every real (non-fake) provision() was failing require_spy_bundle() on any platform including Windows (12)"
       }
     ],
     "slug": "nvda-addon-testkit",
@@ -89,11 +103,30 @@
     "description": "A cross-platform inference engine for neural TTS models.",
     "language": "Rust",
     "license": "GPL-3.0",
-    "stars": 13,
-    "openIssues": 1,
+    "stars": 14,
+    "openIssues": 8,
     "topics": [],
     "defaultBranch": "main",
+    "archived": false,
     "releases": [
+      {
+        "tag": "v3.1.0",
+        "date": "2026-11-04T23:44:37Z",
+        "url": "https://github.com/ZirekHQ/dengjen/releases/tag/v3.1.0",
+        "excerpt": "What's Changed chore(stt): bump sherpa-onnx to 2.0.1 (501) by @austek in chore(deps): update pypa/gh-action-pypi-publish action to v1.14.3 by @renovatebot in chore(deps): update dependency setuptools…"
+      },
+      {
+        "tag": "v3.0.4",
+        "date": "2026-10-27T17:24:50Z",
+        "url": "https://github.com/ZirekHQ/dengjen/releases/tag/v3.0.4",
+        "excerpt": "What's Changed chore(deps): update minor dependencies to v2.14.0 by @renovatebot in chore(deps): update patch dependencies by @renovatebot in chore(deps): update rust crate cc to v1.9.0 by @renovateb…"
+      },
+      {
+        "tag": "v3.0.3",
+        "date": "2026-10-25T15:24:21Z",
+        "url": "https://github.com/ZirekHQ/dengjen/releases/tag/v3.0.3",
+        "excerpt": "What's Changed chore(deps): update rust crate pyo3 to v0.29.3 by @renovatebot in chore(deps): update dependency rust to v1.99.0 by @renovatebot in chore(deps): update actions/upload-code-coverage dig…"
+      },
       {
         "tag": "v2.1.1",
         "date": "2026-10-07T16:47:21Z",
@@ -109,8 +142,8 @@
     ],
     "slug": "dengjen",
     "name": "dengjen",
-    "tagline": "Cross-platform inference engine for neural TTS.",
-    "logo": "dengjen-tts-logo.png",
+    "tagline": "Cross-platform engine for neural speech models.",
+    "logo": "dengjen-logo.png",
     "group": "speech-synthesis",
     "docsComponent": "dengjen",
     "getUrl": "https://github.com/ZirekHQ/dengjen/releases",
@@ -121,9 +154,10 @@
     "language": "Rust",
     "license": "NOASSERTION",
     "stars": 11,
-    "openIssues": 0,
+    "openIssues": 1,
     "topics": [],
     "defaultBranch": "main",
+    "archived": true,
     "releases": [],
     "slug": "dengjen-piper-rs",
     "name": "dengjen-piper-rs",
@@ -142,10 +176,11 @@
     "openIssues": 0,
     "topics": [],
     "defaultBranch": "main",
+    "archived": false,
     "releases": [],
     "slug": "dengjen-tts-go",
     "name": "dengjen-tts-go",
-    "tagline": "Go bindings for dengjen-tts, with prebuilt binaries.",
+    "tagline": "Go bindings for dengjen, with prebuilt binaries.",
     "logo": "dengjen-tts-go-logo.png",
     "group": "speech-synthesis",
     "getUrl": "https://github.com/ZirekHQ/dengjen-tts-go/releases",
@@ -156,39 +191,40 @@
     "language": "Rust",
     "license": "Apache-2.0",
     "stars": 10,
-    "openIssues": 1,
+    "openIssues": 0,
     "topics": [],
     "defaultBranch": "main",
+    "archived": false,
     "releases": [
+      {
+        "tag": "v3.0.2",
+        "date": "2026-10-20T12:36:04Z",
+        "url": "https://github.com/ZirekHQ/dengjen-tashkeel/releases/tag/v3.0.2",
+        "excerpt": "What's changed Fixes - ort: move to ort 2.0.0-rc.15 NOJIRA (244) - release: link ort-sys rc.14 in the macOS arm64 release build NOJIRA (242) Maintenance - release: drop the temporary dist upload run…"
+      },
+      {
+        "tag": "v3.0.0",
+        "date": "2026-10-13T13:35:41Z",
+        "url": "https://github.com/ZirekHQ/dengjen-tashkeel/releases/tag/v3.0.0",
+        "excerpt": "What's changed Breaking changes - publish the Java natives as their own artifact, only when they change (217) - ship the Java natives without onnxruntime and the model (214) Fixes - keep ort-static a…"
+      },
+      {
+        "tag": "v2.1.0",
+        "date": "2026-10-12T20:41:04Z",
+        "url": "https://github.com/ZirekHQ/dengjen-tashkeel/releases/tag/v2.1.0",
+        "excerpt": "What's changed Features - add TashkeelOptions, lazy Python init and idempotent Java load (210) Fixes - bound inference batch size and remediate repo audit findings (201) - print the smoke-test output…"
+      },
+      {
+        "tag": "v2.0.0",
+        "date": "2026-10-11T19:20:15Z",
+        "url": "https://github.com/ZirekHQ/dengjen-tashkeel/releases/tag/v2.0.0",
+        "excerpt": "dengjen-tashkeel-capi 2.0.0 Download dengjen-tashkeel-capi 2.0.0 | File | Platform | Checksum | |--------|----------|----------| | dengjen-tashkeel-capi-aarch64-apple-darwin.tar.xz | Apple Silicon ma…"
+      },
       {
         "tag": "v1.6.6",
         "date": "2026-09-16T22:39:32Z",
         "url": "https://github.com/ZirekHQ/dengjen-tashkeel/releases/tag/v1.6.6",
         "excerpt": "dengjen-tashkeel-capi 1.6.6 Download dengjen-tashkeel-capi 1.6.6 | File | Platform | Checksum | |--------|----------|----------| | dengjen-tashkeel-capi-aarch64-apple-darwin.tar.xz | Apple Silicon ma…"
-      },
-      {
-        "tag": "v1.6.2",
-        "date": "2026-09-14T02:03:35Z",
-        "url": "https://github.com/ZirekHQ/dengjen-tashkeel/releases/tag/v1.6.2",
-        "excerpt": "dengjen-tashkeel-cli 1.6.2 Install dengjen-tashkeel-cli 1.6.2 Install prebuilt binaries via shell script sh curl --proto '=https' --tlsv1.2 -LsSf | sh Install prebuilt binaries via powershell script…"
-      },
-      {
-        "tag": "v1.5.3",
-        "date": "2026-09-03T14:40:41Z",
-        "url": "https://github.com/ZirekHQ/dengjen-tashkeel/releases/tag/v1.5.3",
-        "excerpt": "dengjen-tashkeel-cli 1.5.3 Install dengjen-tashkeel-cli 1.5.3 Install prebuilt binaries via shell script sh curl --proto '=https' --tlsv1.2 -LsSf | sh Install prebuilt binaries via powershell script…"
-      },
-      {
-        "tag": "v1.5.2",
-        "date": "2026-09-03T11:37:44Z",
-        "url": "https://github.com/ZirekHQ/dengjen-tashkeel/releases/tag/v1.5.2",
-        "excerpt": "dengjen-tashkeel-cli 1.5.2 Install dengjen-tashkeel-cli 1.5.2 Install prebuilt binaries via shell script sh curl --proto '=https' --tlsv1.2 -LsSf | sh Install prebuilt binaries via powershell script…"
-      },
-      {
-        "tag": "v1.5.1",
-        "date": "2026-08-24T14:05:43Z",
-        "url": "https://github.com/ZirekHQ/dengjen-tashkeel/releases/tag/v1.5.1",
-        "excerpt": "Install tashkeel 1.5.1 Install prebuilt binaries via shell script sh curl --proto '=https' --tlsv1.2 -LsSf | sh Install prebuilt binaries via powershell script sh powershell -ExecutionPolicy Bypass -…"
       }
     ],
     "slug": "dengjen-tashkeel",
@@ -205,9 +241,10 @@
     "language": "Java",
     "license": "GPL-3.0",
     "stars": 7,
-    "openIssues": 22,
+    "openIssues": 21,
     "topics": [],
     "defaultBranch": "main",
+    "archived": false,
     "releases": [],
     "slug": "dengjen-werger",
     "name": "dengjen-werger",
