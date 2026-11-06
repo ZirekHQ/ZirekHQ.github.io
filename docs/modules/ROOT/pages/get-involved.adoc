@@ -5,7 +5,7 @@ Zirek builds screen-reader support and local neural text-to-speech for languages
 == How the project fits together
 
 * *Screen readers.* https://github.com/ZirekHQ/dengjen-nvda[dengjen-nvda] is an NVDA add-on that speaks with local neural voices. https://github.com/ZirekHQ/nvda-addon-testkit[nvda-addon-testkit] tests NVDA add-ons against a real NVDA in CI.
-* *Speech synthesis.* https://github.com/ZirekHQ/dengjen[dengjen] is the Rust engine that runs the voice models. https://github.com/ZirekHQ/dengjen-piper-rs[dengjen-piper-rs] runs Piper models directly. https://github.com/ZirekHQ/dengjen-tashkeel[dengjen-tashkeel] restores Arabic diacritics before synthesis.
+* *Speech synthesis.* https://github.com/ZirekHQ/dengjen[dengjen] is the Rust engine that runs the voice models. https://github.com/ZirekHQ/dengjen-piper-rs[dengjen-piper-rs], now archived, ran Piper models directly; Piper support lives in dengjen. https://github.com/ZirekHQ/dengjen-tashkeel[dengjen-tashkeel] restores Arabic diacritics before synthesis.
 * *Language support.* Kurmanji phoneme support goes upstream to https://github.com/espeak-ng/espeak-ng[espeak-ng], so every project that uses it benefits.
 
 xref:architecture.adoc[Architecture] shows how these pieces connect.
@@ -93,7 +93,7 @@ Windows testers are needed for dengjen-nvda, especially against current NVDA rel
 
 Each repository owns its code, build instructions and issues. Start from the repository's README and its issue list.
 
-* *dengjen, dengjen-piper-rs, dengjen-tashkeel.* Rust core with Python, Java and other bindings. Fixes and binding work are welcome across all three.
+* *dengjen and dengjen-tashkeel.* Rust core with Python, Java and other bindings. Fixes and binding work are welcome in both. Send Piper issues and pull requests to dengjen; dengjen-piper-rs is archived and takes none.
 * *dengjen-nvda and nvda-addon-testkit.* Python, for NVDA add-on and test work.
 
 == Maintain
