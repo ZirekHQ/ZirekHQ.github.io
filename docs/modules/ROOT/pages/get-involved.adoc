@@ -4,7 +4,7 @@ Zirek builds screen-reader support and local neural text-to-speech for languages
 
 == How the project fits together
 
-The add-ons run on the dengjen speech engine, which runs the voice models. Every project, with its latest version, docs and open issues, is listed under https://zirekhq.github.io/#projects[Projects] on the home page. xref:architecture.adoc[Architecture] shows how the pieces connect.
+The add-ons run on the dengjen speech engine, which runs the voice models. Every project is listed under https://zirekhq.github.io/#projects[Projects] on the home page, with links to its releases, source and issues, and to its docs where it has them. xref:architecture.adoc[Architecture] shows how the pieces connect.
 
 Kurmanji phoneme support goes upstream to https://github.com/espeak-ng/espeak-ng[espeak-ng], so every project that uses it benefits.
 
