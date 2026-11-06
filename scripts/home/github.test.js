@@ -20,6 +20,12 @@ test('maps repo fields and skips drafts and prereleases', async () => {
   assert.equal(data.releases[0].excerpt, 'Notes fix thing')
 })
 
+test('maps the archived flag and defaults it to false', async () => {
+  const withRepo = (body) => async (url) => (url.endsWith('/releases/latest') ? notFound : url.includes('/releases') ? ok([]) : ok(body))
+  assert.equal((await fetchRepo(withRepo({ ...repo, archived: true }), 'x')).archived, true)
+  assert.equal((await fetchRepo(withRepo(repo), 'x')).archived, false)
+})
+
 test('repo without releases yields an empty list', async () => {
   assert.deepEqual((await fetchRepo(route(), 'x')).releases, [])
 })

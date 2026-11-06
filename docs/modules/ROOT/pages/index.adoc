@@ -26,8 +26,8 @@ work:
 
 * *https://github.com/ZirekHQ/dengjen[dengjen]* — cross-platform Rust engine for neural
   TTS models (Piper, Kokoro, MeloTTS).
-* *https://github.com/ZirekHQ/dengjen-piper-rs[dengjen-piper-rs]* — Rust bindings for running
-  Piper TTS models directly, independent of the full dengjen engine.
+* *https://github.com/ZirekHQ/dengjen-piper-rs[dengjen-piper-rs]* — archived. Rust bindings for
+  running Piper TTS models directly; Piper support now lives in dengjen.
 * *https://github.com/ZirekHQ/dengjen-tashkeel[dengjen-tashkeel]* — diacritic (tashkeel)
   restoration for Arabic. Arabic is normally written without the short vowels a synthesizer
   needs, so they have to be inferred before anything can be spoken.
@@ -51,8 +51,8 @@ On the synthesis and add-on side:
 
 * *Windows testers* for dengjen-nvda, especially against current NVDA releases.
 * *Co-maintainers.* Every add-on and engine here has one maintainer, which is one too few.
-* *Developers* to extend the Rust/Python/Java bindings and fix issues across dengjen,
-  dengjen-piper-rs, and dengjen-tashkeel's multi-language surface.
+* *Developers* to extend the Rust/Python/Java bindings and fix issues across dengjen
+  and dengjen-tashkeel's multi-language surface.
 
 And for this documentation site:
 

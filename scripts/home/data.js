@@ -2,7 +2,7 @@
 
 const { fetchRepo } = require('./github')
 
-const DEFAULTS = { releases: [], topics: [], stars: 0, openIssues: 0 }
+const DEFAULTS = { releases: [], topics: [], stars: 0, openIssues: 0, archived: false }
 
 const mergeLive = (config, live) => config.map((project, i) => ({ ...live[i], ...project }))
 
