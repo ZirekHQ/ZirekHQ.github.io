@@ -1,2 +1,3 @@
 * xref:index.adoc[Overview]
 * xref:architecture.adoc[Architecture]
+* xref:get-involved.adoc[Get involved]

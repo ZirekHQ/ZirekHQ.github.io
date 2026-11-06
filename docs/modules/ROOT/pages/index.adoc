@@ -41,6 +41,7 @@ project that uses it.
 Kurmanji is badly served by assistive technology, and most of the gap needs native speakers
 rather than programmers:
 
+* *Translators* for the NVDA add-ons' interface and documentation.
 * *Voice recordings* for text-to-speech training.
 
 Sorani and Zazaki speakers are just as welcome; the work is Kurmanji-first only because that's
@@ -58,7 +59,8 @@ And for this documentation site:
 * *Writers* to expand the docs beyond the current README-derived starting point — tutorials,
   troubleshooting guides, and architecture notes are all still missing.
 
-Open an issue on the relevant repository — for anything that sounds wrong, include the exact
-text and what it should sound like. See
+xref:get-involved.adoc[Get involved] has the details for each. Open an issue on the relevant
+repository — for anything that sounds wrong, include the exact text and what it should sound
+like. See
 https://github.com/ZirekHQ/.github/blob/main/CONTRIBUTING.md[CONTRIBUTING.md]; you do not need
 to write code to help.

@@ -1,0 +1,109 @@
+= Get involved
+
+Zirek builds screen-reader support and local neural text-to-speech for languages large vendors don't get around to. Kurmanji comes first; Sorani and Zazaki speakers are just as welcome. Most of the work needs native speakers, not programmers.
+
+== How the project fits together
+
+* *Screen readers.* https://github.com/ZirekHQ/dengjen-nvda[dengjen-nvda] is an NVDA add-on that speaks with local neural voices. https://github.com/ZirekHQ/nvda-addon-testkit[nvda-addon-testkit] tests NVDA add-ons against a real NVDA in CI.
+* *Speech synthesis.* https://github.com/ZirekHQ/dengjen[dengjen] is the Rust engine that runs the voice models. https://github.com/ZirekHQ/dengjen-piper-rs[dengjen-piper-rs], now archived, ran Piper models directly; Piper support lives in dengjen. https://github.com/ZirekHQ/dengjen-tashkeel[dengjen-tashkeel] restores Arabic diacritics before synthesis.
+* *Language support.* Kurmanji phoneme support goes upstream to https://github.com/espeak-ng/espeak-ng[espeak-ng], so every project that uses it benefits.
+
+xref:architecture.adoc[Architecture] shows how these pieces connect.
+
+== Translate
+
+The NVDA add-ons are translated in the NVDA community's Crowdin project, the one every NVDA add-on uses. You need to read English, the source language, and write the language you translate into. No coding is involved.
+
+. Create a https://crowdin.com/[Crowdin] account.
+. Subscribe to the https://groups.io/g/nvda-translations[NVDA Translations mailing list]. Translation questions and announcements go there.
+. Ask for access to the `nvda` and `nvdaAddon` translation teams.
+. Join the NVDA Add-ons Crowdin project.
+. Choose your language. For Kurmanji, select Kurmanji.
+. Translate the interface strings and the documentation.
+
+NVDA maintains the full procedure in https://github.com/nvaccess/AddonTemplate/blob/master/docs/l10n/addonTranslators.md[addonTranslators.md]. Follow it if a step above has changed.
+
+For a string that has no context or reads wrongly, open an issue on the https://github.com/ZirekHQ/dengjen-nvda/issues[dengjen-nvda repository] with the exact text and what it should say.
+
+== Record your voice
+
+Text-to-speech models for Kurmanji, Sorani and Zazaki need voice recordings from native speakers. The voices are used by blind people with NVDA, often at two to three times normal speed, so every sound has to stay clear. Consistency matters more than expressiveness.
+
+Anyone who speaks the language natively can volunteer. To start, open an issue on the https://github.com/ZirekHQ/dengjen/issues[dengjen repository] saying which language you speak. GitHub issues are public, so post only your language, the terms line and your credit choice, never contact details or recordings; the terms below do not cover what you write in an issue. If you prefer not to use a public issue, contact a maintainer through the https://github.com/ZirekHQ[organization page]. We send you the script and access to the upload folder. Start with batch 1: it is useful on its own, and you can continue from there. The guide below is the Kurmanji one; other languages will follow the same method.
+
+=== Recording terms
+
+By recording for Zirek you agree to the following. Confirm it in your opening issue with the line "I agree to the recording terms".
+
+* *Licence.* You release your recordings under https://creativecommons.org/publicdomain/zero/1.0/[CC0 1.0], the same dedication as the Common Voice sentences you read. Anyone may use, train on and redistribute them without asking or crediting you.
+* *Published voices.* Models trained on your recordings may be published and used by anyone, including other projects. A published model cannot be recalled.
+* *Withdrawal.* You can ask us to remove your recordings from the dataset at any time before they go into a training run. Once a model is released, your voice stays in it.
+* *Your data.* A voice identifies you. We keep your audio, your name or pseudonym, and your language. Only the maintainers can access them. They stay in the shared Drive folder until they go into a training run. To have your data deleted, open an issue on the dengjen repository.
+* *Credit.* You choose whether the voice credits you by name or does not name you. Say which in your opening issue.
+
+=== What you read
+
+* The Kurmanji script has 12,944 sentences in 13 batches of about one hour of finished audio each.
+* Batches 1 to 10 are the core, about 10 hours per speaker. Every speaker reads the same sentences in the same order. Batches 11 to 13 are optional extensions.
+* Batch 1 covers every common Kurmanji sound pair, so it alone is enough to train a test voice.
+* We train on the core set first and decide afterwards whether more hours are worth recording. More than 10 to 20 hours per speaker barely improves a Piper voice, and long sessions make voice and pace drift, which hurts clarity.
+* Each line has an id such as `kmr_00042`. Save each recording as `kmr_00042.wav`.
+* The sentences come from https://commonvoice.mozilla.org/[Common Voice] (CC0) and an earlier Kurmanji script. If a sentence is wrong Kurmanji, has a typo, or is something you would not say, skip it and add its id to a `skipped.txt` file. Do not fix it while reading.
+
+=== Room and equipment
+
+* Use a small, quiet room with soft furnishings such as curtains, a sofa or a bed. Turn off fans, fridges and heating noise, and silence your phone.
+* Use the same microphone, in the same position, in the same room, for every session. A USB condenser microphone with a pop filter is fine.
+* Keep the microphone 15 to 20 cm from your mouth, slightly to the side.
+* Record 48 kHz, 24-bit or 16-bit, mono WAV.
+* Set the input level so normal speech peaks around -12 to -6 dBFS and never clips.
+* Apply no processing: no noise reduction, compression, EQ, normalisation or reverb, in the app or afterwards. We clean up in one place.
+
+=== How to read
+
+* Read in a calm, neutral, informative voice, like a news reader or audiobook narrator. Don't act or add emotion, even for exclamations.
+* Keep a steady, moderate pace. Don't speed up as the session goes on.
+* Say every consonant fully, especially at the ends of words. Don't let sentence endings fade into a whisper.
+* Use your natural native pronunciation, including the difference between aspirated and plain p, t, k and ç (for example _çadir_ and _çav_), and h/ḧ and x/ẍ where you make them.
+* Leave about half a second of silence before and after each sentence.
+* If you stumble, re-record the whole sentence. Don't correct yourself mid-sentence.
+* Read names, abbreviations and foreign words the way a Kurmanji news reader would.
+
+=== Sessions
+
+* Record at most 1 to 1.5 hours of actual reading per day, in sessions of 30 to 45 minutes with breaks. A tired voice changes how you sound, and that hurts the model.
+* Record at the same time of day when you can. Keep water nearby, and avoid dairy and caffeine just before recording.
+* Start every session by reading the reference sentence _Yek, du, sê, çar, pênc, şeş, heft, heşt, neh, deh._ Save it as `ref_YYYY-MM-DD_N.wav`, where N counts that day's sessions (`_1`, `_2`), so two sessions on one day never overwrite each other. We use it to check that your voice and setup stay the same between sessions.
+* After batch 1, upload it and wait for feedback before continuing. Setup problems are cheap to fix at that point.
+
+=== Recording app
+
+* Piper Recording Studio is the easiest option. It shows one sentence at a time, records it and saves it under its id. We load the batch files into it for you. Whichever app you use, upload mono WAV files in the format above. Check what your app saves, and tell us if it saves anything else; we check the format on your batch 1 before you continue.
+* Audacity also works if you export one file per sentence, named by id.
+
+=== Handing in recordings
+
+Upload each batch to the shared Drive folder `ziman/recordings/<speaker name>/batch_XX/`, together with that batch's `skipped.txt` and your session reference files.
+
+== Test
+
+Windows testers are needed for dengjen-nvda, especially against current NVDA releases. Install the latest release, use it with your own NVDA setup, and report problems in the https://github.com/ZirekHQ/dengjen-nvda/issues[dengjen-nvda issues]. Include your NVDA and Windows versions.
+
+== Write code
+
+Each repository owns its code, build instructions and issues. Start from the repository's README and its issue list.
+
+* *dengjen and dengjen-tashkeel.* Rust core with Python, Java and other bindings. Fixes and binding work are welcome in both. Send Piper issues and pull requests to dengjen; dengjen-piper-rs is archived and takes none.
+* *dengjen-nvda and nvda-addon-testkit.* Python, for NVDA add-on and test work.
+
+== Maintain
+
+Every add-on and engine here has one maintainer, which is one too few. If you want to co-maintain a repository, open an issue there or contact the maintainer through the https://github.com/ZirekHQ[organization page].
+
+== Write documentation
+
+This site starts from the repositories' READMEs. Tutorials, troubleshooting guides and architecture notes are all missing. The site's build setup is described in https://github.com/ZirekHQ/ZirekHQ.github.io/blob/main/.github/CONTRIBUTING.md[its CONTRIBUTING.md].
+
+== Ground rules
+
+Open an issue on the relevant repository before large changes. See the organization's https://github.com/ZirekHQ/.github/blob/main/CONTRIBUTING.md[CONTRIBUTING.md] for commit and pull-request conventions. You do not need to write code to help.
