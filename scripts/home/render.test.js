@@ -75,9 +75,9 @@ test('every image has an alt attribute', () => {
   assert.doesNotMatch(renderPage(model(configured)), /<img(?![^>]*\balt=)/)
 })
 
-test('renders the seven configured projects and never nvdaku', () => {
+test('renders the eight configured projects and never nvdaku', () => {
   const html = renderPage(model(configured))
-  assert.equal(configured.length, 7)
+  assert.equal(configured.length, 8)
   configured.forEach((p) => assert.ok(html.includes(`id="${p.slug}"`), p.slug))
   assert.doesNotMatch(html, /nvdaku/i)
 })
