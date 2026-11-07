@@ -38,14 +38,14 @@ project that uses it.
 
 == Help wanted
 
-Kurmanji is badly served by assistive technology, and most of the gap needs native speakers
-rather than programmers:
+Many languages are badly served by assistive technology, Kurmanji among them, and most of the
+gap needs native speakers rather than programmers:
 
 * *Translators* for the NVDA add-ons' interface and documentation.
 * *Voice recordings* for text-to-speech training.
 
-Sorani and Zazaki speakers are just as welcome; the work is Kurmanji-first only because that's
-where it started.
+Speakers of any language are welcome, Kurdish or not; the work started with Kurmanji, but it
+is not limited to it.
 
 On the synthesis and add-on side:
 

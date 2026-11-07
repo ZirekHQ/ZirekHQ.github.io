@@ -78,10 +78,10 @@ ${feedList(feed)}</section>`
 
 const helpSection = () => `
 <section id="help-wanted" aria-labelledby="help-title"><h2 id="help-title">Help wanted</h2>
-<p>Kurmanji is badly served by assistive technology, and most of the gap needs native speakers rather than programmers:</p>
+<p>Many languages are badly served by assistive technology, Kurmanji among them, and most of the gap needs native speakers rather than programmers:</p>
 <ul><li><strong>Translators</strong> for the NVDA add-ons, through Crowdin.</li>
 <li><strong>Voice recordings</strong> for text-to-speech training.</li></ul>
-<p>Sorani and Zazaki speakers are just as welcome; the work is Kurmanji-first only because that is where it started.</p>
+<p>Speakers of any language are welcome, Kurdish or not; the work started with Kurmanji, but it is not limited to it.</p>
 <p>On the synthesis side the shortage is different:</p>
 <ul><li><strong>Windows testers</strong> for dengjen-nvda, especially against current NVDA releases.</li>
 <li><strong>Co-maintainers.</strong> The add-on has one maintainer, which is one too few.</li></ul>
