@@ -7,6 +7,7 @@ const LOGOS = {
   'dengjen-tashkeel': 'dengjen-tashkeel-logo.png',
   'dengjen-werger': 'dengjen-werger-logo.png',
   'piper-rs': 'dengjen-piper-rs-logo.png',
+  'voice-models': 'voice-models-logo.png',
 }
 
 module.exports = function componentLogo (name) {
