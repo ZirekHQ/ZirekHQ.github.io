@@ -59,6 +59,16 @@
     "getLabel": "Releases"
   },
   {
+    "slug": "voice-models",
+    "name": "voice-models",
+    "tagline": "Kurmanji speech models: training recipes, recording script and benchmarks.",
+    "logo": "voice-models-logo.png",
+    "group": "speech-synthesis",
+    "docsComponent": "voice-models",
+    "getUrl": "https://huggingface.co/rojanu/piper-ku-berfin-renas-medium",
+    "getLabel": "Get the voice"
+  },
+  {
     "slug": "dengjen-werger",
     "name": "dengjen-werger",
     "tagline": "Peer review and commitment for volunteer translation.",
