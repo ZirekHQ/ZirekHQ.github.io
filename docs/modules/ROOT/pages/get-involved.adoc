@@ -1,6 +1,8 @@
 = Get involved
 
-Zirek builds screen-reader support and local neural text-to-speech for languages large vendors don't get around to. Kurmanji comes first; Sorani and Zazaki speakers are just as welcome. Most of the work needs native speakers, not programmers.
+Zirek builds screen-reader support and local neural text-to-speech for languages large vendors don't get around to. Kurmanji is where it started, but every language is welcome, Kurdish or not. Most of the work needs native speakers, not programmers.
+
+'''
 
 == How the project fits together
 
@@ -8,30 +10,70 @@ The add-ons run on the dengjen speech engine, which runs the voice models. Every
 
 Kurmanji phoneme support goes upstream to https://github.com/espeak-ng/espeak-ng[espeak-ng], so every project that uses it benefits.
 
+'''
+
+[#mailing-lists]
+== Join the mailing lists
+
+Two NVDA community lists on https://groups.io/[groups.io] matter for this work. Both are public:
+
+[cols="2,3,3,3",options="header"]
+|===
+|List |Page |Subscribe by email |Unsubscribe by email
+
+|nvda-translations: translation questions and announcements. Translators need it.
+|https://groups.io/g/nvda-translations
+|`nvda-translations+subscribe@groups.io`
+|`nvda-translations+unsubscribe@groups.io`
+
+|nvda-addons: add-on development, and where each dengjen-nvda release is announced.
+|https://nvda-addons.groups.io/g/nvda-addons
+|`nvda-addons+subscribe@groups.io`
+|`nvda-addons+unsubscribe@groups.io`
+|===
+
+To subscribe on the web:
+
+. Open the list's page and select *Join This Group*. Sign in or create a free groups.io account when asked.
+. Pick how you receive messages: individual emails, a daily digest, or the web only.
+. Confirm your address from the email groups.io sends you. A moderator may need to approve your request.
+
+To subscribe by email, send an empty message to the subscribe address and reply to the confirmation message.
+
+'''
+
 == Translate
 
 The NVDA add-ons are translated in the NVDA community's Crowdin project, the one every NVDA add-on uses. You need to read English, the source language, and write the language you translate into. No coding is involved.
 
 . Create a https://crowdin.com/[Crowdin] account.
-. Subscribe to the https://groups.io/g/nvda-translations[NVDA Translations mailing list]. Translation questions and announcements go there.
+. Subscribe to the NVDA Translations mailing list; see <<mailing-lists,Join the mailing lists>>. Translation questions and announcements go there.
 . Ask for access to the `nvda` and `nvdaAddon` translation teams.
 . Join the NVDA Add-ons Crowdin project.
-. Choose your language. For Kurmanji, select Kurmanji.
+. Choose your language, whichever it is. If it is not listed, ask for it on the mailing list.
 . Translate the interface strings and the documentation.
+
+New to Crowdin? Its guide for translators is at https://support.crowdin.com/for-translators/[Crowdin for translators], and https://support.crowdin.com/online-editor/[Online Editor] explains how to translate strings in the browser.
 
 NVDA maintains the full procedure in https://github.com/nvaccess/AddonTemplate/blob/master/docs/l10n/addonTranslators.md[addonTranslators.md]. Follow it if a step above has changed.
 
 For a string that has no context or reads wrongly, open an issue on the https://github.com/ZirekHQ/dengjen-nvda/issues[dengjen-nvda repository] with the exact text and what it should say.
 
+'''
+
 == Record your voice
 
-Text-to-speech models for Kurmanji, Sorani and Zazaki need voice recordings from native speakers. The voices are used by blind people with NVDA, often at two to three times normal speed, so every sound has to stay clear. Consistency matters more than expressiveness.
+Text-to-speech models for any language need voice recordings from native speakers. The voices are used by blind people with NVDA, often at two to three times normal speed, so every sound has to stay clear. Consistency matters more than expressiveness.
 
-Anyone who speaks the language natively can volunteer. The full guide, with the recording terms, the public recording script, equipment, reading style and how to hand in recordings, is xref:voice-models::record-your-voice.adoc[Record your voice] in the voice-models docs. Start there, then open an issue on the https://github.com/ZirekHQ/voice-models/issues[voice-models repository] saying which language you speak.
+Anyone who speaks the language natively can volunteer. The full guide, with the recording terms, the recording script, equipment, reading style and how to hand in recordings, is xref:voice-models::record-your-voice.adoc[Record your voice] in the voice-models docs. Start there, then open an issue on the https://github.com/ZirekHQ/voice-models/issues[voice-models repository] saying which language you speak.
+
+'''
 
 == Test
 
 Windows testers are needed for dengjen-nvda, especially against current NVDA releases. Install the latest release, use it with your own NVDA setup, and report problems in the https://github.com/ZirekHQ/dengjen-nvda/issues[dengjen-nvda issues]. Include your NVDA and Windows versions.
+
+'''
 
 == Write code
 
@@ -40,13 +82,19 @@ Each repository owns its code, build instructions and issues. Start from the rep
 * *dengjen and dengjen-tashkeel.* Rust core with Python, Java and other bindings. Fixes and binding work are welcome in both. Send Piper issues and pull requests to dengjen; dengjen-piper-rs is archived and takes none.
 * *dengjen-nvda and nvda-addon-testkit.* Python, for NVDA add-on and test work.
 
+'''
+
 == Maintain
 
 Every add-on and engine here has one maintainer, which is one too few. If you want to co-maintain a repository, open an issue there or contact the maintainer through the https://github.com/ZirekHQ[organization page].
 
+'''
+
 == Write documentation
 
 This site starts from the repositories' READMEs. Tutorials, troubleshooting guides and architecture notes are all missing. The site's build setup is described in https://github.com/ZirekHQ/ZirekHQ.github.io/blob/main/.github/CONTRIBUTING.md[its CONTRIBUTING.md].
+
+'''
 
 == Ground rules
 
