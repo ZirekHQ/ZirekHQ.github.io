@@ -79,6 +79,13 @@ content:
       branches:
         - main
       start_path: docs
+    - url: https://github.com/ZirekHQ/voice-models.git
+      tags:
+        - 'v*.*.*'
+        - '!v*-*'
+      branches:
+        - main
+      start_path: docs
 
 ui:
   bundle:
