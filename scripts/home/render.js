@@ -85,7 +85,7 @@ const helpSection = () => `
 <p>On the synthesis side the shortage is different:</p>
 <ul><li><strong>Windows testers</strong> for dengjen-nvda, especially against current NVDA releases.</li>
 <li><strong>Co-maintainers.</strong> The add-on has one maintainer, which is one too few.</li></ul>
-<p>${link('/home/get-involved.html', 'Get involved')} has the steps for each. Open an issue on the relevant repository, and read the ${link(CONTRIBUTING_URL, 'contribution guide')}. You do not need to write code to help.</p></section>`
+<p>${link('/home/contribute.html', 'Contribute')} (in Kurmanji and English) shows where to start for each role, and ${link('/home/get-involved.html', 'Get involved')} has the details. Open an issue on the relevant repository, and read the ${link(CONTRIBUTING_URL, 'contribution guide')}. You do not need to write code to help.</p></section>`
 
 const supportSection = () => `
 <section id="support" aria-labelledby="support-title"><h2 id="support-title">Support the work</h2>
