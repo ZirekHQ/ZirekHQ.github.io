@@ -3,8 +3,10 @@
 
 You don't need to write code to help. Pick the role that suits you; each one takes a few minutes to start.
 
+[.lang-ku]
 Ji bo alîkariyê ne hewce ye ku tu kod binivîsî. Karê ku li te tê hilbijêre; destpêkirina her yekê çend deqîqe ye.
 
+[.lang-ku]
 <<kurmanci,Kurmancî li jêr e.>>
 
 [#english]
