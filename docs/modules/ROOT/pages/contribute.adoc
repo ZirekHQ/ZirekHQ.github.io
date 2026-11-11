@@ -13,7 +13,7 @@ Ji bo alîkariyê ne hewce ye ku tu kod binivîsî. Karê ku li te tê hilbijêr
 [#translate]
 === Translate
 
-Translate the NVDA add-on and the app strings into your language on Crowdin, in the browser. Translations are reviewed by a second speaker through https://github.com/ZirekHQ/dengjen-werger[Werger] before they ship. The steps are in xref:get-involved.adoc#translate[Get involved: Translate].
+Translate the NVDA add-on into your language on Crowdin, in the browser. The steps are in xref:get-involved.adoc#translate[Get involved: Translate]. Coming later: translating the Android, Apple and Windows apps, and a second-speaker review step through https://github.com/ZirekHQ/dengjen-werger[Werger].
 
 [#pronunciation]
 === Check pronunciation
@@ -46,7 +46,7 @@ Read the https://github.com/ZirekHQ/.github/blob/main/CONTRIBUTING.md[contributi
 [#werger]
 === Werger
 
-Pêveka NVDA û nivîsên sepanan li ser Crowdin, di gerokê de, wergerîne zimanê xwe. Berî ku werger werin weşandin, axêverekî din bi rêya https://github.com/ZirekHQ/dengjen-werger[Werger] wan kontrol dike. Gav di xref:get-involved.adoc#translate[Get involved: Translate] de ne (bi îngilîzî).
+Pêveka NVDA li ser Crowdin, di gerokê de, wergerîne zimanê xwe. Gav di xref:get-involved.adoc#translate[Get involved: Translate] de ne (bi îngilîzî). Paşê: wergerandina sepanên Android, Apple û Windows, û kontrolkirina ji aliyê axêverekî din ve bi rêya https://github.com/ZirekHQ/dengjen-werger[Werger].
 
 [#bilevkirin]
 === Bilêvkirinê kontrol bike
