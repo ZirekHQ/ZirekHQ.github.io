@@ -1,0 +1,87 @@
+= Contribute · Beşdar bibe
+:description: How to help Zirek without writing code: translate, check pronunciation, donate your voice, ask questions, or write code.
+
+You don't need to write code to help. Pick the role that suits you; each one takes a few minutes to start.
+
+[.lang-ku]
+Ji bo alîkariyê ne hewce ye ku tu kod binivîsî. Karê ku li te tê hilbijêre; destpêkirina her yekê çend deqîqe ye.
+
+[.lang-ku]
+<<kurmanci,Kurmancî li jêr e.>>
+
+[#english]
+== English
+
+[#translate]
+=== Translate
+
+Translate the NVDA add-on into your language on Crowdin, in the browser. The steps are in xref:get-involved.adoc#translate[Get involved: Translate]. Coming later: translating the Android, Apple and Windows apps, and a second-speaker review step through https://github.com/ZirekHQ/dengjen-werger[Werger].
+
+[#pronunciation]
+=== Check pronunciation
+
+Listen to the Kurmanji voice and tell us when a word, number or abbreviation sounds wrong.
+
+* Today: post the exact text and how it should sound in https://github.com/ZirekHQ/ZirekHQ.github.io/discussions/categories/pronunciation[Discussions, Pronunciation]. If you're comfortable on GitHub, you can add the fix to the pronunciation lexicon yourself; see https://github.com/ZirekHQ/dengjen/blob/main/docs/modules/ROOT/pages/pronunciation-lexicon.adoc[Fixing a word that sounds wrong].
+* Coming soon: a page in Werger where you listen to test sentences, mark the words that sound wrong and suggest a fix, which a second native speaker reviews (https://github.com/ZirekHQ/dengjen-werger/issues/110[dengjen-werger#110]).
+
+[#voice]
+=== Donate your voice
+
+New voices need recordings from native speakers. The recording guide covers the terms, the script, equipment and how to hand recordings in: xref:voice-models::record-your-voice.adoc[Record your voice].
+
+[#ask]
+=== Ask a question
+
+Ask in https://github.com/ZirekHQ/ZirekHQ.github.io/discussions[GitHub Discussions], in Kurmanji or English. It works in the browser, it's searchable, and there is no mailing list to join. Report bugs as issues on the relevant repository.
+
+[#code]
+=== Write code
+
+Read the https://github.com/ZirekHQ/.github/blob/main/CONTRIBUTING.md[contribution guide] and the repository's own `CONTRIBUTING.md`. Before your first pull request is merged, you agree to the https://github.com/ZirekHQ/dengjen/blob/main/CLA.md[Contributor License Agreement] by posting this sentence, from the end of the agreement, as a comment on the pull request:
+
+____
+I have read the Zirek Individual Contributor License Agreement, version 1.0, and I agree to it.
+____
+
+In the dengjen repository a CLA check also comments on your pull request with this sentence and records your agreement, so you only post it once there. xref:get-involved.adoc#write-code[Get involved: Write code] lists where help is needed.
+
+'''
+
+[#kurmanci.lang-ku]
+== Kurmancî
+
+[#werger]
+=== Werger
+
+Pêveka NVDA li ser Crowdin, di gerokê de, wergerîne zimanê xwe. Gav di xref:get-involved.adoc#translate[[.lang-en]#Get involved: Translate#] de ne (bi îngilîzî). Paşê: wergerandina sepanên Android, Apple û Windows, û kontrolkirina ji aliyê axêverekî din ve bi rêya https://github.com/ZirekHQ/dengjen-werger[Werger].
+
+[#bilevkirin]
+=== Bilêvkirinê kontrol bike
+
+Guh bide dengê kurmancî û ji me re bibêje kengî peyvek, hejmarek an kurtenivîsek xelet tê gotin.
+
+* Niha: nivîsa rast û divê çawa were gotin di [.lang-en]##https://github.com/ZirekHQ/ZirekHQ.github.io/discussions/categories/pronunciation[Discussions, Pronunciation]## de binivîse. Heke tu bi GitHubê dizanî, tu dikarî rastkirinê bi xwe li ferhenga bilêvkirinê zêde bikî: https://github.com/ZirekHQ/dengjen/blob/main/docs/modules/ROOT/pages/pronunciation-lexicon.adoc[[.lang-en]#Fixing a word that sounds wrong#] (bi îngilîzî).
+* Di demeke nêzîk de: rûpelek di Wergerê de, ku tu guh didî hevokên ceribandinê, peyvên xelet nîşan didî û rastkirinê pêşniyar dikî; axêverekî din ê zikmakî wê kontrol dike (https://github.com/ZirekHQ/dengjen-werger/issues/110[dengjen-werger#110]).
+
+[#deng]
+=== Dengê xwe bibexşîne
+
+Ji bo dengên nû tomarên axêverên zikmakî lazim in. Rêbera tomarkirinê şert, nivîsar, amûr û awayê radestkirinê vedibêje: xref:voice-models::record-your-voice.adoc[[.lang-en]#Record your voice#] (bi îngilîzî).
+
+[#pirs]
+=== Pirsekê bipirse
+
+Di https://github.com/ZirekHQ/ZirekHQ.github.io/discussions[[.lang-en]#GitHub Discussions#] de bi kurmancî an bi îngilîzî bipirse. Di gerokê de dixebite, lêgerîn tê de heye, û ne hewce ye ku tu tevlî lîsteya e-nameyan bibî. Çewtiyan wekî issue li ser depoya têkildar rapor bike.
+
+[#kod]
+=== Kod binivîse
+
+https://github.com/ZirekHQ/.github/blob/main/CONTRIBUTING.md[Rêbera beşdariyê] û `CONTRIBUTING.md` ya depoyê bixwîne. Berî ku pull requesta te ya yekem were yekkirin, tu https://github.com/ZirekHQ/dengjen/blob/main/CLA.md[Peymana Lîsansa Beşdaran (CLA)] qebûl dikî: vê hevoka îngilîzî, ji dawiya peymanê, wekî şîroveyekê li ser pull requestê binivîse:
+
+[.lang-en]
+____
+I have read the Zirek Individual Contributor License Agreement, version 1.0, and I agree to it.
+____
+
+Di depoya dengjen de kontrola CLA jî vê hevokê di şîroveyekê de dide te û qebûlkirina te tomar dike, ji ber vê yekê li wir tu tenê carekê dinivîsî.

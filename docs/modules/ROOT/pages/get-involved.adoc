@@ -2,6 +2,8 @@
 
 Zirek builds screen-reader support and local neural text-to-speech for languages large vendors don't get around to. Kurmanji is where it started, but every language is welcome, Kurdish or not. Most of the work needs native speakers, not programmers.
 
+xref:contribute.adoc[Contribute] is the short version of this page, in Kurmanji and English.
+
 '''
 
 == How the project fits together

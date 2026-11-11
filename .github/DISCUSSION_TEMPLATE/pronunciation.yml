@@ -1,0 +1,36 @@
+title: "[Pronunciation] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping the voice sound right. You can write in Kurmanji or English.
+        Spas ji bo alîkariya te. Tu dikarî bi kurmancî an bi îngilîzî binivîsî.
+  - type: input
+    id: text
+    attributes:
+      label: The exact text / Nivîsa rast
+      description: Copy the word or sentence exactly as it was written. / Peyvê an hevokê tam wekî ku hatiye nivîsandin kopî bike.
+      placeholder: "AB"
+    validations:
+      required: true
+  - type: input
+    id: heard
+    attributes:
+      label: What you heard / Çi hat bihîstin
+      description: Write it the way the voice said it. / Wekî ku deng got binivîse.
+      placeholder: "a be"
+    validations:
+      required: true
+  - type: input
+    id: expected
+    attributes:
+      label: How it should sound / Divê çawa were gotin
+      description: Write it the way a native speaker says it, in Kurmanji letters. / Wekî ku axêverekî zikmakî dibêje, bi tîpên kurmancî binivîse.
+      placeholder: "Yekîtiya Ewropayê"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Where did you hear it? / Te li ku bihîst?
+      description: Optional. The app or screen reader, and anything else that helps. / Ne mecbûrî ye. Sepan an xwînerê ekranê, û her tiştê din ê ku alîkar e.
