@@ -95,6 +95,7 @@ ui:
 
 antora:
   extensions:
+    - require: ./extensions/lang-roles.js
     - require: ./extensions/doc-versions.js
       unversioned: [home]
     - require: '@antora/lunr-extension'
